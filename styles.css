@@ -22,6 +22,12 @@ section {
   clear: both;
 }
 
+article {
+  width: 800px;
+  margin: auto;
+  clear: both;
+}
+
 div {
   float: left;
   width: 50%;
@@ -59,7 +65,21 @@ h3 {
   font-size: 20px;
   line-height: 36px;
   text-transform: lowercase;
-  text-align: right;
+}
+
+header h3 {
+    text-align: right;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: left;
+  color: #414042;
+  clear: both;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 a {
@@ -111,6 +131,11 @@ footer a {
 
 img {
   float: left;
+}
+
+article img {
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 /*banner*/
