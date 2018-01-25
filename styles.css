@@ -79,7 +79,10 @@ p {
   clear: both;
   padding-top: 10px;
   padding-bottom: 10px;
-  margin-bottom: 3%;
+}
+
+p:last-child {
+  margin-bottom: 10%;
 }
 
 a {
