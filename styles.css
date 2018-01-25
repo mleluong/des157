@@ -38,7 +38,6 @@ nav {
   float: left;
 }
 
-
 /*typography*/
 
 * {
@@ -68,7 +67,7 @@ h3 {
 }
 
 header h3 {
-    text-align: right;
+  text-align: right;
 }
 
 p {
@@ -80,6 +79,7 @@ p {
   clear: both;
   padding-top: 10px;
   padding-bottom: 10px;
+  margin-bottom: 3%;
 }
 
 a {
@@ -126,7 +126,6 @@ footer a {
   padding-left: 80px;
 }
 
-
 /*image*/
 
 img {
@@ -139,6 +138,7 @@ article img {
 }
 
 /*banner*/
+
 #mySketch {
   width: 800px;
   height: 250px;
