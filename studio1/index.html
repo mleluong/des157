@@ -3,73 +3,138 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Mad Libs</title>
+  <title>ohmigod, what are you wearing?!</title>
   <link href="https://meyerweb.com/eric/tools/css/reset/reset.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Emilys+Candy|Inconsolata" rel="stylesheet">
   <link href="styles.css" rel=stylesheet>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.16/p5.min.js"></script>
 </head>
 
 <body>
-  <header>
-    <h1>First Day at your New High School</h1>
+  <header id=header>
+    <h1>ohmigod, <em>what</em> are you <em>wearing?!</em></h1>
   </header>
 
+ <article>
   <form name="f">
-    <label for="meanGirl">name of the meanest popular girl at your high school</label>
-    <input type="text" name="meanGirl">
+    <section>
+      <label for="meanGirl">name of the meanest girl from high school</label>
+      <input type="text" name="meanGirl" required>
+    </section>
 
-    <label for="clothing1">clothing item</label>
-    <input type="text" name="clothing1">
+    <section>
+      <label for="clothing1">clothing item</label>
+      <input type="text" name="clothing1" required>
+    </section>
 
-    <label for="celeb1">celebrity</label>
-    <input type="text" name="celeb1">
+    <section>
+      <label for="celeb1">celebrity</label>
+      <input type="text" name="celeb1" required>
+    </section>
 
-    <label for="fam">family member</label>
-    <input type="text" name="fam">
+    <section>
+      <label for="fam">family member</label>
+      <input type="text" name="fam" required>
+    </section>
 
-    <label for="year90">favorite 90s year</label>
-    <input type="text" name="year90">
+    <section>
+      <label for="year90">favorite 90s year</label>
+      <input type="text" name="year90" required>
+    </section>
 
-    <label for="animal">animal</label>
-    <input type="text" name="animal">
+    <section>
+      <label for="animal">animal</label>
+      <input type="text" name="animal" required>
+    </section>
 
-    <label for="clothing2">clothing item</label>
-    <input type="text" name="clothing2">
+    <section>
+      <label for="clothing2">clothing item</label>
+      <input type="text" name="clothing2" required>
+    </section>
 
-    <label for="bodyPart">body part</label>
-    <input type="text" name="bodyPart">
+    <section>
+      <label for="bodyPart">body part</label>
+      <input type="text" name="bodyPart" required>
+    </section>
 
-    <label for="vegetable">vegetable</label>
-    <input type="text" name="vegetable">
+    <section>
+      <label for="vegetable">vegetable</label>
+      <input type="text" name="vegetable" required>
+    </section>
 
-    <label for="clothing3">clothing</label>
-    <input type="text" name="clothing3">
+    <section>
+      <label for="clothing3">clothing item</label>
+      <input type="text" name="clothing3" required>
+    </section>
 
-    <label for="clothingColor">color</label>
-    <input type="text" name="clothingColor">
+    <section>
+      <label for="clothingColor">color</label>
+      <input type="text" name="clothingColor" required>
+    </section>
 
-    <label for="pattern">pattern</label>
-    <input type="text" name="pattern">
+    <section>
+      <label for="pattern">pattern</label>
+      <input type="text" name="pattern" required>
+    </section>
 
-    <label for="currentYear">current year</label>
-    <input type="text" name="currentYear">
+    <section>
+      <label for="currentYear">current year</label>
+      <input type="text" name="currentYear" required>
+    </section>
 
-    <label for="celeb2">celebrity</label>
-    <input type="text" name="celeb2">
+    <section>
+      <label for="celeb2">celebrity</label>
+      <input type="text" name="celeb2" required>
+    </section>
 
-    <label for="celeb3">celebrity</label>
-    <input type="text" name="celeb3">
+    <section>
+      <label for="celeb3">celebrity</label>
+      <input type="text" name="celeb3" required>
+    </section>
 
-    <label for="crush">your high school crush</label>
-    <input type="text" name="crush">
+    <section>
+      <label for="crush">your high school crush</label>
+      <input type="text" name="crush" required>
+    </section>
 
-    <input type="submit" value="submit">
-    <input type="reset" value="reset">
+    <section class="button">
+      <input type="reset" value="reset">
+    </section>
+
+    <section class="button">
+      <input type="submit" value="submit" onclick="location.href='#results'">
+    </section>
+
   </form>
 
-  <section id="results">
-    <p id="myMsg"></p>
+    <img src="../images/xoxo.png" alt="XO, Kissy Lips, and Hearts" id="xoxo">
+
+  </article>
+
+<article class="afterForm">
+
+  <section id="stopSign" class="hide">
+    <img src="../images/stop-sign.png" alt="Stop Sign" >
   </section>
+
+  <section id="barbie" class="hide">
+    <img src="../images/barbies.png" alt="Trio of Fashionable Barbies" >
+  </section>
+
+  <section id="results" class="hide">
+    <h2 id="myHeading"></h2>
+    <p id="myMsg"></p>
+    <p id="myMsg2"></p>
+    <p id="myMsg3"></p>
+    <a href="#header"><p id="scrollUp" class="hide"></p></a>
+  </section>
+
+</article>
+
+<footer>
+  <a href="https://validator.w3.org/check?uri=referer">Valid HTML 5</a>
+  <a href="https://jigsaw.w3.org/css-validator/check/referer">Valid CSS</a>
+</footer>
 
 
   <script src="script.js"></script>

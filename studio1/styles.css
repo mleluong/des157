@@ -1,0 +1,165 @@
+/*form styling*/
+form {
+  width: 50%;
+  height: 100%;
+  margin: auto;
+  background-color: #fff9f3;
+  padding: 1% 2%;
+  border: 2px solid #f985ba;
+  border-radius: 25px;
+}
+
+form section {
+  padding: .6%;
+
+}
+
+input {
+  padding: .5%;
+  margin: .3% 1%;
+  border: none;
+  background-color: #f985ba;
+}
+
+input[type="reset"], input[type="submit"] {
+  border: 2px solid #ff277f;
+  border-radius: 10px;
+  background-color: #ffffff;
+  font-family: 'Inconsolata', monospace;
+  font-size: 1em;
+  color: #ff277f;
+  padding: 1% 2%;
+  margin: auto;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+input[type="reset"]:hover, input[type="submit"]:hover {
+  background-color: #fff9f3;
+}
+
+.button {
+  display: inline;
+}
+
+/*results styling*/
+.afterForm {
+  padding: 1% 2%;
+  width: 60%;
+  height: 100vh;
+  clear: both;
+  margin: auto;
+}
+
+#results {
+  border: 2px solid #f985ba;
+  border-radius: 25px;
+}
+
+/*footer styling*/
+footer {
+  width: 100%;
+  text-align: center;
+  display: inline;
+  position: fixed;
+  bottom: 10px;
+  left: 0px;
+}
+
+/*typography*/
+em {
+  font-style: italic;
+}
+
+h1 {
+  font-family: 'Emilys Candy', cursive;
+  font-size: 2.5em;
+  text-align: center;
+  color: #ff277f;
+  padding: 1.5%;
+}
+
+h2 {
+  font-family: 'Emilys Candy', cursive;
+  font-size: 2em;
+  padding-bottom: 2%;
+  color: #ff277f;
+  text-align: center;
+}
+
+label {
+  font-family: 'Inconsolata', monospace;
+  color: #f985ba;
+  font-size: .9em;
+}
+
+input[type=text]{
+  font-family: 'Inconsolata', monospace;
+  font-size: .7em;
+  color: #ffffff;
+  outline-color: #ffffff;
+}
+
+span{
+  color: #ff277f;
+}
+
+#results {
+  clear: both;
+}
+
+#results p {
+  color: #f985ba;
+  font-family: 'Inconsolata', monospace;
+  padding: 1%;
+}
+
+footer a {
+  font-family: 'Inconsolata', monospace;
+  color: #ff277f;
+}
+
+a {
+  text-decoration: none;
+  padding: 3%;
+  color: blue;
+}
+
+#scrollUp {
+  padding: 1% 2%;
+  border: 2px solid  #ff277f;
+  border-radius: 10px;
+  width: 18%;
+  background-color: #fff9f3;
+}
+
+#scrollUp:hover {
+  background-color: #ffffff;
+}
+
+/*images */
+#xoxo {
+  position: relative;
+  left: 60%;
+  bottom: 200px;
+}
+
+
+#barbie {
+  float: left;
+}
+
+#stopSign {
+  float: left;
+  position: relative;
+  bottom: -50px;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+  padding: 3%;
+}
