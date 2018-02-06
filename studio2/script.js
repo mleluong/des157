@@ -15,7 +15,6 @@ var pandaCapt = document.getElementById('panda-caption');
 
 /*click on tangerine to reveal tangerine face and caption*/
 tang.addEventListener('click', function() {
-  tang.style.cursor = 'pointer';
   tang.src = 'images/tangerine-face.png';
   tangCapt.style.display = 'block';
   lipCapt.style.display = 'none';
@@ -24,9 +23,8 @@ tang.addEventListener('click', function() {
 
 /*click on lipstick to reveal lips, hearts, and caption*/
 lip.addEventListener('click', function() {
-  lip.style.cursor = 'pointer';
   lip.src = 'images/lipstick-lips.png';
-  hearts.style.display = 'block';
+  hearts.style.visibility = 'visible';
   lipCapt.style.display = 'block';
   tangCapt.style.display = 'none';
   pandaCapt.style.display = 'none';
@@ -34,16 +32,14 @@ lip.addEventListener('click', function() {
 
 /*click on panda to reveal music notes, earphones, and caption*/
 panda.addEventListener('click', function() {
-  panda.style.cursor = 'pointer';
   panda.src = 'images/panda-earphones.png';
   pandaCapt.style.display = 'block';
-  notes.style.display = 'block';
+  notes.style.visibility = 'visible';
   tangCapt.style.display = 'none';
   lipCapt.style.display = 'none';
 })
 
 /*click on hearts to reveal tanger-friend*/
-hearts.addEventListener('click', function(){
-  panda.style.cursor = 'pointer';
-  tangerfriend.style.display='block';
+hearts.addEventListener('click', function() {
+  tangerfriend.style.visibility = 'visible';
 })
