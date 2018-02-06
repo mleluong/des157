@@ -1,3 +1,91 @@
+body {
+  width: 80%;
+  margin: auto;
+  background-color: #f2e6ff;
+  box-sizing: border-box;
+}
+
+/*typography*/
+* {
+  font-family: 'Quicksand', monospace, sans-serif;
+    text-align: center;
+}
+
+h1 {
+  color: #b53573;
+  font-size: 2em;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 20px 10px;
+}
+
+h2 {
+  color: #b53573;
+  font-size: 1.2em;
+  font-weight: 400;
+  margin: 10px;
+}
+
+h3 {
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+p {
+  font-size: .9em;
+  font-weight: 400;
+}
+
+
+/*images styling*/
+images {
+  float: left;
+}
+
+#tang {
+ position: relative;
+}
+
+#panda {
+  position: relative;
+  left: -104px;
+  bottom: 150px;
+}
+
+#lip {
+  position: relative;
+  left: -350px;
+  bottom: -200px;
+}
+
+#tangerfriend {
+  display: none;
+  position: relative;
+  bottom: 560px;
+  left: 350px;
+  float: left;
+}
+
+#hearts {
+  display: none;
+  position: relative;
+  left: 300px;
+  bottom: -50px;
+  float: left;
+}
+
+#notes {
+  display: none;
+  position: relative;
+  bottom: -70px;
+  float: left;
+}
+
+#tang, #lip, #panda{
+  cursor: pointer;
+}
+
+/*captions*/
 #tang-caption {
   display: none;
 }
