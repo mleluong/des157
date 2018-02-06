@@ -1,9 +1,16 @@
+
+/*
 html {
   box-sizing: border-box;
 }
 
 *, *:before, *:after {
   box-sizing: inherit;
+}
+*/
+
+* {
+  box-sizing: border-box;
 }
 
 body {
@@ -50,35 +57,35 @@ section {
   position: relative;
   top: 0;
   left: 0;
-  height: 70%;
+  height: 100%;
   width: 100%;
 }
 
 #tang {
   position: absolute;
-  top: 20%;
+  top: 10%;
   left: 20%;
   z-index: 1;
 }
 
 #panda {
   position: absolute;
-  left: 13%;
-  bottom: 30%;
+  left: 11%;
+  top: 20%;
 }
 
 #lip {
   position: absolute;
   left: 10%;
-  bottom: 20%;
+  top: 35%;
   z-index: 1;
 }
 
 #tangerfriend {
   visibility: hidden;
   position: absolute;
-  top: 17%;
-  left: 51%;
+  top: 9%;
+  left: 60%;
   float: left;
 }
 
