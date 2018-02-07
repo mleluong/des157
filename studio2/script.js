@@ -18,22 +18,21 @@ var h1 = document.getElementsByTagName("h1")[0];
 var h2 = document.getElementsByTagName("h2")[0]
 var arrow = document.getElementById("arrow");
 
-/*click on h1 to reveal new h1 and h2 message*/
-h1.addEventListener('click', function(){
-  h1.innerHTML="Me as a tangerine: aka Tangerine-mily!";
-  h2.innerHTML="a cutie who loves lipstick and sharing music with friends"
-  arrow.style.visibility="visible";
-
-})
 
 /*click on tangerine to reveal tangerine face and caption*/
 tang.addEventListener('click', function() {
   tang.src = 'images/tangerine-face.png';
+
+/*change h1 and 2 and hide arrow*/
+  h1.innerHTML="Me as a tangerine: aka Tangerine-mily!";
+  h2.innerHTML="a cutie who loves lipstick and sharing music with friends"
+  arrow.style.visibility="hidden";
+
+/*show caption and hide other captions*/
   tangCapt.style.display = 'block';
   lipCapt.style.display = 'none';
   pandaCapt.style.display = 'none';
   heartsCapt.style.display='none';
-  arrow.style.visibility="hidden";
 })
 
 /*click on lipstick to reveal lips, hearts, and caption*/

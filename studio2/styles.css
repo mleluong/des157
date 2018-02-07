@@ -112,7 +112,7 @@ section {
 }
 
 #arrow {
-  visibility: hidden;
+  visibility: visible;
   position: absolute;
   left: 2%;
   top: 3%;
@@ -162,10 +162,6 @@ footer {
 @media only screen and (min-width: 1366px) {
 
 /*typography*/
-  h1:hover {
-    color: #eda6c8;
-    cursor: pointer;
-  }
   h2 {
     padding: 0;
   }
@@ -190,8 +186,12 @@ footer {
   img:hover {
     opacity: 0.5;
   }
-  /*make tangerfriend have no hover*/
+  /*make certain images have no hover*/
   #tangerfriend:hover {
+    opacity: 1;
+  }
+
+  #arrow:hover {
     opacity: 1;
   }
 
@@ -237,7 +237,7 @@ footer {
   }
   #arrow {
     position: absolute;
-    left: 27%;
+    left: 30%;
     top: 2%;
   }
 }
