@@ -18,6 +18,7 @@ var h1 = document.getElementsByTagName("h1")[0];
 var h2 = document.getElementsByTagName("h2")[0]
 var arrow = document.getElementById("arrow");
 
+/*click on h1 to reveal new h1 and h2 message*/
 h1.addEventListener('click', function(){
   h1.innerHTML="Me as a tangerine: aka Tangerine-mily!";
   h2.innerHTML="a cutie who loves lipstick and sharing music with friends"
@@ -31,6 +32,7 @@ tang.addEventListener('click', function() {
   tangCapt.style.display = 'block';
   lipCapt.style.display = 'none';
   pandaCapt.style.display = 'none';
+  heartsCapt.style.display='none';
   arrow.style.visibility="hidden";
 })
 
@@ -41,6 +43,7 @@ lip.addEventListener('click', function() {
   lipCapt.style.display = 'block';
   tangCapt.style.display = 'none';
   pandaCapt.style.display = 'none';
+  heartsCapt.style.display='none';
   arrow.style.visibility="hidden";
 })
 
@@ -51,6 +54,7 @@ panda.addEventListener('click', function() {
   pandaCapt.style.display = 'block';
   tangCapt.style.display = 'none';
   lipCapt.style.display = 'none';
+  heartsCapt.style.display='none';
   arrow.style.visibility="hidden";
 })
 
