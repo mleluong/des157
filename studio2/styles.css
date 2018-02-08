@@ -1,3 +1,4 @@
+/*border box*/
 html {
   box-sizing: border-box;
 }
@@ -6,6 +7,7 @@ html {
   box-sizing: inherit;
 }
 
+/*body width, background color, and universal font*/
 body {
   width: 100%;
   max-width: 100%;
@@ -15,7 +17,7 @@ body {
 }
 
 
-/*typography*/
+/******************typography*********************/
 
 h1 {
   color: #b53573;
@@ -54,8 +56,9 @@ a {
 }
 
 
-/*images styling*/
+/************images styling************/
 
+/*image container*/
 section {
   position: relative;
   top: 0;
@@ -64,7 +67,7 @@ section {
   height: 60%;
 }
 
-/*position images*/
+/*position images for mobile view (ipad)*/
 
 #tang {
   position: absolute;
@@ -119,8 +122,9 @@ section {
 }
 
 
-/*captions*/
-/*position and style captions*/
+/************captions styling*************/
+
+/*caption container*/
 article {
   position: relative;
   top: 0;
@@ -132,6 +136,7 @@ article {
   padding: 1em;
 }
 
+/*position and style captions*/
 #tang-caption {
   display: none;
 }
@@ -150,7 +155,6 @@ article {
 
 
 /*footer*/
-
 footer {
   width: 100%;
   position: fixed;
@@ -161,7 +165,7 @@ footer {
 /*****************screens 1366 px or bigger***************************/
 @media only screen and (min-width: 1366px) {
 
-/*typography*/
+/***********typography***************/
   h2 {
     padding: 0;
   }
@@ -169,7 +173,8 @@ footer {
     color: #eda6c8;
   }
 
-/*images styling*/
+/************images styling***************/
+/*image container*/
   section {
     position: relative;
     top: 0;
@@ -186,6 +191,7 @@ footer {
   img:hover {
     opacity: 0.5;
   }
+
   /*make certain images have no hover*/
   #tangerfriend:hover {
     opacity: 1;

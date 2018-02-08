@@ -1,19 +1,23 @@
 console.log('reading');
 "use strict";
 
+/*initialize main images*/
 var tang = document.getElementById('tang');
 var lip = document.getElementById('lip');
 var panda = document.getElementById('panda');
 
+/*initialize hidden images*/
 var hearts = document.getElementById('hearts');
 var notes = document.getElementById('notes');
 var tangerfriend = document.getElementById('tangerfriend');
 
+/*initialize captions*/
 var tangCapt = document.getElementById('tang-caption');
 var lipCapt = document.getElementById('lip-caption');
 var pandaCapt = document.getElementById('panda-caption');
 var heartsCapt = document.getElementById('hearts-caption');
 
+/*initialize typography and arrow image*/
 var h1 = document.getElementsByTagName("h1")[0];
 var h2 = document.getElementsByTagName("h2")[0]
 var arrow = document.getElementById("arrow");
@@ -57,7 +61,7 @@ panda.addEventListener('click', function() {
   arrow.style.visibility="hidden";
 })
 
-/*click on hearts to reveal tanger-friend*/
+/*click on hearts to reveal tanger-friend and caption*/
 hearts.addEventListener('click', function() {
   tangerfriend.style.visibility = 'visible';
   heartsCapt.style.display='block';
