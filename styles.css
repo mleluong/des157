@@ -85,6 +85,10 @@ p:last-child {
   margin-bottom: 10%;
 }
 
+ul:last-child{
+  margin-bottom: 10%;
+}
+
 a {
   text-decoration: none;
   font-size: 18px;
@@ -100,11 +104,11 @@ li {
   line-height: 24px;
 }
 
-ul li {
+ol li {
   list-style-type: decimal;
 }
 
-ol li {
+ul li {
   list-style-type: circle;
 }
 
