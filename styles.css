@@ -1,29 +1,33 @@
-/*BOX MODEL*/
+/*****************BOX MODEL********************/
+
+* {
+  box-sizing: border-box;
+}
 
 header {
-  width: 800px;
+  width: 55%;
   margin: auto;
-  padding-top: 50px;
-  padding-bottom: 20px;
+  padding-top: 3%;
+  padding-bottom: 1%;
 }
 
 hr {
   border-color: #FF6564;
   border-width: 0.5px;
   margin: auto;
-  margin-bottom: 10px;
-  margin-top: 10px;
+  margin-bottom: 1%;
+  margin-top: 1%;
   width: 100%;
 }
 
 section {
-  width: 800px;
+  width: 55%;
   margin: auto;
   clear: both;
 }
 
 article {
-  width: 800px;
+  width: 55%;
   margin: auto;
   clear: both;
 }
@@ -38,72 +42,79 @@ nav {
   float: left;
 }
 
-/*typography*/
+.column {
+  float: left;
+}
+
+.col-4 {
+  width: 33.333%;
+  padding-right: 4%;
+}
+
+
+
+/*****************typography********************/
 
 * {
   color: #FF6564;
 }
 
+/*headings*/
 h1 {
   font-family: "Montserrat", sans-serif;
-  font-size: 36px;
-  line-height: 40px;
+  font-size: 2em;
+  line-height: 1em;
   text-transform: uppercase;
   text-align: right;
 }
 
 h2 {
   font-family: "Montserrat", sans-serif;
-  font-size: 24px;
-  line-height: 35px;
+  font-size: 1.5em;
+  line-height: 1.8em;
   text-transform: uppercase;
+  padding-bottom: 2%;
 }
 
 h3 {
-  font-family: "Lora", serif;
-  font-size: 20px;
-  line-height: 36px;
-  text-transform: lowercase;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  text-transform: uppercase;
+  padding-top: 1.5%;
+  padding-bottom: 0.5%;
 }
 
 header h3 {
   text-align: right;
+  font-family: "Lora", serif;
+  font-size: 1.3em;
+  line-height: 1.5em;
+  text-transform: lowercase;
 }
 
+/*body text*/
 p {
   font-family: "Montserrat", sans-serif;
-  font-size: 14px;
-  line-height: 21px;
+  font-size: .9em;
+  line-height: 1.5em;
   text-align: left;
   color: #414042;
   clear: both;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 1%;
+  padding-bottom: 1%;
 }
 
+/*margin to space from footer*/
 p:last-child {
   margin-bottom: 10%;
 }
 
 ul:last-child{
-  margin-bottom: 10%;
+  margin-bottom: 40%;
 }
 
-a {
-  text-decoration: none;
-  font-size: 18px;
-}
-
-a:hover {
-  color: #FFE0D1;
-}
-
-li {
-  font-family: "Lora", serif;
-  text-transform: lowercase;
-  line-height: 24px;
-}
-
+/*list styles*/
 ol li {
   list-style-type: decimal;
 }
@@ -112,39 +123,73 @@ ul li {
   list-style-type: circle;
 }
 
+/*homepage nav list items*/
+nav li {
+  font-family: "Lora", serif;
+  text-transform: lowercase;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+/*subpages list items*/
+article li {
+  font-family: "Montserrat", sans-serif;
+  font-size: .9em;
+  line-height: 1.5em;
+  text-align: left;
+  color: #414042;
+  clear: both;
+}
+
+
+/*links*/
+
+a {
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+a:hover {
+  color: #FFE0D1;
+}
+
+/*footer*/
 footer {
   width: 100%;
   font-family: "Lora", serif;
-  font-size: 18px;
   text-transform: lowercase;
   font-style: italic;
   text-align: center;
   clear: both;
   position: fixed;
   bottom: 0;
-  border: 2px hidden;
   background-color: #FF6564;
-  padding: 10px 5px;
+  padding: 0.8% 0.8%;
 }
 
 footer a {
   color: #ffffff;
-  padding-right: 80px;
-  padding-left: 80px;
+  padding-right: 7%;
+  padding-left: 7%;
 }
 
-/*image*/
+/**********************IMAGES************************/
 
 img {
   float: left;
 }
 
 article img {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 1%;
+  padding-bottom: 1%;
 }
 
-/*banner*/
+#charlotte {
+  padding-top: 1.5%;
+}
+
+
+/*********************BANNER*************************/
 
 #mySketch {
   width: 800px;
