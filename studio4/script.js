@@ -15,7 +15,8 @@ var canvasHeight = 480;
 
 //function to create video
 function setup() {
-  createCanvas(canvasWidth, canvasHeight);
+  var myCanvas = createCanvas(canvasWidth, canvasHeight);
+  myCanvas.parent('myContainer');
   pixelDensity(1);
   video = createCapture(VIDEO);
   //hide video because drawing it on canvas
@@ -44,26 +45,29 @@ function draw() {
   //hovering over different quadrants shows what color they will turn
   if (mouseX > width / 2 && mouseX < width && mouseY > height / 2 && mouseY < height) {
     //bottom right
-    console.log('bottom right hover color');
+    console.log('bottom right hover');
     fill(14, 57, 247, 150);
     rect(width / 2, height / 2, width, height);
+
   }
 
   if (mouseX > width / 2 && mouseX < width && mouseY < height / 2 && mouseY > 0) {
     //top right
-    console.log('bottom right hover color');
+    console.log('top right hover');
     fill(255, 206, 153, 150);
     rect(width / 2, 0, width, height / 2);
   }
 
   if (mouseX < width / 2 && mouseX > 0 && mouseY > height / 2 && mouseY < height) {
     //bottom left
+    console.log('bottom left hover')
     fill(198, 162, 255, 150);
     rect(0, height / 2, width / 2, height);
   }
 
   if (mouseX < width / 2 && mouseX > 0 && mouseY < height / 2 && mouseY > 0) {
     //top left
+    console.log('top left hover')
     fill(255, 69, 74, 150);
     rect(0, 0, width / 2, height / 2);
   }
