@@ -4,8 +4,8 @@
 }
 
 body {
-  background-color: #e2e2e2;
   width: 100%;
+  background-color: #f5f7ff;
 }
 
 #myContainer {
@@ -26,13 +26,15 @@ footer {
   position: fixed;
   left: 0;
   top: 92%;
+  text-align: right;
 }
 
 /*********BUTTON***********/
 button {
   display: block;
   border-radius: 10%;
-  background-color: #ff454a;
+  background-color: #0e39f7;
+  border: 0px;
   margin: auto;
   padding: 2%;
   color: #fff;
@@ -40,12 +42,27 @@ button {
 
 /*************TYPOGRAPHY***********/
 h1 {
+  font-family: 'Oswald', sans-serif;
   text-align: center;
+  font-size: 2.5em;
+  color: #0e39f7;
 }
 
 h2 {
+  font-family: 'Open Sans', sans-serif;
   font-size: 1em;
   text-align: center;
+  color: #c6a2ff;
+}
+
+footer a {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 0.8em;
+  color: #0e39f7;
+}
+
+footer a:hover {
+  color: #c6a2ff;
 }
 
 /*********************FOR DESKTOP*************************/
