@@ -13,6 +13,10 @@ var a = 0;
 var canvasWidth = 640;
 var canvasHeight = 480;
 
+//initialize button
+var button;
+var playing = true;
+
 //function to create video
 function setup() {
   var myCanvas = createCanvas(canvasWidth, canvasHeight);
@@ -21,12 +25,13 @@ function setup() {
   video = createCapture(VIDEO);
   //hide video because drawing it on canvas
   video.hide();
+  button = createButton('PAUSE');
+  button.mousePressed(toggleVid);
 }
 
 function draw() {
   background(0)
 
-  // A video image can also be tinted and resized just as with a PImage.
   image(video, 0, 0, canvasWidth, canvasHeight);
   fill(r, g, b, a);
 
@@ -90,4 +95,20 @@ function mouseClicked() {
   } else {
     tint(255, 255, 255);
   }
+}
+
+function toggleVid() {
+  if (playing) {
+    //pause video
+    video.pause();
+    //change button text
+    button.html('PLAY');
+  } else {
+    //play video
+    video.loop();
+    //change button text
+    button.html('PAUSE');
+  }
+  //change boolean
+  playing = !playing;
 }
