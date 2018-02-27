@@ -118,6 +118,10 @@ ul:last-child{
   margin-bottom: 40%;
 }
 
+img:last-child{
+  margin-bottom: 10%;
+}
+
 /*list styles*/
 ol li {
   list-style-type: decimal;
