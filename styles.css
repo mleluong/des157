@@ -118,10 +118,13 @@ ul:last-child{
   margin-bottom: 40%;
 }
 
-img:last-child{
-  margin-bottom: 10%;
+article {
+  margin-bottom: 50%;
 }
 
+section {
+  margin-bottom: 40%;
+}
 /*list styles*/
 ol li {
   list-style-type: decimal;
