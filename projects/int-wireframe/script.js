@@ -1,19 +1,3 @@
-/*console.log('reading js');
-'use strict';
-
-//capture the submit event
-document.f.onsubmit=processForm;
-
-function processForm(){
-  console.log('process');
-
-
-  //write messages for reflection page
-  myMsg.innerHTML="You chose: "+race;
-
-}
-*/
-
 console.log("reading");
 "use strict";
 
@@ -22,7 +6,21 @@ console.log("reading");
 //capture the submit event
 document.f1.onsubmit = processForm;
 var reflection = document.getElementById("reflection");
-var submit1 = document.getElementById('submit1')
+
+//submit variables
+var submit1 = document.getElementById('submit1');
+var submit2 = document.getElementById('submit2');
+
+//click submit, scroll
+submit1.addEventListener('click', function(){
+  console.log('jump to reflection')
+  window.location.href="#reflection";
+})
+
+submit2.addEventListener('click', function(){
+  console.log('jump to gallery')
+  window.location.href="#gallery";
+})
 
 //define process function
 function processForm() {
@@ -93,18 +91,26 @@ var gallery = document.getElementById("gallery");
 
 function processForm2() {
   console.log('process2');
+  //variables for questions
+  var question1 = document.f1.question1.value;
+  var question2 = document.f1.question2.value;
+  var question3 = document.f1.question3.value;
+  var question4 = document.f1.question4.value;
+  var question5 = document.f1.question5.value;
+
+  //variables for user filled field
   var reason = document.f2.reason.value;
   var reason2 = document.f2.reason2.value;
   var reason3 = document.f2.reason3.value;
   var reason4 = document.f2.reason4.value;
   var reason5 = document.f2.reason5.value;
 
-  myMsg.innerHTML = "I chose " + question1 + "because " + reason;
+  myMsg.innerHTML = "I chose " + question1 + " because " + reason;
   console.log('write msgs')
-  myMsg2.innerHTML = "I chose " + question2 + "because " + reason2;
-  myMsg3.innerHTML = "I chose " + question3 + "because " + reason3;
-  myMsg4.innerHTML = "I chose " + question4 + "because " + reason4;
-  myMsg5.innerHTML = "I chose " + question5 + "because " + reason5;
+  myMsg2.innerHTML = "I chose " + question2 + " because " + reason2;
+  myMsg3.innerHTML = "I chose " + question3 + " because " + reason3;
+  myMsg4.innerHTML = "I chose " + question4 + " because " + reason4;
+  myMsg5.innerHTML = "I chose " + question5 + " because " + reason5;
 
   return false;
 }
