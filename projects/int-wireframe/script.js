@@ -22,6 +22,7 @@ console.log("reading");
 //capture the submit event
 document.f1.onsubmit = processForm;
 var reflection = document.getElementById("reflection");
+var submit1 = document.getElementById('submit1')
 
 //define process function
 function processForm() {
@@ -87,15 +88,16 @@ document.f2.onsubmit = processForm2;
 var gallery = document.getElementById("gallery");
 
 //variables for form 2
-var reason = document.f2.reason.value;
-var reason2 = document.f2.reason2.value;
-var reason3 = document.f2.reason3.value;
-var reason4 = document.f2.reason4.value;
-var reason5 = document.f2.reason5.value;
+
 
 
 function processForm2() {
   console.log('process2');
+  var reason = document.f2.reason.value;
+  var reason2 = document.f2.reason2.value;
+  var reason3 = document.f2.reason3.value;
+  var reason4 = document.f2.reason4.value;
+  var reason5 = document.f2.reason5.value;
 
   myMsg.innerHTML = "I chose " + question1 + "because " + reason;
   console.log('write msgs')
