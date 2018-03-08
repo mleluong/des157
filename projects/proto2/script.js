@@ -133,13 +133,53 @@ jump5.addEventListener('click', function() {
   window.location.href = "#r5";
 })
 
-//click 'next question' on reflection section to go back to questions
+//click 'next question' on GALLERY section to go back to questions
 //jumpback button variable
-var jumpback2 = document.getElementById("#jumpback2");
-jumpback2.addEventListener('click', function() {
+goback1.addEventListener('click', function() {
+  var goback1 = document.getElementById("#goback1");
+  window.location.href = "#question1";
+})
+
+goback2.addEventListener('click', function() {
+  var goback2 = document.getElementById("#goback2");
   window.location.href = "#question2";
 })
 
+goback3.addEventListener('click', function() {
+  var goback3 = document.getElementById("#goback3");
+  window.location.href = "#question3";
+})
+
+goback4.addEventListener('click', function() {
+  var goback4 = document.getElementById("#goback4");
+  window.location.href = "#question4";
+})
+
+goback5.addEventListener('click', function() {
+  var goback2 = document.getElementById("#goback5");
+  window.location.href = "#question5";
+})
+
+//click 'Back to question...' on reflection section to go back to questions
+jumpback2.addEventListener('click', function() {
+  var jumpback2 = document.getElementById("#jumpback2");
+  window.location.href = "#question2";
+})
+
+jumpback3.addEventListener('click', function() {
+  var jumpback3 = document.getElementById("#jumpback3");
+  window.location.href = "#question3";
+})
+
+jumpback4.addEventListener('click', function() {
+  var jumpback2 = document.getElementById("#jumpback4");
+  window.location.href = "#question4";
+})
+
+jumpback5.addEventListener('click', function() {
+  var jumpback2 = document.getElementById("#jumpback5");
+  window.location.href = "#question5";
+})
 
 //after submitting form, populate reflection section
 function processForm() {
