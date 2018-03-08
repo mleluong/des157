@@ -4,36 +4,144 @@ console.log("reading");
 //mobile navigation dropdown
 var menu = document.getElementById('menu');
 var dropdown = document.getElementById('dropdown');
-menu.addEventListener('click', function(){
+menu.addEventListener('click', function() {
   console.log('toggle menu')
-  if (dropdown.style.display == 'none'){
-    dropdown.style.display='block';
+  if (dropdown.style.display == 'none') {
+    dropdown.style.display = 'block';
   } else {
-    dropdown.style.display='none';
+    dropdown.style.display = 'none';
   }
 })
 
 /*******************************FORMS*************************************/
+//submit variables
+var submitquestions = document.getElementById('submit1');
+var submitreflection = document.getElementById('submit2');
+
+//next button variables
+var next1 = document.getElementById('next1');
+var next2 = document.getElementById('next2');
+var next3 = document.getElementById('next3');
+var next4 = document.getElementById('next4');
+
+//back button variables
+var back1 = document.getElementById('back1');
+var back2 = document.getElementById('back2');
+var back3 = document.getElementById('back3');
+var back4 = document.getElementById('back4');
+
+//jump to reflection button  variables
+var jump1 = document.getElementById('jump1');
+var jump2 = document.getElementById('jump2');
+var jump3 = document.getElementById('jump3');
+var jump4 = document.getElementById('jump4');
+var jump4 = document.getElementById('jump4');
+
+
 //capture the submit event
 document.f1.onsubmit = processForm;
 var reflection = document.getElementById("reflection");
 
-//submit variables
-var submit1 = document.getElementById('submit1');
-var submit2 = document.getElementById('submit2');
-
 //click submit, scroll
-submit1.addEventListener('click', function(){
+submitquestions.addEventListener('click', function() {
   console.log('jump to reflection')
-  window.location.href="#reflection";
+  window.location.href = "#reflection";
 })
 
-submit2.addEventListener('click', function(){
+submitreflection.addEventListener('click', function() {
   console.log('jump to gallery')
-  window.location.href="#gallery";
+  window.location.href = "#gallery";
 })
 
-//define process function
+//click next, scroll to next question
+next1.addEventListener('click', function() {
+  console.log('go to question 2')
+  window.location.href = "#question2";
+})
+
+next2.addEventListener('click', function() {
+  console.log('go to question 3')
+  window.location.href = "#question3";
+})
+
+next3.addEventListener('click', function() {
+  console.log('go to question 4')
+  window.location.href = "#question4";
+})
+
+next4.addEventListener('click', function() {
+  console.log('go to question 5')
+  window.location.href = "#question5";
+})
+
+//click back, scroll back to last question
+back1.addEventListener('click', function() {
+  console.log('back to question 1')
+  window.location.href = "#question1";
+})
+
+back2.addEventListener('click', function() {
+  console.log('back to question 2')
+  window.location.href = "#question2";
+})
+
+back3.addEventListener('click', function() {
+  console.log('back to question 3')
+  window.location.href = "#question3";
+})
+
+back4.addEventListener('click', function() {
+  console.log('go to question 4')
+  window.location.href = "#question4";
+})
+
+//click 'Reflect Now?' -> scroll to Reflection, populate one question at a time
+jump1.addEventListener('click', function() {
+  console.log('jump to reflection 1')
+  window.location.href = "#r1";
+
+  //variables for question 1
+  var race1 = document.getElementById("#race1");
+  var gender1 = document.getElementById("#gender1");
+  var sexuality1 = document.getElementById("#sexuality1");
+  var age1 = document.getElementById("#age1");
+  var ability1 = document.getElementById("#ability1");
+  var income1 = document.getElementById("#income1");
+
+  //populate reflection1 section
+  var question1 = document.f1.question1.value;
+  myChoice.innerHTML = "You answered: " + question1 + "<br>" + "I chose " + question1 + " because...";
+})
+
+jump2.addEventListener('click', function() {
+  console.log('jump to reflection 2')
+  window.location.href = "#r2";
+})
+
+jump3.addEventListener('click', function() {
+  console.log('jump to reflection 3')
+  window.location.href = "#r3";
+})
+
+jump4.addEventListener('click', function() {
+  console.log('jump to reflection 4')
+  window.location.href = "#r4";
+})
+
+jump5.addEventListener('click', function() {
+  console.log('jump to reflection 5')
+  window.location.href = "#r5";
+})
+
+//click 'next question' on reflection section to go back to questions
+//jumpback button variable
+var jumpback2 = document.getElementById("#jumpback2");
+jumpback2.addEventListener('click', function() {
+  window.location.href = "#question2";
+})
+
+
+//after submitting form, populate reflection section
 function processForm() {
   console.log('process');
 
@@ -92,7 +200,7 @@ function processForm() {
   return false;
 }
 
-//capture submit event for second form
+//capture submit event for reflection form
 document.f2.onsubmit = processForm2;
 var gallery = document.getElementById("gallery");
 
