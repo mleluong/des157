@@ -7,7 +7,6 @@
 body {
   width: 100%;
   margin: auto;
-  height: 100vh;
 }
 
 .container {
@@ -15,13 +14,10 @@ body {
   margin: auto;
 }
 
-.col {
+.column {
   float: left;
 }
 
-.col-6 {
-  width: 50%;
-}
 .col-12 {
   width: 100%;
 }
@@ -29,7 +25,9 @@ body {
 footer {
   position: fixed;
   width: 100%;
+  text-align: center;
   top: 95%;
+
 }
 
 /*************TYPOGRAPHY**************/
@@ -37,11 +35,9 @@ footer {
 h1 {
   font-family: 'Arvo', serif;
   text-align: center;
-  font-size: 2em;
+  font-size: 2.5em;
   line-height: 1.3em;
   color: #04248E;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
 }
 
 h2 {
@@ -50,7 +46,7 @@ h2 {
   font-size: 1.5em;
 }
 
-.workshops h2 {
+div h2 {
   color: #fff;
 }
 
@@ -59,18 +55,13 @@ h3 {
   font-size: 1.2em;
   text-align: center;
   line-height: 1.4em;
-  padding-top: 1%;
-  padding-bottom: 2%;
-  color: #939598;
-  width: 70%;
-  margin: auto;
+  padding-top: 5%;
 }
 
 p {
   font-family: 'Source Sans Pro', serif;
   font-size: 1em;
   line-height: 1.5em;
-  color: #939598;
 }
 
 li {
@@ -80,113 +71,10 @@ li {
 a {
   font-family: 'Source Sans Pro', serif;
   text-decoration: none;
-  color: #680466;
 }
-
-span {
-  color: #04248E;
-}
-
-/********NAVIGATION****************/
-
-#dropdown {
-  display: none;
-  padding: 10%;
-  width: 40%;
-  background-color: #e6e7e8;
-  position: absolute;
-}
-
-#dropdown a {
-  display: block;
-  margin: auto;
-  text-align: center;
-}
-
-#menu {
-  background-color: transparent;
-  border: 1px transparent;
-  color: #680466;
-  font-size: 2em;
-  margin-top: 2%;
-}
-
-/***********BUTTONS******************/
-
-.button {
-  background-color: #680466;
-  padding: 5% 10%;
-  border-radius: .5em;
-  margin: auto;
-  width: 60%;
-  text-align: center;
-}
-
-.button a {
-  color: #fff;
-}
-
-input[type="radio"] {
-  display: none;
-}
-
-input[type="button"] {
-  background-color: #680466;
-  padding: 2% 5%;
-  color: #fff;
-  display: inline;
-}
-
-input[type="submit"] {
-  background-color: #680466;
-  padding: 2% 5%;
-  color: #fff;
-  display: inline;
-}
-
-label {
-  padding: 5% 1%;
-  margin: auto;
-  margin-top: 2%;
-  display: block;
-  width: 70%;
-  text-align: center;
-  font-family: 'Source Sans Pro', sans-serif;
-  border-radius: .5em;
-  border: 2px #aba5d2 solid;
-}
-
-
-input[type="radio"]:checked+label{
-background-color: #04248E;
-color: #fff;
-border: 2px transparent;
-}
-
-.actionbuttons {
-  margin: auto;
-  text-align: center;
-  padding: 3%;
-}
-
-/******ask me later buttons*******/
-#next1 #next2 #next3 #next4 #submit1{
-  display: block;
-}
-
-#jumpback2 #jumpback3 #jumpback4 #jumpback5 {
-  display: block;
-}
-
-/*********************************HOME PAGE***********************************************/
-#homepage {
-  background-image: url(images/background.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 
 /***********WORKSHOP MENU***********/
+
 .workshops {
   padding: 10% 2%;
   margin: auto;
@@ -194,6 +82,46 @@ border: 2px transparent;
   background-color: #04248E;
 }
 
+
+/********NAVIGATION****************/
+
+#dropdown {
+  display: none;
+}
+
+/***********BUTTONS******************/
+
+button {
+  background-color: pink;
+  padding: 2%;
+  border-radius: 2%;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+label {
+  background-color: red;
+  padding: 5% 1%;
+  margin: auto;
+  margin-top: 2%;
+  display: block;
+  width: 60%;
+  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+label:active {
+  background-color: blue;
+}
+
+/*********************************HOME PAGE***********************************************/
+#homepage {
+  background-image: url(images/placeholder-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 /*********************************IDENTITY SIGNS WORKSHOP************************************/
 #nav-questions {
   position: fixed;

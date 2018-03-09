@@ -18,10 +18,10 @@ menu.addEventListener('click', function() {
 /****************SUBMIT FORMS********************/
 //submit variables
 var submitquestions = document.getElementById('submit1');
-var submitreflection = document.getElementById('submit2');
+//var submitreflection = document.getElementById('submit2');
 
 //capture the submit event
-document.f1.onsubmit = processForm;
+//document.f1.onsubmit = processForm;
 var reflection = document.getElementById("reflection");
 
 //click submit, scroll
@@ -30,10 +30,12 @@ submitquestions.addEventListener('click', function() {
   window.location.href = "#reflection";
 })
 
-submitreflection.addEventListener('click', function() {
+submitquestions.addEventListener('click', processForm);
+/*submitreflection.addEventListener('click', function() {
   console.log('jump to gallery')
   window.location.href = "#gallery";
 })
+*/
 
 /****************************QUESTIONS SECTION************************************/
 
@@ -102,7 +104,7 @@ var jump3 = document.getElementById('jump3');
 var jump4 = document.getElementById('jump4');
 var jump4 = document.getElementById('jump4');
 
-//click 'Reflect Now?' -> scroll to Reflection, populate one question at a time
+//click 'next' -> scroll to Reflection, populate one question at a time
 //Question1 -> Reflection 1
 jump1.addEventListener('click', function() {
   console.log('jump to reflection 1')
@@ -117,6 +119,9 @@ jump1.addEventListener('click', function() {
   //populate reflection1 section
   var question1 = document.f1.question1.value;
   myChoice.innerHTML = "You answered: " + question1 + "<br>" + "I chose " + question1 + " because...";
+  //turn off 'next question' button on gallery; replace with 'next reflection'
+  console.log('turn off button')
+  jumpback2.style.display='none';
 })
 
 //Question2 -> Reflection 2
@@ -182,7 +187,7 @@ jump5.addEventListener('click', function() {
 
 /***********************************REFLECTION SECTION BUTTONS***************************************/
 
-//click 'Back to question...' on reflection section to go back to questions
+//click 'back' on reflection section to go back to questions
 jumpback2.addEventListener('click', function() {
   var jumpback2 = document.getElementById("#jumpback2");
   window.location.href = "#question2";
@@ -304,7 +309,7 @@ goback5.addEventListener('click', function() {
   window.location.href = "#question5";
 })
 
-
+/**********************CLICK SUBMIT******************************/
 //after submitting form, populate reflection section
 function processForm() {
   console.log('process');
@@ -355,15 +360,26 @@ function processForm() {
   var question5 = document.f1.question5.value;
 
   //write messages
-  myChoice.innerHTML = "You answered: " + question1 + "<br>" + "I chose " + question1 + " because...";
+  myChoice.innerHTML = "You answered: <span>" + question1 + "</span> <br>" + "I chose <span>" + question1 + "</span> because...";
   myChoice2.innerHTML = "You answered: " + question2 + "<br>" + "I chose " + question2 + " because...";
   myChoice3.innerHTML = "You answered: " + question3 + "<br>" + "I chose " + question3 + " because...";
   myChoice4.innerHTML = "You answered: " + question4 + "<br>" + "I chose " + question4 + " because...";
   myChoice5.innerHTML = "You answered: " + question5 + "<br>" + "I chose " + question5 + " because...";
 
+  //hide 'ask me later' buttons
+  console.log('hide ask me later buttons')
+  next1.style.display='none';
+  next2.style.display='none';
+  next3.style.display='none';
+  next4.style.display='none';
+  submit1.style.display='none';
+
+
   return false;
 }
 
+
+/*
 //capture submit event for reflection form
 document.f2.onsubmit = processForm2;
 var gallery = document.getElementById("gallery");
@@ -394,3 +410,4 @@ function processForm2() {
 
   return false;
 }
+*/

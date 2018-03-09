@@ -26,13 +26,13 @@
 
     <h1>Identity Signs</h1>
 
-      <nav id='nav-questions'>
-        <a href="#question1">Q1</a>
-        <a href="#question2">Q2</a>
-        <a href="#question3">Q3</a>
-        <a href="#question4">Q4</a>
-        <a href="#question5">Q5</a>
-      </nav>
+    <nav id='nav-questions'>
+      <a href="#question1">Q1</a>
+      <a href="#question2">Q2</a>
+      <a href="#question3">Q3</a>
+      <a href="#question4">Q4</a>
+      <a href="#question5">Q5</a>
+    </nav>
   </header>
 
   <section>
@@ -58,8 +58,9 @@
           <input type="radio" name="question1" value="income" id="income1">
           <label for="income1">income</label>
 
-          <input type="button" name="jump1" value="Reflect now?" id="jump1">
-          <input type="button" name="next1" value="Next Question" id="next1">
+          <section class="actionbuttons">
+            <input type="button" name="jump1" value="next" id="jump1">
+          </section>
         </section>
 
         <section id="question2">
@@ -82,9 +83,11 @@
           <input type="radio" name="question2" value="income" id="income2">
           <label for="income2">income</label>
 
-          <input type="button" name="back1" value="back" id="back1">
-          <input type="button" name="jump2" value="Reflect now?" id="jump2">
-          <input type="button" name="next2" value="Next Question" id="next2">
+          <section class="actionbuttons">
+            <input type="button" name="back1" value="back" id="back1">
+            <input type="button" name="jump2" value="next" id="jump2">
+
+          </section>
         </section>
 
         <section id="question3">
@@ -107,9 +110,10 @@
           <input type="radio" name="question3" value="income" id="income3">
           <label for="income3">income</label>
 
-          <input type="button" name="back2" value="back" id="back2">
-          <input type="button" name="jump3" value="Reflect now?" id="jump3">
-          <input type="button" name="next3" value="next" id="next3">
+          <section class="actionbuttons">
+            <input type="button" name="back2" value="back" id="back2">
+            <input type="button" name="jump3" value="next" id="jump3">
+          </section>
         </section>
 
         <section id="question4">
@@ -133,9 +137,10 @@ was...</h3>
           <input type="radio" name="question4" value="income" id="income4">
           <label for="income4">income</label>
 
-          <input type="button" name="back3" value="back" id="back3">
-          <input type="button" name="jump4" value="Reflect now?" id="jump4">
-          <input type="button" name="next4" value="next" id="next4">
+          <section class="actionbuttons">
+            <input type="button" name="back3" value="back" id="back3">
+            <input type="button" name="jump4" value="next" id="jump4">
+          </section>
         </section>
 
         <section id="question5">
@@ -158,15 +163,16 @@ was...</h3>
           <input type="radio" name="question5" value="income" id="income5">
           <label for="income5">income</label>
 
-          <input type="button" name="back4" value="back" id="back4">
-          <input type="button" name="jump5" value="Reflect now?" id="jump5">
-            <input type="submit" value="submit" id='submit1'>
+          <section class="actionbuttons">
+            <input type="button" name="back4" value="back" id="back4">
+            <input type="button" name="jump5" value="next" id="jump5">
+          </section>
         </section>
 
       </form>
     </article>
 
-<!--*********************************REFLECTION*******************************************-->
+    <!--*********************************REFLECTION*******************************************-->
     <article id="reflection">
       <form name="f2">
         <h2>Reflection</h2>
@@ -174,49 +180,50 @@ was...</h3>
           <h3>Question 1: The identity I'm most aware of every day is...</h3>
           <p id="myChoice"></p>
           <textarea name="reason" id="reason" rows="10" cols="30"></textarea>
-          <input type="button" name="goback1" value="Back to Question 1" id="goback1">
-          <input type="button" name="togallery1" value="Next" id="togallery1">
+          <input type="button" name="goback1" value="back" id="goback1">
+          <input type="button" name="next1" value="ask me later" id="next1">
+          <input type="button" name="togallery1" value="answer now" id="togallery1">
         </section>
 
         <section id="r2">
           <h3>Question 2: The part of my identity that I am the least aware of on a daily basis is...</h3>
           <p id="myChoice2"></p>
           <textarea name="reason2" id="reason2" rows="10" cols="30"></textarea>
-          <input type="button" name="goback2" value="Back to Question 2" id="goback2">
-          <input type="button" name="togallery2" value="Next" id="togallery2">
+          <input type="button" name="goback2" value="back" id="goback2">
+          <input type="button" name="next2" value="ask me later" id="next2">
+          <input type="button" name="togallery2" value="answer now" id="togallery2">
         </section>
 
         <section id="r3">
           <h3>Question 3: The part of my identity that I believe is the most misunderstood by others is...</h3>
           <p id="myChoice3"></p>
           <textarea name="reason3" id="reason3" rows="10" cols="30"></textarea>
-          <input type="button" name="goback3" value="Back to Question 3" id="goback3">
-          <input type="button" name="togallery3" value="Next" id="togallery3">
+          <input type="button" name="goback3" value="back" id="goback3">
+          <input type="button" name="next3" value="ask me later" id="next3">
+          <input type="button" name="togallery3" value="answer now" id="togallery3">
         </section>
 
         <section id="r4">
           <h3>Question 4:The part of my identity that was most emphasized or important in my family growing up was...</h3>
           <p id="myChoice4"></p>
           <textarea name="reason4" id="reason4" rows="10" cols="30"></textarea>
-          <input type="button" name="goback4" value="Back to Question 4" id="goback4">
-          <input type="button" name="togallery4" value="Next" id="togallery4">
+          <input type="button" name="goback4" value="back" id="goback4">
+          <input type="button" name="next4" value="ask me later" id="next4">
+          <input type="button" name="togallery4" value="answer now" id="togallery4">
         </section>
 
         <section id="r5">
           <h3>Question 5: The part of my identity that garners me the most privilege is...</h3>
           <p id="myChoice5"></p>
           <textarea name="reason5" id="reason5" rows="10" cols="30"></textarea>
-          <input type="button" name="goback5" value="Back to Question 5" id="goback5">
-          <input type="button" name="togallery5" value="Next" id="togallery5">
-        </section>
-
-        <section class="button">
-          <input type="submit" value="submit" id='submit2'>
+          <input type="button" name="goback5" value="back" id="goback5">
+          <input type="submit" value="ask me later" id='submit1'>
+          <input type="button" name="togallery5" value="answer now" id="togallery5">
         </section>
       </form>
     </article>
 
-<!--*********************************GALLERY*******************************************-->
+    <!--*********************************GALLERY*******************************************-->
     <article id="gallery">
       <h2>Gallery</h2>
       <section id='gallery1'>
