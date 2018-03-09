@@ -5,6 +5,11 @@
 }
 
 body {
+  width: 100%;
+  margin: auto;
+}
+
+.container {
   width: 90%;
   margin: auto;
 }
@@ -17,12 +22,20 @@ body {
   width: 100%;
 }
 
+footer {
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  top: 95%;
+
+}
+
 /*************TYPOGRAPHY**************/
 
 h1 {
   font-family: 'Arvo', serif;
   text-align: center;
-  font-size: 1.8em;
+  font-size: 2.5em;
   line-height: 1.3em;
   color: #04248E;
 }
@@ -33,11 +46,16 @@ h2 {
   font-size: 1.5em;
 }
 
+div h2 {
+  color: #fff;
+}
+
 h3 {
   font-family: 'Source Sans Pro', serif;
   font-size: 1.2em;
   text-align: center;
   line-height: 1.4em;
+  padding-top: 5%;
 }
 
 p {
@@ -60,8 +78,9 @@ a {
   padding: 10% 2%;
   margin: auto;
   margin-top: 5%;
-  background-color: #f86b6b;
+  background-color: #04248E;
 }
+
 
 /********NAVIGATION****************/
 
@@ -96,8 +115,19 @@ label:active {
   background-color: blue;
 }
 
-/*********IDENTITY SIGNS: questions***************/
+/*********************************HOME PAGE***********************************************/
+#homepage {
+  background-image: url(images/placeholder-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*********************************IDENTITY SIGNS WORKSHOP************************************/
+#nav-questions {
+  position: fixed;
+  display: none;
+}
 
+/*********IDENTITY SIGNS: questions***************/
 #question1 {
   width: 100%;
   height: 100vh;
