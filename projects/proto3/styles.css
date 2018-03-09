@@ -48,6 +48,7 @@ h2 {
   font-family: 'Arvo', serif;
   text-align: center;
   font-size: 1.5em;
+  color: #680466;
 }
 
 .workshops h2 {
@@ -62,7 +63,7 @@ h3 {
   padding-top: 1%;
   padding-bottom: 2%;
   color: #939598;
-  width: 70%;
+  width: 80%;
   margin: auto;
 }
 
@@ -73,8 +74,18 @@ p {
   color: #939598;
 }
 
+ol {
+  margin: auto;
+  padding: 0 0 8% 0;
+  width: 90%;
+}
+
 li {
   font-family: 'Source Sans Pro', serif;
+  font-size: 1em;
+  line-height: 1.5em;
+  color: #939598;
+  list-style-position: outside;
 }
 
 a {
@@ -85,6 +96,13 @@ a {
 
 span {
   color: #04248E;
+}
+
+textarea {
+  font-family: 'Source Sans Pro', serif;
+  font-size: 1em;
+  line-height: 1.5em;
+  color: #939598;
 }
 
 /********NAVIGATION****************/
@@ -149,7 +167,7 @@ label {
   margin: auto;
   margin-top: 2%;
   display: block;
-  width: 70%;
+  width: 80%;
   text-align: center;
   font-family: 'Source Sans Pro', sans-serif;
   border-radius: .5em;
@@ -254,9 +272,10 @@ border: 2px transparent;
 /*********IDENTITY SIGNS: Reflection***************/
 
 textarea {
-  border: .5px solid black;
+  border: .5px solid #939598;
   width: 100%;
   height: 50%;
+  margin-bottom: 5%;
 }
 
 /*********IDENTITY SIGNS: Gallery***************/
