@@ -74,29 +74,29 @@ var back2 = document.getElementById('back2');
 var back3 = document.getElementById('back3');
 var back4 = document.getElementById('back4');
 
-//click back, scroll back to last question
+//click back, scroll back to last question's reflection
 back1.addEventListener('click', function() {
-  console.log('back to question 1')
-  window.location.href = "#question1";
+  console.log('back to r1')
+  window.location.href = "#r1";
 })
 
 back2.addEventListener('click', function() {
-  console.log('back to question 2')
-  window.location.href = "#question2";
+  console.log('back to r2')
+  window.location.href = "#r2";
 })
 
 back3.addEventListener('click', function() {
-  console.log('back to question 3')
-  window.location.href = "#question3";
+  console.log('back to r3')
+  window.location.href = "#r3";
 })
 
 back4.addEventListener('click', function() {
-  console.log('go to question 4')
-  window.location.href = "#question4";
+  console.log('go to r4')
+  window.location.href = "#r4";
 })
 
 
-/**************'REFLECT NOW?' BUTTONS*****************/
+/**************QUESTIONS -> REFLECTIONS*****************/
 // variables to for jump to reflection button
 var jump1 = document.getElementById('jump1');
 var jump2 = document.getElementById('jump2');
@@ -118,10 +118,8 @@ jump1.addEventListener('click', function() {
   var income1 = document.getElementById("#income1");
   //populate reflection1 section
   var question1 = document.f1.question1.value;
-  myChoice.innerHTML = "You answered: " + question1 + "<br>" + "I chose " + question1 + " because...";
+  myChoice.innerHTML = "You answered: <span>" + question1 + "</span> <br>" + "I chose <span>" + question1 + "</span> because...";
   //turn off 'next question' button on gallery; replace with 'next reflection'
-  console.log('turn off button')
-  jumpback2.style.display='none';
 })
 
 //Question2 -> Reflection 2
@@ -137,7 +135,7 @@ jump2.addEventListener('click', function() {
   var income2 = document.getElementById("#income2");
   //populate reflection2 section
   var question2 = document.f1.question2.value;
-  myChoice2.innerHTML = "You answered: " + question2 + "<br>" + "I chose " + question2 + " because...";
+  myChoice2.innerHTML = "You answered: <span>" + question2 + "</span> <br>" + "I chose <span>" + question2 + "</span> because...";
 })
 
 jump3.addEventListener('click', function() {
@@ -152,7 +150,7 @@ jump3.addEventListener('click', function() {
   var income3 = document.getElementById("#income2");
   //populate reflection2 section
   var question3 = document.f1.question3.value;
-  myChoice3.innerHTML = "You answered: " + question3 + "<br>" + "I chose " + question3 + " because...";
+  myChoice3.innerHTML = "You answered: <span>" + question3 + "</span><br>" + "I chose <span>" + question3 + "</span> because...";
 })
 
 jump4.addEventListener('click', function() {
@@ -167,7 +165,7 @@ jump4.addEventListener('click', function() {
   var income4 = document.getElementById("#income4");
   //populate reflection4 section
   var question4 = document.f1.question4.value;
-  myChoice4.innerHTML = "You answered: " + question4 + "<br>" + "I chose " + question4 + " because...";
+  myChoice4.innerHTML = "You answered: <span>" + question4 + "</span> <br>" + "I chose <span>" + question4 + "</span> because...";
 })
 
 jump5.addEventListener('click', function() {
@@ -182,11 +180,10 @@ jump5.addEventListener('click', function() {
   var income5 = document.getElementById("#income5");
   //populate reflection5 section
   var question5 = document.f1.question5.value;
-  myChoice5.innerHTML = "You answered: " + question5 + "<br>" + "I chose " + question5 + " because...";
+  myChoice5.innerHTML = "You answered: <span>" + question5 + "</span><br>" + "I chose <span>" + question5 + "</span> because...";
 })
 
 /***********************************REFLECTION SECTION BUTTONS***************************************/
-
 //click 'back' on reflection section to go back to questions
 jumpback2.addEventListener('click', function() {
   var jumpback2 = document.getElementById("#jumpback2");
@@ -208,12 +205,66 @@ jumpback5.addEventListener('click', function() {
   window.location.href = "#question5";
 })
 
-//click 'Next' on reflection section to continue to GALLERY; populate gallery section!!!
-togallery1.addEventListener('click', function(){
+//'answer now' button only activates when textarea has text
+var reason = document.getElementById('reason');
+var reason2 = document.getElementById('reason2');
+var reason3 = document.getElementById('reason3');
+var reason4 = document.getElementById('reason4');
+var reason5 = document.getElementById('reason5');
+
+reason.addEventListener('input', function() {
+  console.log('enable button');
+  if (reason.value.length == 0) {
+    reason.disabled = true;
+  } else {
+    togallery1.disabled = false;
+  }
+})
+
+reason2.addEventListener('input', function() {
+  console.log('enable button');
+  if (reason2.value.length == 0) {
+    reason2.disabled = true;
+  } else {
+    togallery2.disabled = false;
+  }
+})
+
+reason3.addEventListener('input', function() {
+  console.log('enable button');
+  if (reason3.value.length == 0) {
+    reason3.disabled = true;
+  } else {
+    togallery3.disabled = false;
+  }
+})
+
+reason4.addEventListener('input', function() {
+  console.log('enable button');
+  if (reason4.value.length == 0) {
+    reason4.disabled = true;
+  } else {
+    togallery4.disabled = false;
+  }
+})
+
+reason5.addEventListener('input', function() {
+  console.log('enable button');
+  if (reason5.value.length == 0) {
+    reason5.disabled = true;
+  } else {
+    togallery5.disabled = false;
+  }
+})
+
+
+
+//click 'answer now' on reflection section to continue to GALLERY; populate gallery section!!!
+togallery1.addEventListener('click', function() {
   //scroll to gallery 1
   console.log('go to gallery1');
   var togallery1 = document.getElementById('#togallery1');
-  window.location.href="#gallery1";
+  window.location.href = "#gallery1";
   //populate gallery 1
   //variables for questions
   var question1 = document.f1.question1.value;
@@ -224,11 +275,11 @@ togallery1.addEventListener('click', function(){
   myMsg.innerHTML = "I chose " + question1 + " because " + reason;
 })
 
-togallery2.addEventListener('click', function(){
+togallery2.addEventListener('click', function() {
   //scroll to gallery 2
   console.log('go to gallery2');
   var togallery2 = document.getElementById('#togallery2');
-  window.location.href="#gallery2";
+  window.location.href = "#gallery2";
   //populate gallery 2
   //variables for questions
   var question2 = document.f1.question2.value;
@@ -239,10 +290,10 @@ togallery2.addEventListener('click', function(){
   myMsg2.innerHTML = "I chose " + question2 + " because " + reason2;
 })
 
-togallery3.addEventListener('click', function(){
+togallery3.addEventListener('click', function() {
   //scroll to gallery 3
   var togallery3 = document.getElementById('#togallery3');
-  window.location.href="#gallery3";
+  window.location.href = "#gallery3";
   //populate gallery 3
   //variables for questions
   var question3 = document.f1.question3.value;
@@ -253,10 +304,10 @@ togallery3.addEventListener('click', function(){
   myMsg3.innerHTML = "I chose " + question3 + " because " + reason3;
 })
 
-togallery4.addEventListener('click', function(){
+togallery4.addEventListener('click', function() {
   //scroll to gallery 4
   var togallery4 = document.getElementById('#togallery4');
-  window.location.href="#gallery4";
+  window.location.href = "#gallery4";
   //populate gallery 4
   //variables for questions
   var question4 = document.f1.question4.value;
@@ -267,10 +318,10 @@ togallery4.addEventListener('click', function(){
   myMsg4.innerHTML = "I chose " + question4 + " because " + reason4;
 })
 
-togallery5.addEventListener('click', function(){
+togallery5.addEventListener('click', function() {
   //scroll to gallery 5
   var togallery5 = document.getElementById('#togallery5');
-  window.location.href="#gallery5";
+  window.location.href = "#gallery5";
   //populate gallery 5
   //variables for questions
   var question5 = document.f1.question5.value;
@@ -307,6 +358,26 @@ goback4.addEventListener('click', function() {
 goback5.addEventListener('click', function() {
   var goback2 = document.getElementById("#goback5");
   window.location.href = "#question5";
+})
+
+backtor2.addEventListener('click', function() {
+  var backtor2 = document.getElementById('#backtor2');
+  window.location.href = "#r2";
+})
+
+backtor3.addEventListener('click', function() {
+  var backtor3 = document.getElementById('#backtor3');
+  window.location.href = "#r3";
+})
+
+backtor4.addEventListener('click', function() {
+  var backtor4 = document.getElementById('#backtor4');
+  window.location.href = "#r4";
+})
+
+backtor5.addEventListener('click', function() {
+  var backtor2 = document.getElementById('#backtor5');
+  window.location.href = "#r5";
 })
 
 /**********************CLICK SUBMIT******************************/
@@ -361,20 +432,30 @@ function processForm() {
 
   //write messages
   myChoice.innerHTML = "You answered: <span>" + question1 + "</span> <br>" + "I chose <span>" + question1 + "</span> because...";
-  myChoice2.innerHTML = "You answered: " + question2 + "<br>" + "I chose " + question2 + " because...";
-  myChoice3.innerHTML = "You answered: " + question3 + "<br>" + "I chose " + question3 + " because...";
-  myChoice4.innerHTML = "You answered: " + question4 + "<br>" + "I chose " + question4 + " because...";
-  myChoice5.innerHTML = "You answered: " + question5 + "<br>" + "I chose " + question5 + " because...";
+  myChoice2.innerHTML = "You answered: <span>" + question2 + "</span> <br>" + "I chose <span>" + question2 + "</span> because...";
+  myChoice3.innerHTML = "You answered: <span>" + question3 + "</span> <br>" + "I chose <span>" + question3 + "</span> because...";
+  myChoice4.innerHTML = "You answered: <span>" + question4 + "</span> <br>" + "I chose <span>" + question4 + "</span> because...";
+  myChoice5.innerHTML = "You answered: <span>" + question5 + "</span><br>" + "I chose <span>" + question5 + "</span> because...";
 
   //hide 'ask me later' buttons
-  console.log('hide ask me later buttons')
-  next1.style.display='none';
-  next2.style.display='none';
-  next3.style.display='none';
-  next4.style.display='none';
-  submit1.style.display='none';
+  console.log('hide ask me later buttons');
+  next1.style.display = 'none';
+  next2.style.display = 'none';
+  next3.style.display = 'none';
+  next4.style.display = 'none';
+  submit1.style.display = 'none';
 
+  console.log('turn off jumpback buttons in reflection section');
+  jumpback2.style.display = 'none';
+  jumpback3.style.display = 'none';
+  jumpback4.style.display = 'none';
+  jumpback5.style.display = 'none';
 
+  console.log('turn on backtor2 buttons in reflection section');
+  backtor2.style.display = 'block';
+  backtor3.style.display = 'block';
+  backtor4.style.display = 'block';
+  backtor5.style.display = 'block';
   return false;
 }
 

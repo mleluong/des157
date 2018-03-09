@@ -109,7 +109,6 @@ textarea {
 
 #dropdown {
   display: none;
-  padding: 10%;
   width: 40%;
   background-color: #e6e7e8;
   position: absolute;
@@ -117,8 +116,12 @@ textarea {
 
 #dropdown a {
   display: block;
+  padding: 7% 5%;
+  border: 1px solid #fff;
   margin: auto;
   text-align: center;
+  font-size: 1.5em;
+  text-transform: lowercase;
 }
 
 #menu {
@@ -136,6 +139,7 @@ textarea {
   padding: 5% 10%;
   border-radius: .5em;
   margin: auto;
+  margin-bottom: 10%;
   width: 60%;
   text-align: center;
 }
@@ -172,6 +176,7 @@ label {
   font-family: 'Source Sans Pro', sans-serif;
   border-radius: .5em;
   border: 2px #aba5d2 solid;
+  color: #aba5d2;
 }
 
 
@@ -194,6 +199,27 @@ border: 2px transparent;
 
 #jumpback2 #jumpback3 #jumpback4 #jumpback5 {
   display: block;
+}
+
+#backtor2 {
+  display: none;
+}
+
+#backtor3 {
+  display: none;
+}
+
+#backtor4 {
+  display: none;
+}
+
+#backtor5 {
+  display: none;
+}
+
+/*******answer now buttons***********/
+input[type=button]:disabled {
+  background-color: gray;
 }
 
 /*********************************HOME PAGE***********************************************/
@@ -284,13 +310,61 @@ textarea {
   height: 100vh;
 }
 
+#gallery #myMsg{
+  background-color: #aba5d2;
+  color: #fff;
+  animation-name: fade;
+  animation-duration: 3s;
+  animation-delay: 0s;
+}
+
+#gallery #myMsg2{
+  background-color: #aba5d2;
+  color: #fff;
+  animation-name: fade;
+  animation-duration: 3s;
+  animation-delay: 0s;
+}
+
+#gallery #myMsg3{
+  background-color: #aba5d2;
+  color: #fff;
+  animation-name: fade;
+  animation-duration: 3s;
+  animation-delay: 0s;
+}
+
+#gallery #myMsg4{
+  background-color: #aba5d2;
+  color: #fff;
+  animation-name: fade;
+  animation-duration: 3s;
+  animation-delay: 0s;
+}
+
+#gallery #myMsg5{
+  background-color: #aba5d2;
+  color: #fff;
+  animation-name: fade;
+  animation-duration: 3s;
+  animation-delay: 0s;
+}
+
 #gallery section p {
   float: left;
-  background-color: gray;
+  background-color: #e6e7e8;
   width: 50%;
   height: 30%;
   padding: 4%;
   border: 2px solid white;
-  color: white;
+  color: #939598;
   overflow: scroll;
+
+  animation-name: fade;
+  animation-duration: 3s;
+}
+
+@keyframes fade {
+  from {opacity:0;}
+  to {opacity: 1;}
 }
