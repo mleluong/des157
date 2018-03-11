@@ -200,6 +200,11 @@ jumpback4.addEventListener('click', function() {
   window.location.href = "#question4";
 })
 
+jumpback5.addEventListener('click', function() {
+  var jumpback5 = document.getElementById("#jumpback5");
+  window.location.href = "#question5";
+})
+
 
 //'answer now' button only activates when textarea has text
 var reason = document.getElementById('reason');
@@ -455,6 +460,31 @@ function processForm() {
   return false;
 }
 
+var toreview =document.getElementById('toreview');
+toreview.addEventListener('click', function(){
+  var question1 = document.f1.question1.value;
+  var question2 = document.f1.question2.value;
+  var question3 = document.f1.question3.value;
+  var question4 = document.f1.question4.value;
+  var question5 = document.f1.question5.value;
+
+  //variables for user filled field
+  var reason = document.f2.reason.value;
+  var reason2 = document.f2.reason2.value;
+  var reason3 = document.f2.reason3.value;
+  var reason4 = document.f2.reason4.value;
+  var reason5 = document.f2.reason5.value;
+
+  //write messages for review
+  console.log('write msgs for review')
+  review1.innerHTML = "I chose " + question1 + " because " + reason;
+  review2.innerHTML = "I chose " + question2 + " because " + reason2;
+  review3.innerHTML = "I chose " + question3 + " because " + reason3;
+  review4.innerHTML = "I chose " + question4 + " because " + reason4;
+  review5.innerHTML = "I chose " + question5 + " because " + reason5;
+
+  window.location.href='#review';
+})
 
 /*
 //capture submit event for reflection form

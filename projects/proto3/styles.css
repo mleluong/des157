@@ -178,6 +178,7 @@ input[type="button"] {
   color: #fff;
   display: inline;
   border-radius: .5em;
+  border: 1px solid transparent;
 }
 
 input[type="submit"] {
@@ -412,6 +413,11 @@ textarea {
   }
 }
 
+/**************IDENTITY SIGNS: REVIEWS*************/
+#review {
+  margin-bottom: 5%;
+  height: 100vh;
+}
 
 /******************************************RESPONSIVE*************************************************/
 
@@ -510,26 +516,44 @@ textarea {
   .galleries {
     position: relative;
   }
+
   .msg {
     position: absolute;
     left: 37.5%;
-    top: 25%;
+    top: 35%;
     width: 30%;
     height: 25%;
   }
   .otheruser1 {
     position: absolute;
-    left: -2%;
+    left: 5%;
     top: 15%;
   }
   .otheruser2 {
     position: absolute;
-    left: 75%;
+    left: 70%;
     top: 15%;
   }
   .otheruser3 {
     position: absolute;
     left: 5%;
     top: 45%;
+  }
+
+  .otheruser4 {
+    position: absolute;
+    left: 37.5%;
+  }
+
+  .otheruser5{
+    position: absolute;
+    left: 70%;
+    top: 45%;
+  }
+
+  .otheruser6{
+    position: absolute;
+    left: 37.5%;
+    top: 60%;
   }
 }
