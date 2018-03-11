@@ -7,7 +7,7 @@
 body {
   width: 100%;
   margin: auto;
-  height: 100vh;
+  overflow: auto;
 }
 
 .container {
@@ -22,6 +22,7 @@ body {
 .col-6 {
   width: 50%;
 }
+
 .col-12 {
   width: 100%;
 }
@@ -32,23 +33,26 @@ footer {
   top: 95%;
 }
 
+
 /*************TYPOGRAPHY**************/
 
 h1 {
-  font-family: 'Arvo', serif;
+  font-family: 'Space Mono', monospace;
   text-align: center;
   font-size: 2em;
   line-height: 1.3em;
   color: #04248E;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
+  margin-top: 5%;
+  margin-bottom: 0.5%;
+  text-transform: uppercase;
 }
 
 h2 {
-  font-family: 'Arvo', serif;
+  font-family: 'Space Mono', monospace;
   text-align: center;
   font-size: 1.5em;
-  color: #680466;
+  color: #FF8686;
+  padding-top: 1%;
 }
 
 .workshops h2 {
@@ -57,11 +61,11 @@ h2 {
 
 h3 {
   font-family: 'Source Sans Pro', serif;
-  font-size: 1.2em;
+  font-size: 1.4em;
   text-align: center;
   line-height: 1.4em;
   padding-top: 1%;
-  padding-bottom: 2%;
+  padding-bottom: 4%;
   color: #939598;
   width: 80%;
   margin: auto;
@@ -69,29 +73,29 @@ h3 {
 
 p {
   font-family: 'Source Sans Pro', serif;
-  font-size: 1em;
+  font-size: 1.2em;
   line-height: 1.5em;
   color: #939598;
 }
 
 ol {
   margin: auto;
-  padding: 0 0 8% 0;
-  width: 90%;
+  padding: 0 0 5% 1%;
 }
 
 li {
   font-family: 'Source Sans Pro', serif;
-  font-size: 1em;
-  line-height: 1.5em;
+  font-size: 1.2em;
+  line-height: 1.7em;
   color: #939598;
   list-style-position: outside;
 }
 
 a {
-  font-family: 'Source Sans Pro', serif;
+  font-family: 'Space Mono', monospace;
   text-decoration: none;
-  color: #680466;
+  text-transform: lowercase;
+  color: #FF8686;
 }
 
 span {
@@ -104,6 +108,17 @@ textarea {
   line-height: 1.5em;
   color: #939598;
 }
+
+hr {
+  margin-top: 2%;
+  margin-bottom: 3%;
+  border: 0.5px solid #04248E;
+}
+
+footer a {
+  padding-right: 3%;
+}
+
 
 /********NAVIGATION****************/
 
@@ -127,15 +142,20 @@ textarea {
 #menu {
   background-color: transparent;
   border: 1px transparent;
-  color: #680466;
+  color: #FF8686;
   font-size: 2em;
   margin-top: 2%;
 }
 
+#largescreenmenu {
+  display: none;
+}
+
+
 /***********BUTTONS******************/
 
 .button {
-  background-color: #680466;
+  background-color: #FF8686;
   padding: 5% 10%;
   border-radius: .5em;
   margin: auto;
@@ -144,7 +164,7 @@ textarea {
   text-align: center;
 }
 
-.button a {
+a .button {
   color: #fff;
 }
 
@@ -153,14 +173,15 @@ input[type="radio"] {
 }
 
 input[type="button"] {
-  background-color: #680466;
+  background-color: #FF8686;
   padding: 2% 5%;
   color: #fff;
   display: inline;
+  border-radius: .5em;
 }
 
 input[type="submit"] {
-  background-color: #680466;
+  background-color: #FF8686;
   padding: 2% 5%;
   color: #fff;
   display: inline;
@@ -177,13 +198,13 @@ label {
   border-radius: .5em;
   border: 2px #aba5d2 solid;
   color: #aba5d2;
+  font-size: 1.2em;
 }
 
-
-input[type="radio"]:checked+label{
-background-color: #04248E;
-color: #fff;
-border: 2px transparent;
+input[type="radio"]:checked+label {
+  background-color: #04248E;
+  color: #fff;
+  border: 2px transparent;
 }
 
 .actionbuttons {
@@ -192,8 +213,10 @@ border: 2px transparent;
   padding: 3%;
 }
 
+
 /******ask me later buttons*******/
-#next1 #next2 #next3 #next4 #submit1{
+
+#next1 #next2 #next3 #next4 #submit1 {
   display: block;
 }
 
@@ -217,12 +240,16 @@ border: 2px transparent;
   display: none;
 }
 
+
 /*******answer now buttons***********/
+
 input[type=button]:disabled {
   background-color: gray;
 }
 
+
 /*********************************HOME PAGE***********************************************/
+
 #homepage {
   background-image: url(images/background.png);
   background-repeat: no-repeat;
@@ -231,20 +258,31 @@ input[type=button]:disabled {
 
 
 /***********WORKSHOP MENU***********/
+
+#workshopmenu {
+  margin: 5% 0%;
+  overflow: auto;
+  margin-bottom: 10%;
+}
+
 .workshops {
-  padding: 10% 2%;
+  padding: 10% 0%;
   margin: auto;
-  margin-top: 5%;
+  margin-bottom: 2%;
   background-color: #04248E;
 }
 
+
 /*********************************IDENTITY SIGNS WORKSHOP************************************/
+
 #nav-questions {
   position: fixed;
   display: none;
 }
 
+
 /*********IDENTITY SIGNS: questions***************/
+
 #question1 {
   width: 100%;
   height: 100vh;
@@ -295,6 +333,7 @@ input[type=button]:disabled {
   height: 100vh;
 }
 
+
 /*********IDENTITY SIGNS: Reflection***************/
 
 textarea {
@@ -304,13 +343,14 @@ textarea {
   margin-bottom: 5%;
 }
 
+
 /*********IDENTITY SIGNS: Gallery***************/
 
 #gallery section {
   height: 100vh;
 }
 
-#gallery #myMsg{
+#gallery #myMsg {
   background-color: #aba5d2;
   color: #fff;
   animation-name: fade;
@@ -318,7 +358,7 @@ textarea {
   animation-delay: 0s;
 }
 
-#gallery #myMsg2{
+#gallery #myMsg2 {
   background-color: #aba5d2;
   color: #fff;
   animation-name: fade;
@@ -326,7 +366,7 @@ textarea {
   animation-delay: 0s;
 }
 
-#gallery #myMsg3{
+#gallery #myMsg3 {
   background-color: #aba5d2;
   color: #fff;
   animation-name: fade;
@@ -334,7 +374,7 @@ textarea {
   animation-delay: 0s;
 }
 
-#gallery #myMsg4{
+#gallery #myMsg4 {
   background-color: #aba5d2;
   color: #fff;
   animation-name: fade;
@@ -342,7 +382,7 @@ textarea {
   animation-delay: 0s;
 }
 
-#gallery #myMsg5{
+#gallery #myMsg5 {
   background-color: #aba5d2;
   color: #fff;
   animation-name: fade;
@@ -353,18 +393,143 @@ textarea {
 #gallery section p {
   float: left;
   background-color: #e6e7e8;
-  width: 50%;
+  width: 45%;
   height: 30%;
   padding: 4%;
-  border: 2px solid white;
+  margin-right: 2.5%;
   color: #939598;
   overflow: scroll;
-
   animation-name: fade;
   animation-duration: 3s;
 }
 
 @keyframes fade {
-  from {opacity:0;}
-  to {opacity: 1;}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+/******************************************RESPONSIVE*************************************************/
+
+
+/********FOR SCREENS 768 PX AND LARGER********/
+
+@media only screen and (min-width: 768px) {
+  body {
+    border: 6px solid #aba5d2;
+  }
+  /******BOX SIZING********/
+  .container {
+    width: 60%;
+  }
+  .col-12 {
+    width: 48%;
+  }
+  /*****NAVIGATION**********/
+  #menu {
+    display: none;
+  }
+  #largescreenmenu {
+    display: block;
+    margin-top: 3%;
+  }
+  #largescreenmenu a {
+    padding: 1%;
+    font-size: 1.1em;
+  }
+ a:hover {
+    color: #939598;
+  }
+  /*******WORKSHOP MENU********/
+  .workshops {
+    margin: 1% 1% .25% 0;
+  }
+  .workshops:hover {
+    background-color: #aba5d2;
+  }
+  /******BUTTONS***********/
+  .button {
+    padding: 2% 3%;
+    width: 25%;
+    margin-bottom: 5%;
+  }
+  .button:hover {
+    background-color: #939598;
+  }
+  label {
+    width: 30.3%;
+    float: left;
+    margin: 1.5%;
+    padding: 3.5% 2%;
+    cursor: pointer;
+  }
+  label:hover {
+    background-color: #04248E;
+    color: #fff;
+  }
+  input[type="button"] {
+    cursor: pointer;
+  }
+  input[type="button"]:hover {
+    background-color: #939598;
+  }
+  input[type="button"]:disabled {
+    cursor: default;
+    background-color: gray;
+  }
+  .actionbuttons {
+    margin-top: 30%;
+  }
+  /***************************IDENTITY SIGNS********************************/
+  #identitydescription {
+    height: 100vh;
+  }
+  #aboutpage {
+    height: 100vh;
+  }
+  /******QUESTIONS**********/
+  .questions {
+    padding-top: 5%;
+  }
+  /*****GALLERY SECTION******/
+  #gallery section p {
+   width: 25%;
+   height: 20%;
+   margin: 0;
+  }
+
+  .responses {
+    overflow: auto;
+    height: 500px;
+  }
+
+  .galleries {
+    position: relative;
+  }
+  .msg {
+    position: absolute;
+    left: 37.5%;
+    top: 25%;
+    width: 30%;
+    height: 25%;
+  }
+  .otheruser1 {
+    position: absolute;
+    left: -2%;
+    top: 15%;
+  }
+  .otheruser2 {
+    position: absolute;
+    left: 75%;
+    top: 15%;
+  }
+  .otheruser3 {
+    position: absolute;
+    left: 5%;
+    top: 45%;
+  }
 }

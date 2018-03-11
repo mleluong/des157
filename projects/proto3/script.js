@@ -200,10 +200,6 @@ jumpback4.addEventListener('click', function() {
   window.location.href = "#question4";
 })
 
-jumpback5.addEventListener('click', function() {
-  var jumpback2 = document.getElementById("#jumpback5");
-  window.location.href = "#question5";
-})
 
 //'answer now' button only activates when textarea has text
 var reason = document.getElementById('reason');

@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Interactive Wireframe</title>
   <link href="https://cdn.jsdelivr.net/npm/normalize.css@7.0.0/normalize.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
   <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
   <link href="styles.css" rel="stylesheet">
@@ -19,21 +19,27 @@
       <button id='menu'>
       <i class="fas fa-bars"></i>
     </button>
-      <div id='dropdown' class='hide'>
+      <div id='dropdown'>
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
       </div>
+    </nav>
+
+    <nav id='largescreenmenu'>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
     </nav>
   </header>
 
   <section>
     <h1>Interactive Social Justice Workshops</h1>
-    <p>Would you like to learn more about social justice, but are not sure where to start? add more later</p>
-    <div class="div-button"><a href="about.html">Learn More</a>
-      <div>
+    <hr>
+    <p>Would you like to learn more about social justice, but are not sure where to start? There are many social justice workshops that are done in person, but this website aims to bring them to you in an accessible online form. </p>
+    <a href="about.html"><div class="button">Learn More</div></a>
+
   </section>
 
-  <section>
+  <section id='workshopmenu'>
     <a href="identity/description.html">
       <div class="col col-12 workshops" id="identitysigns">
         <h2>Identity Signs</h2>
@@ -42,6 +48,15 @@
 
     <div class="col col-12 workshops" id="workshop2">
       <h2>Workshop 2</h2>
+    </div>
+
+    <div class="col col-12 workshops" id="workshop3">
+      <h2>Workshop 3</h2>
+    </div>
+
+    <div class="col col-12 workshops" id="workshop4">
+      <h2>Workshop 4</h2>
+    </div>
   </section>
 
 

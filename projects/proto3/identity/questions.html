@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Interactive Wireframe</title>
   <link href="https://cdn.jsdelivr.net/npm/normalize.css@7.0.0/normalize.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
   <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
   <link href="../styles.css" rel="stylesheet">
@@ -25,7 +25,13 @@
       </div>
     </nav>
 
+    <nav id='largescreenmenu'>
+      <a href="../index.html">Home</a>
+      <a href="../about.html">About</a>
+    </nav>
+
     <h1>Identity Signs</h1>
+    <hr>
 
     <nav id='nav-questions'>
       <a href="#question1">Q1</a>
@@ -39,7 +45,7 @@
   <section>
     <article>
       <form name="f1">
-        <section id="question1">
+        <section id="question1" class="questions">
           <h3>Question 1: The identity I'm most aware of every day is...</h3>
           <input type="radio" name="question1" value="race" id="race1">
           <label for="race1">race</label>
@@ -64,7 +70,7 @@
           </section>
         </section>
 
-        <section id="question2">
+        <section id="question2" class="questions">
           <h3>Question 2: The part of my identity that I am the least aware of on a daily basis is...</h3>
           <input type="radio" name="question2" value="race" id="race2">
           <label for="race2">race</label>
@@ -91,7 +97,7 @@
           </section>
         </section>
 
-        <section id="question3">
+        <section id="question3" class="questions">
           <h3>Question 3: The part of my identity that I believe is the most misunderstood by others is...</h3>
           <input type="radio" name="question3" value="race" id="race3">
           <label for="race3">race</label>
@@ -111,13 +117,13 @@
           <input type="radio" name="question3" value="income" id="income3">
           <label for="income3">income</label>
 
-          <section class="actionbuttons">
+          <section class="actionbuttons" >
             <input type="button" name="back2" value="back" id="back2">
             <input type="button" name="jump3" value="next" id="jump3">
           </section>
         </section>
 
-        <section id="question4">
+        <section id="question4" class="questions">
           <h3>Question 4: The part of my identity that was most emphasized or important in my family growing up
 was...</h3>
           <input type="radio" name="question4" value="race" id="race4">
@@ -144,7 +150,7 @@ was...</h3>
           </section>
         </section>
 
-        <section id="question5">
+        <section id="question5" class="questions"  >
           <h3>Question 5: The part of my identity that garners me the most privilege is...</h3>
           <input type="radio" name="question5" value="race" id="race5">
           <label for="race5">race</label>
@@ -225,58 +231,72 @@ was...</h3>
     </article>
 
     <!--*********************************GALLERY*******************************************-->
-    <article id="gallery">
+    <article id="gallery" width="800" height="800">
       <h2>Gallery</h2>
-      <section id='gallery1'>
+      <section id='gallery1' class="galleries">
         <h3>Question 1: The identity I'm most aware of every day is...</h3>
-        <p id="myMsg"></p>
-        <p>Emily: I chose race because...</p>
-        <p>Dana: I chose...</p>
-        <p>Timothea: I chose...</p>
+        <div class="responses">
+        <p id="myMsg" class="msg"></p>
+        <p class="otheruser1">Emily: I chose race because...</p>
+        <p class="otheruser2">Dana: I chose...</p>
+        <p class="otheruser3">Timothea: I chose...</p>
+      </div>
 
         <input type="button" name="jumpback2" value="next question" id="jumpback2">
         <input type="button" name="backtor2" value="next" id="backtor2">
        </section>
 
-      <section id='gallery2'>
+      <section id='gallery2' class="galleries">
         <h3>Question 2: The part of my identity that I am the least aware of on a daily basis is...</h3>
-        <p id="myMsg2"></p>
-        <p>Emily: I chose race because...</p>
-        <p>Dana: I chose...</p>
-        <p>Timothea: I chose...</p>
+        <div class="responses">
+        <p id="myMsg2" class="msg"></p>
+        <p class="otheruser1">Emily: I chose race because...</p>
+        <p class="otheruser2">Dana: I chose...</p>
+        <p class="otheruser3">Timothea: I chose...</p>
+      </div>
 
         <input type="button" name="jumpback3" value="next question" id="jumpback3">
         <input type="button" name="backtor3" value="next" id="backtor3">
       </section>
 
-      <section id='gallery3'>
+      <section id='gallery3' class="galleries">
         <h3>Question 3: The part of my identity that I believe is the most misunderstood by others is...</h3>
-        <p id="myMsg3"></p>
-        <p>Emily: I chose race because...</p>
-        <p>Dana: I chose...</p>
-        <p>Timothea: I chose...</p>
+
+        <div class="responses">
+        <p id="myMsg3" class="msg"></p>
+        <p class="otheruser1">Emily: I chose race because...</p>
+        <p class="otheruser2">Dana: I chose...</p>
+        <p class="otheruser3">Timothea: I chose...</p>
+      </div>
 
         <input type="button" name="jumpback4" value="next question" id="jumpback4">
         <input type="button" name="backtor4" value="next" id="backtor4">
       </section>
 
-      <section id='gallery4'>
+      <section id='gallery4' class="galleries">
         <h3>Question 4:The part of my identity that was most emphasized or important in my family growing up was...</h3>
-        <p id="myMsg4"></p>
-        <p>Emily: I chose race because...</p>
-        <p>Dana: I chose...</p>
-        <p>Timothea: I chose...</p>
+        <div class="responses">
+        <p id="myMsg4" class="msg"></p>
+        <p class="otheruser1">Emily: I chose race because...</p>
+        <p class="otheruser2">Dana: I chose...</p>
+        <p class="otheruser3">Timothea: I chose...</p>
+      </div>
 
         <input type="button" name="jumpback5" value="next question" id="jumpback5">
         <input type="button" name="backtor5" value="next" id="backtor5">
       </section>
 
-      <section id='gallery5'>
+      <section id='gallery5' class="galleries">
         <h3>Question 5: The part of my identity that garners me the most privilege is...</h3>
-        <p id="myMsg5"></p>
-        <p>Emily: I chose race because...</p>
-        <p>Dana: I chose...</p>
-        <p>Timothea: I chose...</p>
+        <div class="responses">
+        <p id="myMsg5" class="msg"></p>
+        <p class="otheruser1">Emily: I chose race because...</p>
+        <p class="otheruser2">Dana: I chose...</p>
+        <p class="otheruser3">Timothea: I chose...</p>
+      </div>
+
+      <input type="button" name="publish" value="publish responses?" id="publish">
+      <input type="button" name="save" value="save responses as pdf" id="save">
       </section>
     </article>
 
