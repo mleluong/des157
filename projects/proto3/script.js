@@ -15,28 +15,6 @@ menu.addEventListener('click', function() {
 
 /*******************************FORMS*************************************/
 
-/****************SUBMIT FORMS********************/
-//submit variables
-var submitquestions = document.getElementById('submit1');
-//var submitreflection = document.getElementById('submit2');
-
-//capture the submit event
-//document.f1.onsubmit = processForm;
-var reflection = document.getElementById("reflection");
-
-//click submit, scroll
-submitquestions.addEventListener('click', function() {
-  console.log('jump to reflection')
-  window.location.href = "#reflection";
-})
-
-submitquestions.addEventListener('click', processForm);
-/*submitreflection.addEventListener('click', function() {
-  console.log('jump to gallery')
-  window.location.href = "#gallery";
-})
-*/
-
 /****************************QUESTIONS SECTION************************************/
 
 /***************NEXT BUTTONS******************/
@@ -382,6 +360,21 @@ backtor5.addEventListener('click', function() {
 })
 
 /**********************CLICK SUBMIT******************************/
+/****************SUBMIT FORMS********************/
+//submit variables
+var submitquestions = document.getElementById('submit1');
+
+//capture the submit event
+var reflection = document.getElementById("reflection");
+
+//click submit, scroll
+submitquestions.addEventListener('click', function() {
+  console.log('jump to reflection')
+  window.location.href = "#reflection";
+})
+
+submitquestions.addEventListener('click', processForm);
+
 //after submitting form, populate reflection section
 function processForm() {
   console.log('process');
@@ -460,6 +453,7 @@ function processForm() {
   return false;
 }
 
+/**********************************IDENTITY SIGNS: REVIEWS*************************************/
 var toreview =document.getElementById('toreview');
 toreview.addEventListener('click', function(){
   var question1 = document.f1.question1.value;
@@ -485,6 +479,23 @@ toreview.addEventListener('click', function(){
 
   window.location.href='#review';
 })
+
+/**********************SUBMIT EVALUATION************************************/
+var submitevaluation = document.getElementById('#submitevaluation');
+var review=document.getElementById('#review');
+
+submitevaluation.addEventListener('click', processForm3);
+
+function processForm3(){
+  console.log('submit evaluation');
+  var surprising = document.f3.surprising.value;
+  var yourself = document.f3.yourself.value;
+  var others = document.f3.others.value;
+  var take = document.f3.take.value;
+
+  var thanks=document.getElementById('#thanks');
+  thanks.innerHTML="Thank you! Your response has been submitted."
+}
 
 /*
 //capture submit event for reflection form
