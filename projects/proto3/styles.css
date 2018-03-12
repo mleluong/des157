@@ -177,12 +177,13 @@ input[type="radio"] {
 
 input[type="button"] {
   background-color: #FF8686;
-  padding: 2% 5%;
+  padding: 2% 2.5%;
   color: #fff;
   display: inline;
   border-radius: .5em;
   border: 1px solid transparent;
   clear: both;
+  font-family: 'Space Mono', monospace;
 }
 
 input[type="submit"] {
@@ -190,6 +191,8 @@ input[type="submit"] {
   padding: 2% 5%;
   color: #fff;
   display: inline;
+  border-radius: .5em;
+  font-family: 'Space Mono', monospace;
 }
 
 label {
@@ -217,6 +220,7 @@ input[type="radio"]:checked+label {
   text-align: center;
   padding: 3%;
 }
+
 
 
 /******ask me later buttons*******/
@@ -351,14 +355,7 @@ textarea {
 
 /*********IDENTITY SIGNS: Gallery***************/
 
-.hide {
-  display: none;
-}
-
-.show {
-  display: block;
-}
-#gallery section {
+.galleries {
   height: 100vh;
 }
 
@@ -390,21 +387,22 @@ textarea {
   animation-delay: 0s;
 }
 
-#gallery section p {
+#gallery p {
   float: left;
+  margin-right: 2.5%;
   background-color: #e6e7e8;
   width: 45%;
-  height: 30%;
-  padding: 4%;
-  margin-right: 2.5%;
+  height: 20%;
+  padding: 2%;
   color: #939598;
   overflow: scroll;
-
 }
 
 .responses {
-    overflow: auto;
+  overflow: auto;
+  height: 500px;
 }
+
 .msg {
   opacity: 0;
 }
@@ -415,21 +413,21 @@ textarea {
 
 .animatemsg {
   animation-name: fade;
-  animation-duration: 3s;
+  animation-duration: 2s;
   animation-fill-mode: forwards;
 }
 
 .animateset1 {
   animation-name: fade;
   animation-delay: 2s;
-  animation-duration: 3s;
+  animation-duration: 2s;
   animation-fill-mode: forwards;
 }
 
 .animateset2 {
   animation-name: fade;
   animation-delay: 4s;
-  animation-duration: 3s;
+  animation-duration: 2s;
   animation-fill-mode: forwards;
 }
 @keyframes fade {
@@ -473,6 +471,7 @@ textarea {
     padding: 1%;
     font-size: 1.1em;
   }
+
  a:hover {
     color: #939598;
   }
@@ -509,6 +508,7 @@ textarea {
   }
   input[type="button"] {
     cursor: pointer;
+    padding: 2% 5%;
   }
   input[type="button"]:hover {
     background-color: #939598;
@@ -517,9 +517,7 @@ textarea {
     cursor: default;
     background-color: gray;
   }
-  .actionbuttons {
-    margin-top: 30%;
-  }
+
   /***************************IDENTITY SIGNS********************************/
   #identitydescription {
     height: 100vh;
@@ -528,18 +526,30 @@ textarea {
     height: 100vh;
   }
   /******QUESTIONS**********/
+
+  .choices {
+    padding-bottom: 30%;
+  }
   .questions {
     padding-top: 5%;
   }
   /*****GALLERY SECTION******/
-  #gallery section p {
+  #gallery p {
    width: 25%;
    height: 20%;
    margin: 0;
+  margin-right: 2.5%;
+  }
+
+  #gallery p:hover {
+    background-color: #aba5d2;
+    cursor: pointer;
+    color: #fff;
   }
 
   .responses {
     height: 500px;
+    margin-bottom: 1%;
   }
 
   .galleries {
