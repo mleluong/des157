@@ -179,6 +179,7 @@ input[type="button"] {
   display: inline;
   border-radius: .5em;
   border: 1px solid transparent;
+  clear: both;
 }
 
 input[type="submit"] {
@@ -347,6 +348,13 @@ textarea {
 
 /*********IDENTITY SIGNS: Gallery***************/
 
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
 #gallery section {
   height: 100vh;
 }
@@ -354,41 +362,26 @@ textarea {
 #gallery #myMsg {
   background-color: #aba5d2;
   color: #fff;
-  animation-name: fade;
-  animation-duration: 3s;
-  animation-delay: 0s;
 }
 
 #gallery #myMsg2 {
   background-color: #aba5d2;
   color: #fff;
-  animation-name: fade;
-  animation-duration: 3s;
-  animation-delay: 0s;
 }
 
 #gallery #myMsg3 {
   background-color: #aba5d2;
   color: #fff;
-  animation-name: fade;
-  animation-duration: 3s;
-  animation-delay: 0s;
 }
 
 #gallery #myMsg4 {
   background-color: #aba5d2;
   color: #fff;
-  animation-name: fade;
-  animation-duration: 3s;
-  animation-delay: 0s;
 }
 
 #gallery #myMsg5 {
   background-color: #aba5d2;
   color: #fff;
-  animation-name: fade;
-  animation-duration: 3s;
-  animation-delay: 0s;
 }
 
 #gallery section p {
@@ -400,17 +393,44 @@ textarea {
   margin-right: 2.5%;
   color: #939598;
   overflow: scroll;
-  animation-name: fade;
-  animation-duration: 3s;
+
 }
 
+.responses {
+    overflow: auto;
+}
+.msg {
+  opacity: 0;
+}
+
+.otheruser1, .otheruser2, .otheruser3, .otheruser4, .otheruser5, .otheruser6 {
+  opacity: 0;
+}
+
+.animatemsg {
+  animation-name: fade;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+.animateset1 {
+  animation-name: fade;
+  animation-delay: 2s;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+.animateset2 {
+  animation-name: fade;
+  animation-delay: 4s;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
 @keyframes fade {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  0%   {opacity: 0}
+  25%  {opacity: .25}
+  50%  {opacity: .5}
+  100% {opacity: 1}
 }
 
 /**************IDENTITY SIGNS: REVIEWS*************/
@@ -509,7 +529,6 @@ textarea {
   }
 
   .responses {
-    overflow: auto;
     height: 500px;
   }
 
@@ -536,8 +555,8 @@ textarea {
   }
   .otheruser3 {
     position: absolute;
-    left: 5%;
-    top: 45%;
+    left: 37.5%;
+    top: 60%;
   }
 
   .otheruser4 {
@@ -553,7 +572,7 @@ textarea {
 
   .otheruser6{
     position: absolute;
-    left: 37.5%;
-    top: 60%;
+    left: 5%;
+    top: 45%;
   }
 }

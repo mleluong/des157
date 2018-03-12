@@ -252,6 +252,14 @@ togallery1.addEventListener('click', function() {
   //write message for gallery 1
   console.log('write message for gallery 1');
   myMsg.innerHTML = "I chose " + question1 + " because " + reason;
+  //animate fade in
+  myMsg.className = 'msg animatemsg';
+  q1other1.className = 'otheruser1 animateset1';
+  q1other2.className = 'otheruser2 animateset1';
+  q1other3.className = 'otheruser3 animateset1';
+  q1other4.className = 'otheruser4 animateset2';
+  q1other5.className = 'otheruser5 animateset2';
+  q1other6.className = 'otheruser6 animateset2';
 })
 
 togallery2.addEventListener('click', function() {
@@ -267,6 +275,14 @@ togallery2.addEventListener('click', function() {
   //write message for gallery 1
   console.log('write message for gallery 2');
   myMsg2.innerHTML = "I chose " + question2 + " because " + reason2;
+  //animate fade in
+  myMsg2.className = 'msg animatemsg';
+  q2other1.className = 'otheruser1 animateset1';
+  q2other2.className = 'otheruser2 animateset1';
+  q2other3.className = 'otheruser3 animateset1';
+  q2other4.className = 'otheruser4 animateset2';
+  q2other5.className = 'otheruser5 animateset2';
+  q2other6.className = 'otheruser6 animateset2';
 })
 
 togallery3.addEventListener('click', function() {
@@ -281,6 +297,14 @@ togallery3.addEventListener('click', function() {
   //write message for gallery 1
   console.log('write message for gallery 3');
   myMsg3.innerHTML = "I chose " + question3 + " because " + reason3;
+  //animate fade in
+  myMsg3.className = 'msg animatemsg';
+  q3other1.className = 'otheruser1 animateset1';
+  q3other2.className = 'otheruser2 animateset1';
+  q3other3.className = 'otheruser3 animateset1';
+  q3other4.className = 'otheruser4 animateset2';
+  q3other5.className = 'otheruser5 animateset2';
+  q3other6.className = 'otheruser6 animateset2';
 })
 
 togallery4.addEventListener('click', function() {
@@ -295,6 +319,14 @@ togallery4.addEventListener('click', function() {
   //write message for gallery 1
   console.log('write message for gallery 4');
   myMsg4.innerHTML = "I chose " + question4 + " because " + reason4;
+  //animate fade in
+  myMsg4.className = 'msg animatemsg';
+  q4other1.className = 'otheruser1 animateset1';
+  q4other2.className = 'otheruser2 animateset1';
+  q4other3.className = 'otheruser3 animateset1';
+  q4other4.className = 'otheruser4 animateset2';
+  q4other5.className = 'otheruser5 animateset2';
+  q4other6.className = 'otheruser6 animateset2';
 })
 
 togallery5.addEventListener('click', function() {
@@ -309,6 +341,14 @@ togallery5.addEventListener('click', function() {
   //write message for gallery 1
   console.log('write message for gallery 5');
   myMsg5.innerHTML = "I chose " + question5 + " because " + reason5;
+  //animate fade in
+  myMsg5.className = 'msg animatemsg';
+  q5other1.className = 'otheruser1 animateset1';
+  q5other2.className = 'otheruser2 animateset1';
+  q5other3.className = 'otheruser3 animateset1';
+  q5other4.className = 'otheruser4 animateset2';
+  q5other5.className = 'otheruser5 animateset2';
+  q5other6.className = 'otheruser6 animateset2';
 })
 
 /**********************************GALLERY SECTION BUTTONS**********************************/
@@ -480,7 +520,7 @@ toreview.addEventListener('click', function(){
   window.location.href='#review';
 })
 
-/**********************SUBMIT EVALUATION************************************/
+/**********************SUBMIT EVALUATION************************************
 var submitevaluation = document.getElementById('#submitevaluation');
 var review=document.getElementById('#review');
 
