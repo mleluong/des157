@@ -27,12 +27,6 @@ body {
   width: 100%;
 }
 
-footer {
-  position: fixed;
-  width: 100%;
-  top: 95%;
-}
-
 
 /*************TYPOGRAPHY**************/
 
@@ -151,6 +145,15 @@ footer a {
   display: none;
 }
 
+footer {
+  position: fixed;
+  width: 100%;
+  top: 95%;
+}
+
+#identitysigns footer {
+  display: none;
+}
 
 /***********BUTTONS******************/
 
@@ -382,6 +385,9 @@ textarea {
 #gallery #myMsg5 {
   background-color: #aba5d2;
   color: #fff;
+  animation-name: fade;
+  animation-duration: 3s;
+  animation-delay: 0s;
 }
 
 #gallery section p {
@@ -469,6 +475,10 @@ textarea {
   }
  a:hover {
     color: #939598;
+  }
+
+  #identitysigns footer {
+    display: block;
   }
   /*******WORKSHOP MENU********/
   .workshops {
