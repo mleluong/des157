@@ -354,6 +354,7 @@ was...</h3>
         </section>
       </article>
 
+      <!--*********************************REVIEWS*******************************************-->
       <article id="review">
         <h2>Review Your Responses</h2>
         <p>Question 1: The identity I'm most aware of every day is...</p>
@@ -370,12 +371,33 @@ was...</h3>
 
         <p>Question 5: The part of my identity that garners me the most privilege is...</p>
         <p id="review5"></p>
+        <section class="actionbuttons">
+          <input type="button" name="publish" value="publish responses?" id="publish">
+          <input type="button" name="save" value="save responses as pdf" id="save">
+          <input type="button" name="toevaluation" value="next" id="toevaluation">
+        </section>
+      </article>
 
-        <input type="button" name="publish" value="publish responses?" id="publish">
-        <input type="button" name="save" value="save responses as pdf" id="save">
-        <a href="end.html">
-          <div class="button">next</div>
-        </a>
+      <article id="evaluation">
+        <h2>Evaluation</h2>
+        <p>These questions are optional, but will provide feedback for us to improve the activity in the future!</p>
+        <form name='f3'>
+          <h3>Did you find anything surprising about this activity?</h3>
+          <textarea name="surprising" id="surprising" rows="5" cols="30"></textarea>
+
+          <h3>Did you learn anything new about yourself?</h3>
+          <textarea name="yourself" id="yourself" rows="5" cols="30"></textarea>
+
+          <h3>How did it feel to learn about other people's identities?</h3>
+          <textarea name="others" id="others" rows="5" cols="30"></textarea>
+
+          <h3>What can you take from this activity? How will you use it?</h3>
+          <textarea name="take" id="take" rows="5" cols="30"></textarea>
+
+          <input type="button" value="submit" id='submitevaluation'>
+          <p id="thanks"></p>
+        </form>
+      <a href="../index.html"><div class="button">back to home</div></a>
       </article>
 
     </section>

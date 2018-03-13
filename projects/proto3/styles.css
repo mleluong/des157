@@ -135,10 +135,11 @@ footer a {
 
 #menu {
   background-color: transparent;
-  border: 1px transparent;
+  border: none;
   color: #FF8686;
   font-size: 2em;
   margin-top: 2%;
+  padding:0;
 }
 
 #largescreenmenu {
@@ -276,9 +277,14 @@ input[type=button]:disabled {
 
 .workshops {
   padding: 10% 0%;
+  height: 50%;
   margin: auto;
   margin-bottom: 2%;
   background-color: #04248E;
+}
+
+#workshop3 {
+  clear: both;
 }
 
 
@@ -389,7 +395,7 @@ textarea {
 
 #gallery p {
   float: left;
-  margin-right: 2.5%;
+  margin: 1.25% 1.25%;
   background-color: #e6e7e8;
   width: 45%;
   height: 20%;
@@ -516,6 +522,10 @@ textarea {
   input[type="button"]:disabled {
     cursor: default;
     background-color: gray;
+  }
+
+  #jumpback2, #jumpback3, #jumpback4, #jumpback5 {
+    margin-left: 80%;
   }
 
   /***************************IDENTITY SIGNS********************************/

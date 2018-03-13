@@ -399,8 +399,71 @@ backtor5.addEventListener('click', function() {
   window.location.href = "#r5";
 })
 
-/**********************CLICK SUBMIT******************************/
-/****************SUBMIT FORMS********************/
+
+/*************************************IDENTITY SIGNS: REVIEWs BUTTONS*******************************************/
+
+publish.addEventListener('click', function(){
+  var publish = document.getElementById('#publish');
+  console.log('publish alert');
+  alert('Oops! This button is still being developed! Try again later :)');
+})
+
+save.addEventListener('click', function(){
+  var save = document.getElementById('#save');
+  console.log('save alert');
+  alert('Oops! This button is still being developed! Try again later :)');
+})
+
+toevaluation.addEventListener('click', function(){
+  var toevaluation = document.getElementById('#toevaluation');
+  console.log('scroll to evaluation');
+  window.location.href="#evaluation";
+})
+
+/**********************************IDENTITY SIGNS: POPULATE REVIEWS*************************************/
+var toreview =document.getElementById('toreview');
+toreview.addEventListener('click', function(){
+  var question1 = document.f1.question1.value;
+  var question2 = document.f1.question2.value;
+  var question3 = document.f1.question3.value;
+  var question4 = document.f1.question4.value;
+  var question5 = document.f1.question5.value;
+
+  //variables for user filled field
+  var reason = document.f2.reason.value;
+  var reason2 = document.f2.reason2.value;
+  var reason3 = document.f2.reason3.value;
+  var reason4 = document.f2.reason4.value;
+  var reason5 = document.f2.reason5.value;
+
+  //write messages for review
+  console.log('write msgs for review')
+  review1.innerHTML = "I chose " + question1 + " because " + reason;
+  review2.innerHTML = "I chose " + question2 + " because " + reason2;
+  review3.innerHTML = "I chose " + question3 + " because " + reason3;
+  review4.innerHTML = "I chose " + question4 + " because " + reason4;
+  review5.innerHTML = "I chose " + question5 + " because " + reason5;
+
+  window.location.href='#review';
+})
+
+/**********************SUBMIT EVALUATION************************************/
+
+var thanks=document.getElementById('#thanks');
+submitevaluation.addEventListener('click', function (){
+  /*
+  console.log('submit evaluation');
+  var surprising = document.f3.surprising.value;
+  var yourself = document.f3.yourself.value;
+  var others = document.f3.others.value;
+  var take = document.f3.take.value;
+*/
+var submitevaluation = document.getElementById('#submit');
+ alert('Oops! This button is still being developed! Try again later :)');
+ return false;
+})
+
+/***********************If user chooses 'ask me later', SUBMIT ENTIRE QUESTIONS FORM***********************/
 //submit variables
 var submitquestions = document.getElementById('submit1');
 
@@ -492,80 +555,3 @@ function processForm() {
   backtor5.style.display = 'block';
   return false;
 }
-
-/**********************************IDENTITY SIGNS: REVIEWS*************************************/
-var toreview =document.getElementById('toreview');
-toreview.addEventListener('click', function(){
-  var question1 = document.f1.question1.value;
-  var question2 = document.f1.question2.value;
-  var question3 = document.f1.question3.value;
-  var question4 = document.f1.question4.value;
-  var question5 = document.f1.question5.value;
-
-  //variables for user filled field
-  var reason = document.f2.reason.value;
-  var reason2 = document.f2.reason2.value;
-  var reason3 = document.f2.reason3.value;
-  var reason4 = document.f2.reason4.value;
-  var reason5 = document.f2.reason5.value;
-
-  //write messages for review
-  console.log('write msgs for review')
-  review1.innerHTML = "I chose " + question1 + " because " + reason;
-  review2.innerHTML = "I chose " + question2 + " because " + reason2;
-  review3.innerHTML = "I chose " + question3 + " because " + reason3;
-  review4.innerHTML = "I chose " + question4 + " because " + reason4;
-  review5.innerHTML = "I chose " + question5 + " because " + reason5;
-
-  window.location.href='#review';
-})
-
-/**********************SUBMIT EVALUATION************************************
-var submitevaluation = document.getElementById('#submitevaluation');
-var review=document.getElementById('#review');
-
-submitevaluation.addEventListener('click', processForm3);
-
-function processForm3(){
-  console.log('submit evaluation');
-  var surprising = document.f3.surprising.value;
-  var yourself = document.f3.yourself.value;
-  var others = document.f3.others.value;
-  var take = document.f3.take.value;
-
-  var thanks=document.getElementById('#thanks');
-  thanks.innerHTML="Thank you! Your response has been submitted."
-}
-
-/*
-//capture submit event for reflection form
-document.f2.onsubmit = processForm2;
-var gallery = document.getElementById("gallery");
-
-function processForm2() {
-  console.log('process2');
-  //variables for questions
-  var question1 = document.f1.question1.value;
-  var question2 = document.f1.question2.value;
-  var question3 = document.f1.question3.value;
-  var question4 = document.f1.question4.value;
-  var question5 = document.f1.question5.value;
-
-  //variables for user filled field
-  var reason = document.f2.reason.value;
-  var reason2 = document.f2.reason2.value;
-  var reason3 = document.f2.reason3.value;
-  var reason4 = document.f2.reason4.value;
-  var reason5 = document.f2.reason5.value;
-
-  //write messages for gallery
-  console.log('write msgs')
-  myMsg.innerHTML = "I chose " + question1 + " because " + reason;
-  myMsg2.innerHTML = "I chose " + question2 + " because " + reason2;
-  myMsg3.innerHTML = "I chose " + question3 + " because " + reason3;
-  myMsg4.innerHTML = "I chose " + question4 + " because " + reason4;
-  myMsg5.innerHTML = "I chose " + question5 + " because " + reason5;
-
-  return false;
-}
-*/
