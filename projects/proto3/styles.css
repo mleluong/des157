@@ -261,7 +261,7 @@ input[type=button]:disabled {
 /*********************************HOME PAGE***********************************************/
 
 #homepage {
-  background-image: url(images/background.png);
+  background-image: url(images/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -399,21 +399,21 @@ textarea {
 
 .animatemsg {
   animation-name: fade;
-  animation-duration: 2s;
+  animation-duration: 1s;
   animation-fill-mode: forwards;
 }
 
 .animateset1 {
   animation-name: fade;
-  animation-delay: 2s;
-  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-duration: 1s;
   animation-fill-mode: forwards;
 }
 
 .animateset2 {
   animation-name: fade;
-  animation-delay: 4s;
-  animation-duration: 2s;
+  animation-delay: 2s;
+  animation-duration: 1s;
   animation-fill-mode: forwards;
 }
 @keyframes fade {
@@ -528,11 +528,13 @@ textarea {
   margin-right: 2.5%;
   }
 
+/*
   #gallery p:hover {
     background-color: #aba5d2;
     cursor: pointer;
     color: #fff;
   }
+  */
 
   .responses {
     height: 500px;
