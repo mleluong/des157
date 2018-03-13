@@ -1,0 +1,151 @@
+/*************BOX MODEL*****************/
+* {
+  box-sizing: border-box;
+}
+body {
+  width: 90%;
+  margin: auto;
+}
+
+.column {
+ float: left;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+
+
+/*************TYPOGRAPHY**************/
+h1 {
+  font-family: 'Arvo', serif;
+  text-align: center;
+  font-size: 1.8em;
+  line-height: 1.3em;
+}
+
+h2 {
+  font-family: 'Arvo', serif;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+h3 {
+  font-family: 'Source Sans Pro', serif;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+p {
+  font-family: 'Source Sans Pro', serif;
+  font-size: 1em;
+  line-height: 1.5em;
+}
+
+li {
+    font-family: 'Source Sans Pro', serif;
+}
+
+a {
+  font-family: 'Source Sans Pro', serif;
+}
+
+/***********WORKSHOP MENU***********/
+.workshops {
+  padding: 10% 2%;
+  margin: auto;
+  margin-top: 5%;
+
+  background-color: blue;
+}
+
+/********NAVIGATION****************/
+#dropdown {
+  display: none;
+}
+
+/***********BUTTONS******************/
+button {
+  background-color: blue;
+  padding: 2%;
+  border-radius: 2%;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+label {
+  background-color: red;
+  padding: 5% 1%;
+  margin: auto;
+  margin-top: 2%;
+  display: block;
+  width: 60%;
+  text-align: center;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+label:active{
+  background-color: blue;
+}
+
+
+/*********IDENTITY SIGNS: questions***************/
+#question1 {
+  width: 100%;
+  height: 100vh;
+}
+
+#question2 {
+  width: 100%;
+  height: 100vh;
+}
+
+#question3 {
+  width: 100%;
+  height: 100vh;
+}
+
+#question4 {
+  width: 100%;
+  height: 100vh;
+}
+
+#question5 {
+  width: 100%;
+  height: 100vh;
+}
+
+#r1 {
+  width: 100%;
+  height: 100vh;
+}
+
+#r2 {
+  width: 100%;
+  height: 100vh;
+}
+
+#r3 {
+  width: 100%;
+  height: 100vh;
+}
+
+#r4 {
+  width: 100%;
+  height: 100vh;
+}
+
+#r5 {
+  width: 100%;
+  height: 100vh;
+}
+
+/*********IDENTITY SIGNS: Reflection***************/
+input[type='text']{
+  border: 1px solid black;
+  width: 100%;
+  height: 50%;
+}
