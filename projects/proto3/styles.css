@@ -298,27 +298,7 @@ input[type=button]:disabled {
 
 /*********IDENTITY SIGNS: questions***************/
 
-#question1 {
-  width: 100%;
-  height: 100vh;
-}
-
-#question2 {
-  width: 100%;
-  height: 100vh;
-}
-
-#question3 {
-  width: 100%;
-  height: 100vh;
-}
-
-#question4 {
-  width: 100%;
-  height: 100vh;
-}
-
-#question5 {
+#question1, #question2,#question3, #question4, #question5 {
   width: 100%;
   height: 100vh;
 }
@@ -529,9 +509,6 @@ textarea {
   }
 
   /***************************IDENTITY SIGNS********************************/
-  #identitydescription {
-    height: 100vh;
-  }
   #aboutpage {
     height: 100vh;
   }
