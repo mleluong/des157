@@ -402,27 +402,27 @@ backtor5.addEventListener('click', function() {
 
 /*************************************IDENTITY SIGNS: REVIEWs BUTTONS*******************************************/
 
-publish.addEventListener('click', function(){
+publish.addEventListener('click', function() {
   var publish = document.getElementById('#publish');
   console.log('publish alert');
   alert('Oops! This button is still being developed! Try again later :)');
 })
 
-save.addEventListener('click', function(){
+save.addEventListener('click', function() {
   var save = document.getElementById('#save');
   console.log('save alert');
   alert('Oops! This button is still being developed! Try again later :)');
 })
 
-toevaluation.addEventListener('click', function(){
+toevaluation.addEventListener('click', function() {
   var toevaluation = document.getElementById('#toevaluation');
   console.log('scroll to evaluation');
-  window.location.href="#evaluation";
+  window.location.href = "#evaluation";
 })
 
 /**********************************IDENTITY SIGNS: POPULATE REVIEWS*************************************/
-var toreview =document.getElementById('toreview');
-toreview.addEventListener('click', function(){
+var toreview = document.getElementById('toreview');
+toreview.addEventListener('click', function() {
   var question1 = document.f1.question1.value;
   var question2 = document.f1.question2.value;
   var question3 = document.f1.question3.value;
@@ -444,13 +444,13 @@ toreview.addEventListener('click', function(){
   review4.innerHTML = "I chose " + question4 + " because " + reason4;
   review5.innerHTML = "I chose " + question5 + " because " + reason5;
 
-  window.location.href='#review';
+  window.location.href = '#review';
 })
 
 /**********************SUBMIT EVALUATION************************************/
 
-var thanks=document.getElementById('#thanks');
-submitevaluation.addEventListener('click', function (){
+var thanks = document.getElementById('#thanks');
+submitevaluation.addEventListener('click', function() {
   /*
   console.log('submit evaluation');
   var surprising = document.f3.surprising.value;
@@ -458,9 +458,9 @@ submitevaluation.addEventListener('click', function (){
   var others = document.f3.others.value;
   var take = document.f3.take.value;
 */
-var submitevaluation = document.getElementById('#submit');
- alert('Oops! This button is still being developed! Try again later :)');
- return false;
+  var submitevaluation = document.getElementById('#submit');
+  alert('Oops! This button is still being developed! Try again later :)');
+  return false;
 })
 
 /***********************If user chooses 'ask me later', SUBMIT ENTIRE QUESTIONS FORM***********************/
