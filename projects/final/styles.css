@@ -92,6 +92,15 @@ a {
   color: #FF8686;
 }
 
+#workshopmenu h2 {
+  text-transform: uppercase;
+}
+
+#workshopmenu p {
+  color: #fff;
+  text-align: center;
+}
+
 span {
   color: #04248E;
 }
@@ -139,7 +148,7 @@ footer a {
   color: #FF8686;
   font-size: 2em;
   margin-top: 2%;
-  padding:0;
+  padding: 0;
 }
 
 #largescreenmenu {
@@ -155,6 +164,7 @@ footer {
 #identitysigns footer {
   display: none;
 }
+
 
 /***********BUTTONS******************/
 
@@ -223,31 +233,14 @@ input[type="radio"]:checked+label {
 }
 
 
-
 /******ask me later buttons*******/
 
-#next1 #next2 #next3 #next4 #submit1 {
+#next1, #next2, #next3, #next4, #submit1 {
   display: block;
 }
 
-#jumpback2 #jumpback3 #jumpback4 #jumpback5 {
+#jumpback2, #jumpback3, #jumpback4, #jumpback5 {
   display: block;
-}
-
-#backtor2 {
-  display: none;
-}
-
-#backtor3 {
-  display: none;
-}
-
-#backtor4 {
-  display: none;
-}
-
-#backtor5 {
-  display: none;
 }
 
 
@@ -260,7 +253,7 @@ input[type=button]:disabled {
 
 /*********************************HOME PAGE***********************************************/
 
-#homepage {
+#homepage, #about {
   background-image: url(images/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -289,16 +282,50 @@ input[type=button]:disabled {
 
 
 /*********************************IDENTITY SIGNS WORKSHOP************************************/
+#identitysigns, #description {
+background-size: 100% 100%;
+ animation: backgroundfade 15s ease infinite;
+ animation-fill-mode: both;
+
+}
+
+@keyframes backgroundfade {
+    0%{background-color: #ffffff}
+    15%{background-color: #FDF3FF}
+    25%{background-color: #EEEEFF}
+    50%{background-color: #F3FFFF}
+    65%{background-color: #EEEEFF}
+    75%{background-color: #FDF3FF}
+    100%{background-color: #ffffff}
+  }
 
 #nav-questions {
   position: fixed;
-  display: none;
+  display: block;
+  left: 90%;
+  top: 25%;
 }
 
+#nav-questions a {
+  font-size: 1em;
+  float: right;
+  clear: both;
+  margin: auto;
+}
+
+#nav-questions p {
+  font-family: 'Space Mono', monospace;
+  text-decoration: none;
+  text-transform: lowercase;
+  color: #FF8686;
+  float: right;
+  clear: both;
+  margin: auto;
+}
 
 /*********IDENTITY SIGNS: questions***************/
 
-#question1, #question2,#question3, #question4, #question5 {
+#question1, #question2, #question3, #question4, #question5 {
   width: 100%;
   height: 100vh;
 }
@@ -345,55 +372,109 @@ textarea {
   height: 100vh;
 }
 
-#gallery #myMsg {
-  background-color: #aba5d2;
-  color: #fff;
-}
-
-#gallery #myMsg2 {
-  background-color: #aba5d2;
-  color: #fff;
-}
-
-#gallery #myMsg3 {
-  background-color: #aba5d2;
-  color: #fff;
-}
-
-#gallery #myMsg4 {
-  background-color: #aba5d2;
-  color: #fff;
-}
-
-#gallery #myMsg5 {
-  background-color: #aba5d2;
-  color: #fff;
-  animation-name: fade;
-  animation-duration: 3s;
-  animation-delay: 0s;
-}
-
 #gallery p {
-  float: left;
-  margin: 1.25% 1.25%;
-  background-color: #e6e7e8;
-  width: 45%;
-  height: 20%;
-  padding: 2%;
   color: #939598;
-  overflow: scroll;
+  overflow: hidden;
 }
 
 .responses {
   overflow: auto;
+  width: 100%;
+  position: relative;
   height: 500px;
+  margin-bottom: 1%;
+}
+.galleries {
+  position: relative;
+}
+
+.pink {
+  position: absolute;
+  width: 80%;
 }
 
 .msg {
-  opacity: 0;
+  position: absolute;
+  left: 10%;
+  top: 10%;
+  width: 80%;
+  height: 40%;
 }
 
-.otheruser1, .otheruser2, .otheruser3, .otheruser4, .otheruser5, .otheruser6 {
+.leftpurple {
+  position: absolute;
+  top: 40%;
+  width: 80%;
+}
+
+.otheruser1 {
+  position: absolute;
+  left: 10%;
+  top: 10%;
+  width: 80%;
+  height: 40%;
+}
+.rightpurple {
+  position: absolute;
+  top: 80%;
+  width: 80%;
+}
+.otheruser2 {
+  position: absolute;
+  left: 10%;
+  top: 10%;
+  width: 80%;
+  height:40%;
+}
+.rightpurple2 {
+  position: absolute;
+  width: 80%;
+}
+.otheruser3 {
+  position: absolute;
+  left: 10%;
+  top: 10%;
+  width: 80%;
+  height: 40%;
+}
+.rightblue {
+  position: absolute;
+  width: 80%;
+}
+.otheruser4 {
+  position: absolute;
+  left: 10%;
+  top: 10%;
+  width: 80%;
+  height: 40%;
+}
+.rightblue2 {
+  position: absolute;
+  width: 80%;
+}
+.otheruser5 {
+  position: absolute;
+  left: 10%;
+  top: 10%;
+  width: 80%;
+  height: 40%;
+}
+.leftblue {
+  position: absolute;
+  width: 80%;
+}
+.otheruser6 {
+  position: absolute;
+  left: 10%;
+  top: 10%;
+  width: 80%;
+  height: 40%;
+}
+
+
+/*********ANIMATION**********/
+
+.pink, .rightpurple, .rightpurple2, .rightblue, .rightblue2, .leftpurple, .leftblue {
   opacity: 0;
 }
 
@@ -416,18 +497,49 @@ textarea {
   animation-duration: 1s;
   animation-fill-mode: forwards;
 }
+
 @keyframes fade {
-  0%   {opacity: 0}
-  25%  {opacity: .25}
-  50%  {opacity: .5}
-  100% {opacity: 1}
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: .25;
+  }
+  50% {
+    opacity: .5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
+/**********OVERLAYS**********/
+.overlay {
+  display: none;
+  width: 100%;
+  height: 80%;
+  padding: 5% 8%;
+  position: absolute;
+  left: 0%;
+  background-color: #fff;
+  border: 1px solid #FF8686;
+  z-index: 1;
+}
+.close {
+  cursor: pointer;
+  font-size: 2em;
+  color: #FF8686;
+  text-align: right;
+}
+
+
 /**************IDENTITY SIGNS: REVIEWS*************/
+
 #review {
   margin-bottom: 5%;
   height: 100vh;
 }
+
 
 /******************************************RESPONSIVE*************************************************/
 
@@ -457,11 +569,9 @@ textarea {
     padding: 1%;
     font-size: 1.1em;
   }
-
- a:hover {
+  a:hover {
     color: #939598;
   }
-
   #identitysigns footer {
     display: block;
   }
@@ -503,17 +613,14 @@ textarea {
     cursor: default;
     background-color: gray;
   }
-
-  #jumpback2, #jumpback3, #jumpback4, #jumpback5 {
-    margin-left: 80%;
+  #jumpback2, #jumpback3, #jumpback4, #jumpback5, #toreview {
+    display: inline;
   }
-
   /***************************IDENTITY SIGNS********************************/
   #aboutpage {
     height: 100vh;
   }
   /******QUESTIONS**********/
-
   .choices {
     padding-bottom: 30%;
   }
@@ -522,66 +629,119 @@ textarea {
   }
   /*****GALLERY SECTION******/
   #gallery p {
-   width: 25%;
-   height: 20%;
-   margin: 0;
-  margin-right: 2.5%;
+    margin: 0;
   }
 
-/*
   #gallery p:hover {
-    background-color: #aba5d2;
-    cursor: pointer;
-    color: #fff;
+    cursor:pointer;
   }
-  */
-
   .responses {
+    position: relative;
+    width: 100%;
     height: 500px;
     margin-bottom: 1%;
   }
-
   .galleries {
     position: relative;
   }
-
+  /**********SPEECH BUBBLES AND MSGS POSITIONING*****************/
+  .pink {
+    position: absolute;
+    left: 35%;
+    top: 28%;
+    width: 30%;
+    height: 30%;
+  }
   .msg {
     position: absolute;
-    left: 37.5%;
-    top: 35%;
-    width: 30%;
-    height: 25%;
+    left: 10%;
+    top: 10%;
+    width: 80%;
+    height: 55%;
+  }
+  .leftpurple {
+    position: absolute;
+    left: 5%;
+    top: 10%;
+    width: 25%;
+    height: 20%;
   }
   .otheruser1 {
     position: absolute;
-    left: 5%;
-    top: 15%;
+    left: 10%;
+    top: 10%;
+    width: 80%;
+    height: 85%;
+  }
+  .rightpurple {
+    position: absolute;
+    left: 70%;
+    top: 10%;
+    width: 25%;
+    height: 20%;
   }
   .otheruser2 {
     position: absolute;
-    left: 70%;
-    top: 15%;
+    left: 10%;
+    top: 10%;
+    width: 80%;
+    height: 85%;
+  }
+  .rightpurple2 {
+    position: absolute;
+    left: 37.5%;
+    top: 65%;
+    width: 25%;
+    height: 20%;
   }
   .otheruser3 {
     position: absolute;
-    left: 37.5%;
-    top: 60%;
+    left: 10%;
+    top: 10%;
+    width: 80%;
+    height: 85%;
   }
-
-  .otheruser4 {
+  .rightblue {
     position: absolute;
     left: 37.5%;
+    width: 25%;
+    height: 20%;
+    top: -1%;
   }
-
-  .otheruser5{
+  .otheruser4 {
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    width: 80%;
+    height: 85%;
+  }
+  .rightblue2 {
     position: absolute;
     left: 70%;
     top: 45%;
+    width: 25%;
+    height: 20%;
   }
-
-  .otheruser6{
+  .otheruser5 {
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    width: 80%;
+    height: 85%;
+  }
+  .leftblue {
     position: absolute;
     left: 5%;
     top: 45%;
+    width: 25%;
+    height: 20%;
   }
+  .otheruser6 {
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    width: 80%;
+    height: 85%;
+  }
+
 }
