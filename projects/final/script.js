@@ -110,28 +110,33 @@ var back1 = document.getElementById('back1');
 var back2 = document.getElementById('back2');
 var back3 = document.getElementById('back3');
 var back4 = document.getElementById('back4');
+var back5 = document.getElementById('back5');
 
 //click back, scroll back to last question's reflection
 back1.addEventListener('click', function() {
-  console.log('back to r1')
-  window.location.href = "#r1";
+  console.log('back to gallery1')
+  window.location.href = "#gallery1";
 })
 
 back2.addEventListener('click', function() {
-  console.log('back to r2')
-  window.location.href = "#r2";
+  console.log('back to gallery2')
+  window.location.href = "#gallery2";
 })
 
 back3.addEventListener('click', function() {
-  console.log('back to r3')
-  window.location.href = "#r3";
+  console.log('back to gallery3')
+  window.location.href = "#gallery3";
 })
 
 back4.addEventListener('click', function() {
-  console.log('go to r4')
-  window.location.href = "#r4";
+  console.log('go to gallery4')
+  window.location.href = "#gallery4";
 })
 
+back5.addEventListener('click', function() {
+  console.log('go to gallery5')
+  window.location.href = "#gallery5";
+})
 /***********************************REFLECTION SECTION BUTTONS***************************************/
 
 //click 'BACK' on Reflection section to go back to Question
@@ -247,7 +252,6 @@ togallery1.addEventListener('click', function() {
   rightblue1.className = 'rightblue animateset2';
   rb1.className = 'rightblue2 animateset2';
   leftblue1.className = 'leftblue animateset2';
-
 })
 
 togallery2.addEventListener('click', function() {
@@ -439,102 +443,127 @@ response[9].addEventListener('click', function() {
 })
 
 response[10].addEventListener('click', function() {
+  console.log('show overlay 10');
   overlay[10].style.display = "block";
 })
 
 response[11].addEventListener('click', function() {
+  console.log('show overlay 11');
   overlay[11].style.display = "block";
 })
 
 response[12].addEventListener('click', function() {
+  console.log('show overlay 12');
   overlay[12].style.display = "block";
 })
 
 response[13].addEventListener('click', function() {
+  console.log('show overlay 13');
   overlay[13].style.display = "block";
 })
 
 response[14].addEventListener('click', function() {
+  console.log('show overlay 14');
   overlay[14].style.display = "block";
 })
 
 response[15].addEventListener('click', function() {
+  console.log('show overlay 15');
   overlay[15].style.display = "block";
 })
 
 response[16].addEventListener('click', function() {
+  console.log('show overlay 16');
   overlay[16].style.display = "block";
 })
 
 response[17].addEventListener('click', function() {
+  console.log('show overlay 17');
   overlay[17].style.display = "block";
 })
 
 response[18].addEventListener('click', function() {
+  console.log('show overlay 18');
   overlay[18].style.display = "block";
 })
 
 response[19].addEventListener('click', function() {
+  console.log('show overlay 19');
   overlay[19].style.display = "block";
 })
 
 response[20].addEventListener('click', function() {
+  console.log('show overlay 20');
   overlay[20].style.display = "block";
 })
 
 response[21].addEventListener('click', function() {
+  console.log('show overlay 21');
   overlay[21].style.display = "block";
 })
 
 response[22].addEventListener('click', function() {
+  console.log('show overlay 22');
   overlay[22].style.display = "block";
 })
 
 response[23].addEventListener('click', function() {
+  console.log('show overlay 23');
   overlay[23].style.display = "block";
 })
 
 response[24].addEventListener('click', function() {
+  console.log('show overlay 24');
   overlay[24].style.display = "block";
 })
 
 response[25].addEventListener('click', function() {
+  console.log('show overlay 25');
   overlay[25].style.display = "block";
 })
 
 response[26].addEventListener('click', function() {
+  console.log('show overlay 26');
   overlay[26].style.display = "block";
 })
 
 response[27].addEventListener('click', function() {
+  console.log('show overlay 27');
   overlay[27].style.display = "block";
 })
 
 response[28].addEventListener('click', function() {
+  console.log('show overlay 28');
   overlay[28].style.display = "block";
 })
 
 response[29].addEventListener('click', function() {
+  console.log('show overlay 29');
   overlay[29].style.display = "block";
 })
 
 response[30].addEventListener('click', function() {
+  console.log('show overlay 30');
   overlay[30].style.display = "block";
 })
 
 response[31].addEventListener('click', function() {
+  console.log('show overlay 31');
   overlay[31].style.display = "block";
 })
 
 response[32].addEventListener('click', function() {
+  console.log('show overlay 32');
   overlay[32].style.display = "block";
 })
 
 response[33].addEventListener('click', function() {
+  console.log('show overlay 33');
   overlay[33].style.display = "block";
 })
 
 response[34].addEventListener('click', function() {
+  console.log('show overlay 34');
   overlay[34].style.display = "block";
 })
 
@@ -647,12 +676,6 @@ save.addEventListener('click', function() {
   alert('Oops! This button is still being developed! Try again later :)');
 })
 
-toevaluation.addEventListener('click', function() {
-  var toevaluation = document.getElementById('#toevaluation');
-  console.log('scroll to evaluation');
-  window.location.href = "#evaluation";
-})
-
 /**********************************IDENTITY SIGNS: POPULATE REVIEWS*************************************/
 var toreview = document.getElementById('toreview');
 toreview.addEventListener('click', function() {
@@ -671,27 +694,11 @@ toreview.addEventListener('click', function() {
 
   //write messages for review
   console.log('write msgs for review')
-  review1.innerHTML = "I chose " + question1 + " because " + reason;
-  review2.innerHTML = "I chose " + question2 + " because " + reason2;
-  review3.innerHTML = "I chose " + question3 + " because " + reason3;
-  review4.innerHTML = "I chose " + question4 + " because " + reason4;
-  review5.innerHTML = "I chose " + question5 + " because " + reason5;
+  review1.innerHTML = "I chose <span>" + question1 + "</span> because " + reason;
+  review2.innerHTML = "I chose <span>" + question2 + "</span> because " + reason2;
+  review3.innerHTML = "I chose <span>" + question3 + "</span> because " + reason3;
+  review4.innerHTML = "I chose <span>" + question4 + "</span> because " + reason4;
+  review5.innerHTML = "I chose <span>" + question5 + "</span> because " + reason5;
 
   window.location.href = '#review';
-})
-
-/**********************SUBMIT EVALUATION************************************/
-
-var thanks = document.getElementById('#thanks');
-submitevaluation.addEventListener('click', function() {
-  /*
-  console.log('submit evaluation');
-  var surprising = document.f3.surprising.value;
-  var yourself = document.f3.yourself.value;
-  var others = document.f3.others.value;
-  var take = document.f3.take.value;
-*/
-  var submitevaluation = document.getElementById('#submit');
-  alert('Oops! This button is still being developed! Try again later :)');
-  return false;
 })
