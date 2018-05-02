@@ -47,6 +47,7 @@ h2 {
   font-size: 1.5em;
   color: #FF8686;
   padding-top: 1%;
+  margin-bottom: 1%;
 }
 
 .workshops h2 {
@@ -55,9 +56,10 @@ h2 {
 
 h3 {
   font-family: 'Work Sans', serif;
-  font-size: 1.4em;
+  font-weight: 400;
+  font-size: 1.2em;
   text-align: center;
-  line-height: 1.4em;
+  line-height: 1.6em;
   padding-top: 1%;
   padding-bottom: 1%;
   color: #939598;
@@ -67,19 +69,22 @@ h3 {
 
 p {
   font-family: 'Work Sans', serif;
-  font-size: 1.2em;
-  line-height: 1.5em;
+  font-size: 1.1em;
+  font-weight: 400;
+  line-height: 1.3em;
   color: #939598;
 }
 
 ol {
   margin: auto;
+  font-weight: 400;
   padding: 0 0 5% 1%;
 }
 
 li {
   font-family: 'Work Sans', serif;
   font-size: 1.2em;
+  font-weight: 400;
   line-height: 1.7em;
   color: #939598;
   list-style-position: outside;
@@ -107,6 +112,7 @@ span {
 
 textarea {
   font-family: 'Work Sans', serif;
+  font-weight: 400;
   font-size: 1em;
   line-height: 1.5em;
   color: #939598;
@@ -392,7 +398,7 @@ textarea {
 
 .msg {
   position: absolute;
-  left: 20%;
+  left: 10%;
   top: 25%;
   width: 80%;
   height: 50%;
@@ -749,10 +755,11 @@ input[type="button"]:disabled {
   margin: 0;
 }
 
-/*#gallery div p:hover {
+#gallery div p:hover {
   cursor: pointer;
+  color: #FF8686;
 }
-*/
+
 
 #gallery .overlay p:hover {
   color: #939598;
@@ -780,6 +787,12 @@ input[type="button"]:disabled {
   line-height: 1.2em;
 }
 
+.reviewquestion {
+  font-family: 'Work Sans';
+  font-weight: 400;
+  color: #FF8686;
+}
+
 .actionbuttons .button {
   margin-top: 3%;
 }
@@ -799,7 +812,7 @@ input[type="button"]:disabled {
 }
 .msg {
   position: absolute;
-  left: 15%;
+  left: 10%;
   top: 25%;
   width: 80%;
   height: 55%;
@@ -813,7 +826,7 @@ input[type="button"]:disabled {
 }
 .otheruser1 {
   position: absolute;
-  left: 15%;
+  left: 10%;
   top: 25%;
   width: 80%;
   height: 85%;
@@ -827,7 +840,7 @@ input[type="button"]:disabled {
 }
 .otheruser2 {
   position: absolute;
-  left: 15%;
+  left: 10%;
   top: 25%;
   width: 80%;
   height: 85%;
@@ -855,7 +868,7 @@ input[type="button"]:disabled {
 }
 .otheruser4 {
   position: absolute;
-  left: 15%;
+  left: 10%;
   top: 25%;
   width: 80%;
   height: 85%;
@@ -869,7 +882,7 @@ input[type="button"]:disabled {
 }
 .otheruser5 {
   position: absolute;
-  left: 15%;
+  left: 10%;
   top: 25%;
   width: 80%;
   height: 85%;
@@ -883,7 +896,7 @@ input[type="button"]:disabled {
 }
 .otheruser6 {
   position: absolute;
-  left: 15%;
+  left: 10%;
   top: 25%;
   width: 80%;
   height: 85%;
