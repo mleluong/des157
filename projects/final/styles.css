@@ -54,7 +54,7 @@ h2 {
 }
 
 h3 {
-  font-family: 'Source Sans Pro', serif;
+  font-family: 'Work Sans', serif;
   font-size: 1.4em;
   text-align: center;
   line-height: 1.4em;
@@ -66,7 +66,7 @@ h3 {
 }
 
 p {
-  font-family: 'Source Sans Pro', serif;
+  font-family: 'Work Sans', serif;
   font-size: 1.2em;
   line-height: 1.5em;
   color: #939598;
@@ -78,7 +78,7 @@ ol {
 }
 
 li {
-  font-family: 'Source Sans Pro', serif;
+  font-family: 'Work Sans', serif;
   font-size: 1.2em;
   line-height: 1.7em;
   color: #939598;
@@ -106,7 +106,7 @@ span {
 }
 
 textarea {
-  font-family: 'Source Sans Pro', serif;
+  font-family: 'Work Sans', serif;
   font-size: 1em;
   line-height: 1.5em;
   color: #939598;
@@ -213,7 +213,7 @@ label {
   display: block;
   width: 80%;
   text-align: center;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Work Sans', sans-serif;
   border-radius: .5em;
   border: 2px #aba5d2 solid;
   color: #aba5d2;
@@ -222,8 +222,8 @@ label {
 
 input[type="radio"]:checked+label {
   background-color: #04248E;
+  border: 2px #04248E solid;
   color: #fff;
-  border: 2px transparent;
 }
 
 .actionbuttons {
@@ -279,11 +279,12 @@ input[type=button]:disabled {
 
 /*********************************IDENTITY SIGNS WORKSHOP************************************/
 
-#identitysigns, #description {
-  background-size: 100% 100%;
+/* #identitysigns, #description {
+ background-size: 100% 100%;
   animation: backgroundfade 15s ease infinite;
   animation-fill-mode: both;
 }
+
 
 @keyframes backgroundfade {
   0% {
@@ -308,6 +309,7 @@ input[type=button]:disabled {
     background-color: #ffffff
   }
 }
+*/
 
 #nav-questions {
   position: fixed;
@@ -390,8 +392,8 @@ textarea {
 
 .msg {
   position: absolute;
-  left: 10%;
-  top: 10%;
+  left: 20%;
+  top: 25%;
   width: 80%;
   height: 50%;
 }
@@ -404,8 +406,8 @@ textarea {
 
 .otheruser1 {
   position: absolute;
-  left: 10%;
-  top: 10%;
+  left: 20%;
+  top: 25%;
   width: 80%;
   height: 40%;
 }
@@ -418,8 +420,8 @@ textarea {
 
 .otheruser2 {
   position: absolute;
-  left: 10%;
-  top: 10%;
+  left: 20%;
+  top: 25%;
   width: 80%;
   height: 40%;
 }
@@ -432,8 +434,8 @@ textarea {
 
 .otheruser3 {
   position: absolute;
-  left: 10%;
-  top: 10%;
+  left: 20%;
+  top: 25%;
   width: 80%;
   height: 40%;
 }
@@ -446,8 +448,8 @@ textarea {
 
 .otheruser4 {
   position: absolute;
-  left: 10%;
-  top: 10%;
+  left: 20%;
+  top: 25%;
   width: 80%;
   height: 40%;
 }
@@ -460,8 +462,8 @@ textarea {
 
 .otheruser5 {
   position: absolute;
-  left: 10%;
-  top: 10%;
+  left: 20%;
+  top: 25%;
   width: 80%;
   height: 40%;
 }
@@ -474,8 +476,8 @@ textarea {
 
 .otheruser6 {
   position: absolute;
-  left: 10%;
-  top: 10%;
+  left: 20%;
+  top: 25%;
   width: 80%;
   height: 40%;
 }
@@ -747,10 +749,10 @@ input[type="button"]:disabled {
   margin: 0;
 }
 
-#gallery div p:hover {
+/*#gallery div p:hover {
   cursor: pointer;
-  color: #FF8686;
 }
+*/
 
 #gallery .overlay p:hover {
   color: #939598;
@@ -797,8 +799,8 @@ input[type="button"]:disabled {
 }
 .msg {
   position: absolute;
-  left: 10%;
-  top: 10%;
+  left: 15%;
+  top: 25%;
   width: 80%;
   height: 55%;
 }
@@ -811,8 +813,8 @@ input[type="button"]:disabled {
 }
 .otheruser1 {
   position: absolute;
-  left: 10%;
-  top: 10%;
+  left: 15%;
+  top: 25%;
   width: 80%;
   height: 85%;
 }
@@ -825,8 +827,8 @@ input[type="button"]:disabled {
 }
 .otheruser2 {
   position: absolute;
-  left: 10%;
-  top: 10%;
+  left: 15%;
+  top: 25%;
   width: 80%;
   height: 85%;
 }
@@ -839,8 +841,8 @@ input[type="button"]:disabled {
 }
 .otheruser3 {
   position: absolute;
-  left: 10%;
-  top: 10%;
+  left: 15%;
+  top: 25%;
   width: 80%;
   height: 85%;
 }
@@ -853,8 +855,8 @@ input[type="button"]:disabled {
 }
 .otheruser4 {
   position: absolute;
-  left: 10%;
-  top: 10%;
+  left: 15%;
+  top: 25%;
   width: 80%;
   height: 85%;
 }
@@ -867,8 +869,8 @@ input[type="button"]:disabled {
 }
 .otheruser5 {
   position: absolute;
-  left: 10%;
-  top: 10%;
+  left: 15%;
+  top: 25%;
   width: 80%;
   height: 85%;
 }
@@ -881,8 +883,8 @@ input[type="button"]:disabled {
 }
 .otheruser6 {
   position: absolute;
-  left: 10%;
-  top: 10%;
+  left: 15%;
+  top: 25%;
   width: 80%;
   height: 85%;
 }
