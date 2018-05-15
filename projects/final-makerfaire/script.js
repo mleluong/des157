@@ -104,7 +104,7 @@ jump5.addEventListener('click', function() {
   myChoice5.innerHTML = "You answered: <span>" + question5 + "</span><br>" + "I chose <span>" + question5 + "</span> because...";
 })
 
-/******************GO BACK TO PREVIOUS REFLECTION********************/
+/******************GO BACK TO PREVIOUS GALLERY********************/
 //back button variables
 var back1 = document.getElementById('back1');
 var back2 = document.getElementById('back2');
@@ -112,7 +112,7 @@ var back3 = document.getElementById('back3');
 var back4 = document.getElementById('back4');
 var back5 = document.getElementById('back5');
 
-//click back, scroll back to last question's reflection
+//click back, scroll back to last question's gallery
 back1.addEventListener('click', function() {
   console.log('back to gallery1')
   window.location.href = "#gallery1";
@@ -167,6 +167,7 @@ goback5.addEventListener('click', function() {
 
 
 //Reflection's 'next' button only activates when textarea has text
+/*
 var reason = document.getElementById('reason');
 var reason2 = document.getElementById('reason2');
 var reason3 = document.getElementById('reason3');
@@ -217,6 +218,7 @@ reason5.addEventListener('input', function() {
     togallery5.disabled = false;
   }
 })
+*/
 
 
 
@@ -233,8 +235,8 @@ togallery1.addEventListener('click', function() {
   var reason = document.f2.reason.value;
   //write message for gallery 1
   console.log('write message for gallery 1');
-  myMsg.innerHTML = "I chose <span>" + question1 + "...</span>";
-  myMsgoverlay.innerHTML = "I chose " + question1 + " because " + reason;
+  myMsg.innerHTML = "You: I chose <span>" + question1 + "</span> because...";
+  myMsgoverlay.innerHTML = "You: I chose " + question1 + " because " + reason;
   //animate fade in
 
   myMsg.className = 'msg animatemsg';
@@ -266,8 +268,8 @@ togallery2.addEventListener('click', function() {
   var reason2 = document.f2.reason2.value;
   //write message for gallery 1
   console.log('write message for gallery 2');
-  myMsg2.innerHTML = "I chose <span>" + question2 + "...</span>";
-  myMsg2overlay.innerHTML = "I chose " + question2 + " because " + reason2;
+  myMsg2.innerHTML = "You: I chose <span>" + question2 + "</span> because...";
+  myMsg2overlay.innerHTML = "You: I chose " + question2 + " because " + reason2;
   //animate fade in
   myMsg2.className = 'msg animatemsg';
 
@@ -298,8 +300,8 @@ togallery3.addEventListener('click', function() {
   var reason3 = document.f2.reason3.value;
   //write message for gallery 1
   console.log('write message for gallery 3');
-  myMsg3.innerHTML = "I chose <span>" + question3 + "...</span>";
-  myMsg3overlay.innerHTML = "I chose " + question3 + " because " + reason3;
+  myMsg3.innerHTML = "You: I chose <span>" + question3 + "</span> because...";
+  myMsg3overlay.innerHTML = "You: I chose " + question3 + " because " + reason3;
   //animate fade in
   myMsg3.className = 'msg animatemsg';
   pink3.className = 'pink animatemsg';
@@ -332,8 +334,8 @@ togallery4.addEventListener('click', function() {
 
   //write message for gallery 1
   console.log('write message for gallery 4');
-  myMsg4.innerHTML = "I chose <span>" + question4 + "...</span>";
-  myMsg4overlay.innerHTML = "I chose " + question4 + " because " + reason4;
+  myMsg4.innerHTML = "You: I chose <span>" + question4 + "</span> because...";
+  myMsg4overlay.innerHTML = "You: I chose " + question4 + " because " + reason4;
   //animate fade in
   myMsg4.className = 'msg animatemsg';
   pink4.className = 'pink animatemsg';
@@ -364,8 +366,8 @@ togallery5.addEventListener('click', function() {
   var reason5 = document.f2.reason5.value;
   //write message for gallery 1
   console.log('write message for gallery 5');
-  myMsg5.innerHTML = "I chose <span>" + question5 + "...</span>";
-  myMsg5overlay.innerHTML = "I chose " + question5 + " because " + reason5;
+  myMsg5.innerHTML = "You: I chose <span>" + question5 + "</span> because...";
+  myMsg5overlay.innerHTML = "You: I chose " + question5 + " because " + reason5;
   //animate fade in
   myMsg5.className = 'msg animatemsg';
   pink5.className = 'pink animatemsg';
@@ -662,20 +664,6 @@ backtor5.addEventListener('click', function() {
 })
 
 
-/*************************************IDENTITY SIGNS: REVIEWs BUTTONS*******************************************/
-
-publish.addEventListener('click', function() {
-  var publish = document.getElementById('#publish');
-  console.log('publish alert');
-  alert('Oops! This button is still being developed! Try again later :)');
-})
-
-save.addEventListener('click', function() {
-  var save = document.getElementById('#save');
-  console.log('save alert');
-  alert('Oops! This button is still being developed! Try again later :)');
-})
-
 /**********************************IDENTITY SIGNS: POPULATE REVIEWS*************************************/
 var toreview = document.getElementById('toreview');
 toreview.addEventListener('click', function() {
@@ -701,4 +689,10 @@ toreview.addEventListener('click', function() {
   review5.innerHTML = "I chose <span>" + question5 + "</span> because " + reason5;
 
   window.location.href = '#review';
+})
+
+var clear = document.getElementById('clear');
+clear.addEventListener('click', function(){
+  console.log('clear all');
+  location.reload();
 })

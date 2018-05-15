@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Identity Signs</title>
+  <title>Identity Signs: Questions</title>
   <link href="https://cdn.jsdelivr.net/npm/normalize.css@7.0.0/normalize.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,600" rel="stylesheet">
@@ -20,48 +20,36 @@
       <i class="fas fa-bars"></i>
     </button>
           <div id='dropdown' class='hide'>
-            <a href="../index.html">Home</a>
+            <a href="../description.html">Home</a>
             <a href="../about.html">About</a>
           </div>
         </nav>
 
         <nav id='largescreenmenu'>
-          <a href="../index.html">Home</a>
+          <a href="description.html">Home</a>
           <a href="../about.html">About</a>
         </nav>
 
-        <nav id="nav-questions">
-          <a href="#questions">Questions</a>
-          <a href="#question1">1</a>
-          <a href="#question2">2</a>
-          <a href="#question3">3</a>
-          <a href="#question4">4</a>
-          <a href="#question5">5</a>
-          <a href="#reflection">Reflection</a>
-          <a href="#r1">1</a>
-          <a href="#r2">2</a>
-          <a href="#r3">3</a>
-          <a href="#r4">4</a>
-          <a href="#r5">5</a>
-          <a href="#gallery">Gallery</a>
-          <a href="#gallery1">1</a>
-          <a href="#gallery2">2</a>
-          <a href="#gallery3">3</a>
-          <a href="#gallery4">4</a>
-          <a href="#gallery5">5</a>
-          <a href="#review">Review</a>
-        </nav>
-
-
         <a href="questions.html"><h1>Identity Signs</h1></a>
-        <hr>
+
       </header>
 
       <!--*****************************QUESTIONS***************************************-->
       <article id="questions">
         <form name="f1">
           <section id="question1" class="questions">
-            <h2>Questions</h2>
+
+            <div class="progresscontainer">
+              <ul class="progressbar">
+                <li class="active">Question 1</li>
+                <li>Question 2</li>
+                <li>Question 3</li>
+                <li>Question 4</li>
+                <li>Question 5</li>
+                <li>Review</li>
+              </ul>
+            </div>
+
             <h3>Question 1: The identity I'm most aware of every day is...</h3>
 
             <div class="choices">
@@ -90,7 +78,16 @@
           </section>
 
           <section id="question2" class="questions">
-            <h2>Questions</h2>
+            <div class="progresscontainer">
+              <ul class="progressbar">
+                <li class="active">Question 1</li>
+                <li class="active">Question 2</li>
+                <li>Question 3</li>
+                <li>Question 4</li>
+                <li>Question 5</li>
+                <li>Review</li>
+              </ul>
+            </div>
             <h3>Question 2: The part of my identity that I am the least aware of on a daily basis is...</h3>
 
             <div class="choices">
@@ -120,7 +117,17 @@
           </section>
 
           <section id="question3" class="questions">
-            <h2>Questions</h2>
+              <div class="progresscontainer">
+                <ul class="progressbar">
+                  <li class="active">Question 1</li>
+                  <li class="active">Question 2</li>
+                  <li class="active">Question 3</li>
+                  <li>Question 4</li>
+                  <li>Question 5</li>
+                  <li>Review</li>
+                </ul>
+              </div>
+
             <h3>Question 3: The part of my identity that I believe is the most misunderstood by others is...</h3>
 
             <div class="choices">
@@ -150,7 +157,17 @@
           </section>
 
           <section id="question4" class="questions">
-            <h2>Questions</h2>
+            <div class="progresscontainer">
+              <ul class="progressbar">
+                <li class="active">Question 1</li>
+                <li class="active">Question 2</li>
+                <li class="active">Question 3</li>
+                <li class="active">Question 4</li>
+                <li>Question 5</li>
+                <li>Review</li>
+              </ul>
+            </div>
+
             <h3>Question 4: The part of my identity that was most emphasized or important in my family growing up
 was...</h3>
             <div class="choices">
@@ -180,7 +197,16 @@ was...</h3>
           </section>
 
           <section id="question5" class="questions">
-            <h2>Questions</h2>
+            <div class="progresscontainer">
+              <ul class="progressbar">
+                <li class="active">Question 1</li>
+                <li class="active">Question 2</li>
+                <li class="active">Question 3</li>
+                <li class="active">Question 4</li>
+                <li class="active">Question 5</li>
+                <li>Review</li>
+              </ul>
+            </div>
             <h3>Question 5: The part of my identity that garners me the most privilege is...</h3>
 
             <div class="choices">
@@ -216,62 +242,109 @@ was...</h3>
       <article id="reflection">
         <form name="f2">
           <section id="r1">
-            <h2>Reflection</h2>
+            <div class="progresscontainer">
+              <ul class="progressbar">
+                <li class="active">Question 1</li>
+                <li>Question 2</li>
+                <li>Question 3</li>
+                <li>Question 4</li>
+                <li>Question 5</li>
+                <li>Review</li>
+              </ul>
+            </div>
+
             <h3>Question 1: The identity I'm most aware of every day is...</h3>
             <p id="myChoice"></p>
-            <textarea name="reason" id="reason" rows="10" cols="30"></textarea>
+            <textarea name="reason" id="reason" rows="10" cols="30" required></textarea>
 
             <div class="actionbuttons">
               <input type="button" name="goback1" value="back" id="goback1">
-              <input type="button" name="togallery1" value="next" id="togallery1" disabled>
+              <input type="button" name="togallery1" value="next" id="togallery1">
             </div>
           </section>
 
           <section id="r2">
-            <h2>Reflection</h2>
+            <div class="progresscontainer">
+              <ul class="progressbar">
+                <li class="active">Question 1</li>
+                <li class="active">Question 2</li>
+                <li>Question 3</li>
+                <li>Question 4</li>
+                <li>Question 5</li>
+                <li>Review</li>
+              </ul>
+            </div>
+
             <h3>Question 2: The part of my identity that I am the least aware of on a daily basis is...</h3>
             <p id="myChoice2"></p>
-            <textarea name="reason2" id="reason2" rows="10" cols="30"></textarea>
+            <textarea name="reason2" id="reason2" rows="10" cols="30" required></textarea>
 
             <div class="actionbuttons">
               <input type="button" name="goback2" value="back" id="goback2">
-              <input type="button" name="togallery2" value="next" id="togallery2" disabled>
+              <input type="button" name="togallery2" value="next" id="togallery2">
             </div>
           </section>
 
           <section id="r3">
-            <h2>Reflection</h2>
+            <div class="progresscontainer">
+              <ul class="progressbar">
+                <li class="active">Question 1</li>
+                <li class="active">Question 2</li>
+                <li class="active">Question 3</li>
+                <li>Question 4</li>
+                <li>Question 5</li>
+                <li>Review</li>
+              </ul>
+            </div>
             <h3>Question 3: The part of my identity that I believe is the most misunderstood by others is...</h3>
             <p id="myChoice3"></p>
-            <textarea name="reason3" id="reason3" rows="10" cols="30"></textarea>
+            <textarea name="reason3" id="reason3" rows="10" cols="30" required></textarea>
 
             <div class="actionbuttons">
               <input type="button" name="goback3" value="back" id="goback3">
-              <input type="button" name="togallery3" value="next" id="togallery3" disabled>
+              <input type="button" name="togallery3" value="next" id="togallery3">
             </div>
           </section>
 
           <section id="r4">
-            <h2>Reflection</h2>
+            <div class="progresscontainer">
+              <ul class="progressbar">
+                <li class="active">Question 1</li>
+                <li class="active">Question 2</li>
+                <li class="active">Question 3</li>
+                <li class="active">Question 4</li>
+                <li>Question 5</li>
+                <li>Review</li>
+              </ul>
+            </div>
             <h3>Question 4: The part of my identity that was most emphasized or important in my family growing up was...</h3>
             <p id="myChoice4"></p>
-            <textarea name="reason4" id="reason4" rows="10" cols="30"></textarea>
+            <textarea name="reason4" id="reason4" rows="10" cols="30" required></textarea>
 
             <div class="actionbuttons">
               <input type="button" name="goback4" value="back" id="goback4">
-              <input type="button" name="togallery4" value="next" id="togallery4" disabled>
+              <input type="button" name="togallery4" value="next" id="togallery4">
             </div>
           </section>
 
           <section id="r5">
-            <h2>Reflection</h2>
+            <div class="progresscontainer">
+              <ul class="progressbar">
+                <li class="active">Question 1</li>
+                <li class="active">Question 2</li>
+                <li class="active">Question 3</li>
+                <li class="active">Question 4</li>
+                <li class="active">Question 5</li>
+                <li>Review</li>
+              </ul>
+            </div>
             <h3>Question 5: The part of my identity that garners me the most privilege is...</h3>
             <p id="myChoice5"></p>
-            <textarea name="reason5" id="reason5" rows="10" cols="30"></textarea>
+            <textarea name="reason5" id="reason5" rows="10" cols="30" required></textarea>
 
             <div class="actionbuttons">
               <input type="button" name="goback5" value="back" id="goback5">
-              <input type="button" name="togallery5" value="next" id="togallery5" disabled>
+              <input type="button" name="togallery5" value="next" id="togallery5">
             </div>
           </section>
         </form>
@@ -281,7 +354,18 @@ was...</h3>
 
       <article id="gallery">
         <section id='gallery1' class="galleries">
-          <h2>Gallery</h2>
+
+          <div class="progresscontainer">
+            <ul class="progressbar">
+              <li class="active">Question 1</li>
+              <li>Question 2</li>
+              <li>Question 3</li>
+              <li>Question 4</li>
+              <li>Question 5</li>
+              <li>Review</li>
+            </ul>
+          </div>
+
           <h3>Question 1: The identity I'm most aware of every day is...</h3>
           <div class="responses">
             <div id="pink1" class="pink bubble">
@@ -296,64 +380,63 @@ was...</h3>
 
             <div id="leftpurple1" class="leftpurple bubble">
               <img src="../images/left-purple.svg" alt="purple speech bubble">
-              <p id="q1other1" class="otheruser1 response  line-clamp">I chose <span>gender...</span></p>
+              <p id="q1other1" class="otheruser1 response  line-clamp">mleluong: I chose <span>gender</span> because...</p>
             </div>
 
             <article class="overlay">
               <div class='close'>&otimes;</div>
-              <p>I chose gender because I usually present very feminine in the way that I dress and do my makeup. I find confidence in the way I look, so expressing myself through my physical appearance is important to me.
-                <br>-mleluong</p>
+              <p>mleluong: I chose gender because I usually present very feminine in the way that I dress and do my makeup. I find confidence in the way I look, so expressing myself through my physical appearance is important to me.</p>
             </article>
 
             <div id="rightpurple1" class="rightpurple bubble">
               <img src="../images/right-purple.svg" alt="purple speech bubble">
-              <p id="q1other2" class="otheruser2 response">I chose <span>ability...</span></p>
+              <p id="q1other2" class="otheruser2 response">canofdanchan: I chose <span>ability</span> because...</p>
             </div>
 
             <article class="overlay">
               <div class='close'>&otimes;</div>
-              <p>I chose ability because my chronic pain has been worsening over the years, so much so that I have to take meds for it. And especially in the winter, I wake up in pain almost everyday so it's a very subtle yet
-                constant reminder. <br>-canofdanchan</p>
+              <p>canofdanchan: I chose ability because my chronic pain has been worsening over the years, so much so that I have to take meds for it. And especially in the winter, I wake up in pain almost everyday so it's a very subtle yet
+                constant reminder.</p>
             </article>
 
             <div id="rp1" class="rightpurple2 bubble">
               <img src="../images/right-purple.svg" alt="purple speech bubble">
-              <p id="q1other3" class="otheruser3 response">I chose <span>gender...</span></p>
+              <p id="q1other3" class="otheruser3 response">peanutbrittles: I chose <span>gender</span> because...</p>
             </div>
 
             <article id='q1overlay3' class="overlay">
               <div class='close'>&otimes;</div>
-              <p>I chose gender because I feel that my gender influences how I interact with others. <br>-peanutbrittles</p>
+              <p>peanutbrittles: I chose gender because I feel that my gender influences how I interact with others</p>
             </article>
 
             <div id="rightblue1" class="rightblue bubble">
               <img src="../images/right-blue.svg" alt="blue speech bubble">
-              <p id="q1other4" class="otheruser4 response">I chose <span>gender...</span></p>
+              <p id="q1other4" class="otheruser4 response">deepchadha: I chose <span>gender</span> because...</p>
             </div>
 
             <article class="overlay">
               <div class='close'>&otimes;</div>
-              <p>I chose gender because I present as male, and as per standard conventions I conform to the expectations of presenting as male. <br>-deepchadha</p>
+              <p>deepchadha: I chose gender because I present as male, and as per standard conventions I conform to the expectations of presenting as male.</p>
             </article>
 
             <div id="rb1" class="rightblue2 bubble">
               <img src="../images/right-blue.svg" alt="blue speech bubble">
-              <p id="q1other5" class="otheruser5 response">I chose <span>age...</span></p>
+              <p id="q1other5" class="otheruser5 response"> cs: I chose <span>age</span> because...</p>
             </div>
 
             <article class="overlay">
               <div class='close'>&otimes;</div>
-              <p>I chose age because I am aware of how old I am and my current situation. <br>-cs</p>
+              <p>cs: I chose age because I am aware of how old I am and my current situation.</p>
             </article>
 
             <div id="leftblue1" class="leftblue bubble">
               <img src="../images/left-blue.svg" alt="blue speech bubble">
-              <p id="q1other6" class="otheruser6 response">I chose <span>gender...</span></p>
+              <p id="q1other6" class="otheruser6 response">photonerd: I chose <span>gender</span> because...</p>
             </div>
 
             <article class="overlay">
               <div class='close'>&otimes;</div>
-              <p>I chose gender because I am a woman in Engineering. <br>-photonerd</p>
+              <p>photonerd: I chose gender because I am a woman in Engineering.</p>
             </article>
           </div>
 
@@ -365,7 +448,16 @@ was...</h3>
         </section>
 
         <section id='gallery2' class="galleries">
-          <h2>Gallery</h2>
+          <div class="progresscontainer">
+            <ul class="progressbar">
+              <li class="active">Question 1</li>
+              <li class="active">Question 2</li>
+              <li>Question 3</li>
+              <li>Question 4</li>
+              <li>Question 5</li>
+              <li>Review</li>
+            </ul>
+          </div>
           <h3>Question 2: The part of my identity that I am the least aware of on a daily basis is...</h3>
           <div class="responses">
             <div id="pink2" class="pink bubble">
@@ -380,64 +472,64 @@ was...</h3>
 
             <div id="leftpurple2" class="leftpurple bubble">
               <img src="../images/left-purple.svg" alt="purple speech bubble">
-              <p id="q2other1" class="otheruser1 response">I chose <span>age...</span></p>
+              <p id="q2other1" class="otheruser1 response">eluong97: I chose <span>age</span> because...</p>
             </div>
 
             <article class="overlay">
               <div class='close'>&otimes;</div>
-              <p>I chose age because I have the privilege of enjoying my youth as a time to try different things and grow as an individual. I am also able-bodied and energetic, so I am able to do most of the things I want to do physically.
-                As a young woman also, I also don't have to worry about things older women may worry about like the stigma on aging. <br>-eluong97</p>
+              <p>eluong97: I chose age because I have the privilege of enjoying my youth as a time to try different things and grow as an individual. I am also able-bodied and energetic, so I am able to do most of the things I want to do physically.
+                As a young woman also, I also don't have to worry about things older women may worry about like the stigma on aging.</p>
             </article>
 
 
             <div id="rightpurple2" class="rightpurple bubble">
               <img src="../images/right-purple.svg" alt="purple speech bubble">
-              <p id="q2other2" class="otheruser2 response">I chose <span>ability...</span></p>
+              <p id="q2other2" class="otheruser2 response">alexa: I chose <span>ability</span> because...</p>
             </div>
 
             <article class="overlay">
               <div class='close'>&otimes;</div>
-              <p>I chose ability because I've never been able to identify as a person who is differently abled. <br>-alexa</p>
+              <p>alexa: I chose ability because I've never been able to identify as a person who is differently abled.</p>
             </article>
 
             <div id="rp2" class="rightpurple2 bubble">
               <img src="../images/right-purple.svg" alt="purple speech bubble">
-              <p id="q2other3" class="otheruser3 response">I chose <span>ability...</span></p>
+              <p id="q2other3" class="otheruser3 response">dumplinggirl: I chose <span>income</span> because...</p>
             </div>
 
             <article class="overlay">
               <div class='close'>&otimes;</div>
-              <p>I chose ability because sometimes I forget that I have back pains and foot problems because of scoliosis and arthritis. <br>-sammy</p>
+              <p>dumplinggirl: I chose income because I often forget how privileged I am. I live comfortably and without needing to worry about most of my expenses because they're covered by my parents.</p>
             </article>
 
             <div id="rightblue2" class="rightblue bubble">
               <img src="../images/right-blue.svg" alt="blue speech bubble">
-              <p id="q2other4" class="otheruser4 response">I chose <span>age...</span></p>
+              <p id="q2other4" class="otheruser4 response">dannyphantom: I chose <span>age</span> because...</p>
             </div>
 
             <article class="overlay">
               <div class='close'>&otimes;</div>
-              <p>I chose age because age is a social construct???? Also I have friends that are ages like 19-29, so age isn't something I pay attention to. <br>-dannyphantom </p>
+              <p>dannyphantom: I chose age because age is a social construct???? Also I have friends that are ages like 19-29, so age isn't something I pay attention to.</p>
             </article>
 
             <div id="rb2" class="rightblue2 bubble">
               <img src="../images/right-blue.svg" alt="blue speech bubble">
-              <p id="q2other5" class="otheruser5 response">I chose <span>race...</span></p>
+              <p id="q2other5" class="otheruser5 response">bbgirl: I chose <span>race</span> because...</p>
             </div>
 
             <article class="overlay">
               <div class='close'>&otimes;</div>
-              <p>I chose I chose race because because I have white-passing privilege. <br>-bbgirl</p>
+              <p>bbgirl: I chose I chose race because because I have white-passing privilege.</p>
             </article>
 
             <div id="leftblue2" class="leftblue bubble">
               <img src="../images/left-blue.svg" alt="blue speech bubble">
-              <p id="q2other6" class="otheruser6 response">I chose <span>sexuality...</span></p>
+              <p id="q2other6" class="otheruser6 response">deepchadha: I chose <span>sexuality</span> because...</p>
             </div>
 
             <article class="overlay">
               <div class='close'>&otimes;</div>
-              <p>I chose sexuality because I am cis-het and hence have not felt scrutinized or observed due to that. <br>-deepchadha</p>
+              <p>deepchadha: I chose sexuality because I am cis-het and hence have not felt scrutinized or observed due to that.</p>
             </article>
           </div>
 
@@ -448,7 +540,16 @@ was...</h3>
         </section>
 
         <section id='gallery3' class="galleries">
-          <h2>Gallery</h2>
+          <div class="progresscontainer">
+            <ul class="progressbar">
+              <li class="active">Question 1</li>
+              <li class="active">Question 2</li>
+              <li class="active">Question 3</li>
+              <li>Question 4</li>
+              <li>Question 5</li>
+              <li>Review</li>
+            </ul>
+          </div>
           <h3>Question 3: The part of my identity that I believe is the most misunderstood by others is...</h3>
           <div class="responses">
             <div id="pink3" class="pink bubble">
@@ -463,62 +564,62 @@ was...</h3>
 
             <div id="leftpurple3" class="leftpurple bubble">
               <img src="../images/left-purple.svg" alt="purple speech bubble">
-              <p id="q3other1" class="otheruser1 response">I chose <span>race...</span></p>
+              <p id="q3other1" class="otheruser1 response">luongliveemily: I chose <span>race</span> because...</p>
             </div>
 
             <article class="overlay">
               <div class='close'>&otimes;</div>
-              <p>I chose race because as a Sino-Vietnamese-American, I have never completely fit into Chinese-American, Vietnamese-American, or (white) American culture. Not many people know what "Sino-Vietnamese" is either,so questions about my race are always more complicated to answer as well. <br>-luongliveemily</p>
+              <p>luongliveemily: I chose race because as a Sino-Vietnamese-American, I have never completely fit into Chinese-American, Vietnamese-American, or (white) American culture. Not many people know what "Sino-Vietnamese" is either,so questions about my race are always more complicated to answer as well.</p>
             </article>
 
             <div id="rightpurple3" class="rightpurple bubble">
               <img src="../images/right-purple.svg" alt="purple speech bubble">
-              <p id="q3other2" class="otheruser2 response">I chose <span>gender...</span></p>
+              <p id="q3other2" class="otheruser2 response">emoeggtart: I chose <span>gender</span> because...</p>
             </div>
 
             <article class="overlay">
               <div class='close'>&otimes;</div>
-              <p>I chose gender because even though I present femininely, I don't necessarily identify as a woman. I do choose to identify as femme, but it's a nuanced identity that correlates with my sexuality (queer). <br>-emoeggtart</p>
+              <p>emoeggtart: I chose gender because even though I present femininely, I don't necessarily identify as a woman. I do choose to identify as femme, but it's a nuanced identity that correlates with my sexuality (queer).</p>
             </article>
 
             <div id="rp3" class="rightpurple2 bubble">
               <img src="../images/right-purple.svg" alt="purple speech bubble">
-              <p id="q3other3" class="otheruser3 response">I chose <span>race...</span></p>
+              <p id="q3other3" class="otheruser3 response">peanutbrittles: I chose <span>race</span> because...</p>
             </div>
 
             <article class="overlay">
               <div class='close'>&otimes;</div>
-              <p>I chose race because I'm white, "technically", although don't necessarily appear to be to all. <br>-peanutbrittles</p>
+              <p>peanutbrittles: I chose race because I'm white, "technically", although don't necessarily appear to be to all.</p>
             </article>
 
             <div id="rightblue3" class="rightblue bubble">
               <img src="../images/right-blue.svg" alt="blue speech bubble">
-              <p id="q3other4" class="otheruser4 response">I chose <span>income...</span></p>
+              <p id="q3other4" class="otheruser4 response">rollinginthedeep: I chose <span>income</span> because...</p>
             </div>
 
             <article class="overlay">
               <div class='close'>&otimes;</div>
-              <p>I chose income because many people think that since I am an international student, I come from money. However this is not the case and I would like if people understood that. <br>-rollinginthedeep</p>
+              <p>rollinginthedeep: I chose income because many people think that since I am an international student, I come from money. However this is not the case and I would like if people understood that.</p>
             </article>
 
             <div id="rb3" class="rightblue2 bubble">
               <img src="../images/right-blue.svg" alt="blue speech bubble">
-              <p id="q3other5" class="otheruser5 response">I chose <span>sexuality...</span></p>
+              <p id="q3other5" class="otheruser5 response">christina: I chose <span>sexuality</span> because...</p>
             </div>
 
             <article class="overlay">
               <div class='close'>&otimes;</div>
-              <p>I chose sexuality because I have been through situations where people misunderstand my sexuality, this is based on how I dress or how I present myself as more "dominant" or "masculine" when in reality it's just who I am as a person and it does not have anything to do with my sexuality. <br>-christina</p>
+              <p>christina: I chose sexuality because I have been through situations where people misunderstand my sexuality, this is based on how I dress or how I present myself as more "dominant" or "masculine" when in reality it's just who I am as a person and it does not have anything to do with my sexuality.</p>
             </article>
 
             <div id="leftblue3" class="leftblue bubble">
               <img src="../images/left-blue.svg" alt="blue speech bubble">
-              <p id="q3other6" class="otheruser6 response">I chose <span>income...</span></p>
+              <p id="q3other6" class="otheruser6 response">dumplinggirl: I chose <span>sexuality</span> because...</p>
             </div>
 
             <article class="overlay">
               <div class='close'>&otimes;</div>
-              <p>I chose income because I have to validate why I am able to afford things. <br>-bbgirl</p>
+              <p>dumplinggirl: I chose sexuality because most people perceive me as an innocent little girl, and that follows that I am "pure" when it comes to my sexual experience. Most people assume that I am straight.</p>
             </article>
           </div>
 
@@ -529,7 +630,16 @@ was...</h3>
         </section>
 
         <section id='gallery4' class="galleries">
-          <h2>Gallery</h2>
+          <div class="progresscontainer">
+            <ul class="progressbar">
+              <li class="active">Question 1</li>
+              <li class="active">Question 2</li>
+              <li class="active">Question 3</li>
+              <li class="active">Question 4</li>
+              <li>Question 5</li>
+              <li>Review</li>
+            </ul>
+          </div>
           <h3>Question 4: The part of my identity that was most emphasized or important in my family growing up was...</h3>
           <div class="responses">
             <div id="pink4" class="pink bubble">
@@ -544,62 +654,62 @@ was...</h3>
 
             <div id="leftpurple4" class="leftpurple bubble">
               <img src="../images/left-purple.svg" alt="purple speech bubble">
-              <p id="q4other1" class="otheruser1 response">I chose <span>sexuality...</span></p>
+              <p id="q4other1" class="otheruser1 response">alexa: I chose <span>sexuality</span> because...</p>
             </div>
 
             <article class="overlay">
               <div class='close'>&otimes;</div>
-              <p>I chose sexuality because my family is not inclusive of those who are not cis-het. <br>-alexa</p>
+              <p>alexa: I chose sexuality because my family is not inclusive of those who are not cis-het.</p>
             </article>
 
             <div id="rightpurple4" class="rightpurple bubble">
               <img src="../images/right-purple.svg" alt="purple speech bubble">
-              <p id="q4other2" class="otheruser2 response">I chose <span>race</span>...</p>
+              <p id="q4other2" class="otheruser2 response">cs: I chose <span>race</span> because...</p>
             </div>
 
             <article class="overlay">
               <div class='close'>&otimes;</div>
-              <p>I chose race because my family has always reminded me that I come from a Chinese background which makes up who I am today. They always tell me to be proud of my culture and to continue passing on the family history and to not lose cultural identity. <br>-cs</p>
+              <p>cs: I chose race because my family has always reminded me that I come from a Chinese background which makes up who I am today. They always tell me to be proud of my culture and to continue passing on the family history and to not lose cultural identity.</p>
             </article>
 
             <div id="rp4" class="rightpurple2 bubble">
               <img src="../images/right-purple.svg" alt="purple speech bubble">
-              <p id="q4other3" class="otheruser3 response">I chose <span>race...</span></p>
+              <p id="q4other3" class="otheruser3 response">photonerd: I chose <span>race</span> because...</p>
             </div>
 
             <article class="overlay">
               <div class='close'>&otimes;</div>
-              <p>I chose race because growing up with immigrant parents, Mexican culture was a huge part of my upbringing. <br>-photonerd</p>
+              <p>photonerd: I chose race because growing up with immigrant parents, Mexican culture was a huge part of my upbringing.</p>
             </article>
 
             <div id="rightblue4" class="rightblue bubble">
               <img src="../images/right-blue.svg" alt="blue speech bubble">
-              <p id="q4other4" class="otheruser4 response">I chose <span>gender...</span></p>
+              <p id="q4other4" class="otheruser4 response">deepdishes: I chose <span>gender</span> because...</p>
             </div>
 
             <article class="overlay">
               <div class='close'>&otimes;</div>
-              <p>I chose gender because my family had a very clear difference between what boys were supposed to do, and what girls were supposed to. <br>-deepdishes</p>
+              <p>deepdishes: I chose gender because my family had a very clear difference between what boys were supposed to do, and what girls were supposed to.</p>
             </article>
 
             <div id="rb4" class="rightblue2 bubble">
               <img src="../images/right-blue.svg" alt="blue speech bubble">
-              <p id="q4other5" class="otheruser5 response">I chose...</p>
+              <p id="q4other5" class="otheruser5 response">vermillion: I chose <span>ability</span> because...</p>
             </div>
 
             <article class="overlay">
               <div class='close'>&otimes;</div>
-              <p>I chose... <br>-user5</p>
+              <p>vermillion: I chose ability because I was always expected to excel in school, extracurriculars, and exemplify a considerate, responsible daughter and sibling.</p>
             </article>
 
             <div id="leftblue4" class="leftblue bubble">
               <img src="../images/left-blue.svg" alt="blue speech bubble">
-              <p id="q4other6" class="otheruser6 response">I chose...</p>
+              <p id="q4other6" class="otheruser6 response">mleluong: I chose <span>gender</span> because...</p>
             </div>
 
             <article class="overlay">
               <div class='close'>&otimes;</div>
-              <p>I chose... <br>-user6</p>
+              <p>mleluong: I chose gender because as a female, my family has always policed my gender performance to make sure I behaved in traditionally feminine ways. My appearance is always judged by family members, I am compared to other female family members, and if I behave in ways that don't conform to gender norms, I am criticized.</p>
             </article>
           </div>
 
@@ -610,7 +720,16 @@ was...</h3>
         </section>
 
         <section id='gallery5' class="galleries">
-          <h2>Gallery</h2>
+          <div class="progresscontainer">
+            <ul class="progressbar">
+              <li class="active">Question 1</li>
+              <li class="active">Question 2</li>
+              <li class="active">Question 3</li>
+              <li class="active">Question 4</li>
+              <li class="active">Question 5</li>
+              <li>Review</li>
+            </ul>
+          </div>
           <h3>Question 5: The part of my identity that garners me the most privilege is...</h3>
           <div class="responses">
             <div id="pink5" class="pink bubble">
@@ -625,63 +744,63 @@ was...</h3>
 
             <div id="leftpurple5" class="leftpurple bubble">
               <img src="../images/left-purple.svg" alt="purple speech bubble">
-              <p id="q5other1" class="otheruser1 response">I chose <span>income...</span></p>
+              <p id="q5other1" class="otheruser1 response">canofdanchan: I chose <span>income</span> because...</p>
             </div>
 
             <article class="overlay">
               <div class='close'>&otimes;</div>
-              <p>I chose income because I grew up in the silicon valley and was/am upper middle class my entire life. My parents are both college graduates, which made getting into and affording college super easy for me. I also
-                have access to fresh food, clean water, and am not in danger of foreclosure. I am not and never will be in danger of being homeless. <br>-canofdanchan</p>
+              <p>canofdanchan: I chose income because I grew up in the silicon valley and was/am upper middle class my entire life. My parents are both college graduates, which made getting into and affording college super easy for me. I also
+                have access to fresh food, clean water, and am not in danger of foreclosure. I am not and never will be in danger of being homeless.</p>
             </article>
 
             <div id="rightpurple5" class="rightpurple bubble">
               <img src="../images/right-purple.svg" alt="purple speech bubble">
-              <p id="q5other2" class="otheruser2 response">I chose <span>income...</span></p>
+              <p id="q5other2" class="otheruser2 response">alexa: I chose <span>income</span> because...</p>
             </div>
 
             <article class="overlay">
               <div class='close'>&otimes;</div>
-              <p>I chose income because My family is quite wealthy. <br>-alexa</p>
+              <p>alexa: I chose income because my family is quite wealthy.</p>
             </article>
 
             <div id="rp5" class="rightpurple2 bubble">
               <img src="../images/right-purple.svg" alt="purple speech bubble">
-              <p id="q5other3" class="otheruser3 response">I chose <span>income...</span></p>
+              <p id="q5other3" class="otheruser3 response">sammy: I chose <span>income</span> because...</p>
             </div>
 
             <article class="overlay">
               <div class='close'>&otimes;</div>
-              <p>I chose income because I think I am privilege in terms of my family income because I do feel that I have opportunities to travel and do things that I want to do. <br>-sammy</p>
+              <p>sammy: I chose income because I think I am privilege in terms of my family income because I do feel that I have opportunities to travel and do things that I want to do.</p>
             </article>
 
             <div id="rightblue5" class="rightblue bubble">
               <img src="../images/right-blue.svg" alt="blue speech bubble">
-              <p id="q5other4" class="otheruser4 response">I chose <span>ability...</span></p>
+              <p id="q5other4" class="otheruser4 response">deepchadha: I chose <span>ability</span> because...</p>
             </div>
 
             <article class="overlay">
               <div class='close'>&otimes;</div>
-              <p>I chose ability because since I am able-bodied and have no visible disabilities, I feel like I am taken more seriously during any conversation. <br>-deepchadha</p>
+              <p>deepchadha: I chose ability because since I am able-bodied and have no visible disabilities, I feel like I am taken more seriously during any conversation.</p>
             </article>
 
             <div id="rb5" class="rightblue2 bubble">
               <img src="../images/right-blue.svg" alt="blue speech bubble">
-              <p id="q5other5" class="otheruser5 response">I chose <span>race...</span></p>
+              <p id="q5other5" class="otheruser5 response">bbgirl: I chose <span>race</span> because...</p>
             </div>
 
             <article class="overlay">
               <div class='close'>&otimes;</div>
-              <p>I chose race because I am white passing.<br>-bbgirl</p>
+              <p>bbgirl: I chose race because I am white passing.</p>
             </article>
 
             <div id="leftblue5" class="leftblue bubble">
               <img src="../images/left-blue.svg" alt="blue speech bubble">
-              <p id="q5other6" class="otheruser6 response">I chose...</p>
+              <p id="q5other6" class="otheruser6 response">vermillion: I chose <span>income</span> because...</p>
             </div>
 
             <article class="overlay">
               <div class='close'>&otimes;</div>
-              <p>I chose... <br>-user6</p>
+              <p>vermillion: I chose income because My parents are well-off, and because of that I have access to countless resources such as private lessons, extracurriculars, etc. I also am able to attend an extremely expensive private school.</p>
             </article>
           </div>
 
@@ -698,6 +817,18 @@ was...</h3>
       <article id="review">
         <section>
           <h2>Review Your Responses</h2>
+          <div class="progresscontainer">
+            <ul class="progressbar">
+              <li class="active">Question 1</li>
+              <li class="active">Question 2</li>
+              <li class="active">Question 3</li>
+              <li class="active">Question 4</li>
+              <li class="active">Question 5</li>
+              <li class="active">Review</li>
+            </ul>
+          </div>
+
+          <div class="reviewquestioncontainer">
           <p class="reviewquestion">Question 1: The identity I'm most aware of every day is...</p>
           <p id="review1"></p>
 
@@ -712,11 +843,15 @@ was...</h3>
 
           <p class="reviewquestion">Question 5: The part of my identity that garners me the most privilege is...</p>
           <p id="review5"></p>
+        </div>
+          <p id="thankyou">Thank You!</p>
           <div class="actionbuttons">
             <input type="button" name="back5" value="back" id="back5">
-            <input type="button" name="publish" value="publish responses?" id="publish">
-            <input type="button" name="save" value="save as pdf" id="save">
+            <input type="button" name="clear" value="clear all" id="clear">
           </div>
+         <div id="returntohome">
+          <a href="description.html">return to home</a>
+        </div>
         </section>
       </article>
 
@@ -727,6 +862,7 @@ was...</h3>
       </footer>
 
     <script src="../script.js"></script>
+  </div>
 </body>
 
 </html>
