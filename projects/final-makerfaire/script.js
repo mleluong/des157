@@ -25,9 +25,13 @@ var jump3 = document.getElementById('jump3');
 var jump4 = document.getElementById('jump4');
 var jump4 = document.getElementById('jump4');
 
+var f1 = document.getElementById('f1');
 //click 'next' -> scroll to Reflection, populate one question at a time
 //Question1 -> Reflection 1
 jump1.addEventListener('click', function() {
+  if ((f1.question1[0].checked == false) && (f1.question1[1].checked == false) && (f1.question1[2].checked == false) && (f1.question1[3].checked == false) && (f1.question1[4].checked == false) && (f1.question1[5].checked == false)) {
+    alert('This question is required');
+  } else {
   console.log('jump to reflection 1')
   window.location.href = "#r1";
   //variables for question 1
@@ -40,10 +44,14 @@ jump1.addEventListener('click', function() {
   //populate reflection1 section
   var question1 = document.f1.question1.value;
   myChoice.innerHTML = "You answered: <span>" + question1 + "</span> <br>" + "I chose <span>" + question1 + "</span> because...";
+}
 })
 
 //Question2 -> Reflection 2
 jump2.addEventListener('click', function() {
+  if ((f1.question2[0].checked == false) && (f1.question2[1].checked == false) && (f1.question2[2].checked == false) && (f1.question2[3].checked == false) && (f1.question2[4].checked == false) && (f1.question2[5].checked == false)) {
+    alert('This question is required');
+  } else {
   console.log('jump to reflection 2')
   window.location.href = "#r2";
   //variables for question 2
@@ -56,9 +64,13 @@ jump2.addEventListener('click', function() {
   //populate reflection2 section
   var question2 = document.f1.question2.value;
   myChoice2.innerHTML = "You answered: <span>" + question2 + "</span> <br>" + "I chose <span>" + question2 + "</span> because...";
+}
 })
 
 jump3.addEventListener('click', function() {
+  if ((f1.question3[0].checked == false) && (f1.question3[1].checked == false) && (f1.question3[2].checked == false) && (f1.question3[3].checked == false) && (f1.question3[4].checked == false) && (f1.question3[5].checked == false)) {
+    alert('This question is required');
+  } else {
   console.log('jump to reflection 3')
   window.location.href = "#r3";
   //variables for question 3
@@ -71,9 +83,13 @@ jump3.addEventListener('click', function() {
   //populate reflection2 section
   var question3 = document.f1.question3.value;
   myChoice3.innerHTML = "You answered: <span>" + question3 + "</span><br>" + "I chose <span>" + question3 + "</span> because...";
+}
 })
 
 jump4.addEventListener('click', function() {
+  if ((f1.question4[0].checked == false) && (f1.question4[1].checked == false) && (f1.question4[2].checked == false) && (f1.question4[3].checked == false) && (f1.question4[4].checked == false) && (f1.question4[5].checked == false)) {
+    alert('This question is required');
+  } else {
   console.log('jump to reflection 4')
   window.location.href = "#r4";
   //variables for question 4
@@ -86,9 +102,13 @@ jump4.addEventListener('click', function() {
   //populate reflection4 section
   var question4 = document.f1.question4.value;
   myChoice4.innerHTML = "You answered: <span>" + question4 + "</span> <br>" + "I chose <span>" + question4 + "</span> because...";
+}
 })
 
 jump5.addEventListener('click', function() {
+  if ((f1.question5[0].checked == false) && (f1.question5[1].checked == false) && (f1.question5[2].checked == false) && (f1.question5[3].checked == false) && (f1.question5[4].checked == false) && (f1.question5[5].checked == false)) {
+    alert('This question is required');
+  } else {
   console.log('jump to reflection 5')
   window.location.href = "#r5";
   //variables for question 5
@@ -101,6 +121,7 @@ jump5.addEventListener('click', function() {
   //populate reflection5 section
   var question5 = document.f1.question5.value;
   myChoice5.innerHTML = "You answered: <span>" + question5 + "</span><br>" + "I chose <span>" + question5 + "</span> because...";
+}
 })
 
 /******************GO BACK TO PREVIOUS GALLERY********************/
@@ -197,7 +218,7 @@ togallery1.addEventListener('click', function() {
 
   pink1.className = 'pink animatemsg';
   leftpurple1.className = 'leftpurple animateset1';
-  rightpurple1.className = 'rightpurple animateset1';
+  rightpurple1.className = 'rightpurple animateset1 animateflash';
   rp1.className = 'rightpurple2 animateset1';
   rightblue1.className = 'rightblue animateset2';
   rb1.className = 'rightblue2 animateset2';

@@ -286,13 +286,17 @@ input[type=button]:disabled {
 /*********************************IDENTITY SIGNS WORKSHOP************************************/
 
 #identitysigns, #description {
-  background-color: #FDF3FF;
+  background-color: #fff;
 }
 
 
 /*************IDENTITY SIGNS: DESCRIPTION page********/
 #description {
-  height: 100vh;
+  min-height: 100vh;
+}
+
+#description article {
+  height: 100%;
 }
 
 #identitydescription .button {
@@ -302,7 +306,12 @@ input[type=button]:disabled {
 #paragraphdescription {
   padding: 3%;
   margin: 2%;
-  background-color: rgba(255, 255, 255, .75);
+  background-color: #fff;
+  border: #FF8686 solid 2px;
+}
+
+#description img {
+  margin-top: 3%;
 }
 
 /*********IDENTITY SIGNS: questions***************/
@@ -516,6 +525,19 @@ textarea {
   }
 }
 
+.animateflash {
+  animation-name: flash;
+  animation-delay: 2s;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: 5;
+}
+
+@keyframes flash {
+  0% { opacity: 1; }
+	50% { opacity: .1; }
+	100% { opacity: 1; }
+}
 
 /**********OVERLAYS**********/
 
