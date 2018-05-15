@@ -40,7 +40,6 @@ jump1.addEventListener('click', function() {
   //populate reflection1 section
   var question1 = document.f1.question1.value;
   myChoice.innerHTML = "You answered: <span>" + question1 + "</span> <br>" + "I chose <span>" + question1 + "</span> because...";
-  //turn off 'next question' button on gallery; replace with 'next reflection'
 })
 
 //Question2 -> Reflection 2
@@ -166,64 +165,13 @@ goback5.addEventListener('click', function() {
 })
 
 
-//Reflection's 'next' button only activates when textarea has text
-/*
-var reason = document.getElementById('reason');
-var reason2 = document.getElementById('reason2');
-var reason3 = document.getElementById('reason3');
-var reason4 = document.getElementById('reason4');
-var reason5 = document.getElementById('reason5');
-
-reason.addEventListener('input', function() {
-  console.log('enable button');
-  if (reason.value.length == 0) {
-    togallery1.disabled = true;
-  } else {
-    togallery1.disabled = false;
-  }
-})
-
-reason2.addEventListener('input', function() {
-  console.log('enable button');
-  if (reason2.value.length == 0) {
-    togallery2.disabled = true;
-  } else {
-    togallery2.disabled = false;
-  }
-})
-
-reason3.addEventListener('input', function() {
-  console.log('enable button');
-  if (reason3.value.length == 0) {
-    togallery3.disabled = true;
-  } else {
-    togallery3.disabled = false;
-  }
-})
-
-reason4.addEventListener('input', function() {
-  console.log('enable button');
-  if (reason4.value.length == 0) {
-    togallery4.disabled = true;
-  } else {
-    togallery4.disabled = false;
-  }
-})
-
-reason5.addEventListener('input', function() {
-  console.log('enable button');
-  if (reason5.value.length == 0) {
-    togallery5.disabled = true;
-  } else {
-    togallery5.disabled = false;
-  }
-})
-*/
-
-
-
 //click 'next' on reflection section to continue to GALLERY; populate gallery section!!!
 togallery1.addEventListener('click', function() {
+    var reason = document.getElementById('reason');
+    if (reason.value.length == 0){
+      console.log('alert');
+      alert('This question is required');
+    } else {
   //scroll to gallery 1
   console.log('go to gallery1');
   var togallery1 = document.getElementById('#togallery1');
@@ -254,9 +202,15 @@ togallery1.addEventListener('click', function() {
   rightblue1.className = 'rightblue animateset2';
   rb1.className = 'rightblue2 animateset2';
   leftblue1.className = 'leftblue animateset2';
+  }
 })
 
 togallery2.addEventListener('click', function() {
+  var reason2 = document.getElementById('reason2');
+  if (reason2.value.length == 0){
+    console.log('alert');
+    alert('This question is required');
+  } else {
   //scroll to gallery 2
   console.log('go to gallery2');
   var togallery2 = document.getElementById('#togallery2');
@@ -287,9 +241,15 @@ togallery2.addEventListener('click', function() {
   rightblue2.className = 'rightblue animateset2';
   rb2.className = 'rightblue2 animateset2';
   leftblue2.className = 'leftblue animateset2';
+}
 })
 
 togallery3.addEventListener('click', function() {
+  var reason3 = document.getElementById('reason3');
+  if (reason3.value.length == 0){
+    console.log('alert');
+    alert('This question is required');
+  } else {
   //scroll to gallery 3
   var togallery3 = document.getElementById('#togallery3');
   window.location.href = "#gallery3";
@@ -320,9 +280,15 @@ togallery3.addEventListener('click', function() {
   rightblue3.className = 'rightblue animateset2';
   rb3.className = 'rightblue2 animateset2';
   leftblue3.className = 'leftblue animateset2';
+}
 })
 
 togallery4.addEventListener('click', function() {
+  var reason4 = document.getElementById('reason4');
+  if (reason4.value.length == 0){
+    console.log('alert');
+    alert('This question is required');
+  } else {
   //scroll to gallery 4
   var togallery4 = document.getElementById('#togallery4');
   window.location.href = "#gallery4";
@@ -353,9 +319,15 @@ togallery4.addEventListener('click', function() {
   rightblue4.className = 'rightblue animateset2';
   rb4.className = 'rightblue2 animateset2';
   leftblue4.className = 'leftblue animateset2';
+}
 })
 
 togallery5.addEventListener('click', function() {
+  var reason5 = document.getElementById('reason5');
+  if (reason5.value.length == 0){
+    console.log('alert');
+    alert('This question is required');
+  } else {
   //scroll to gallery 5
   var togallery5 = document.getElementById('#togallery5');
   window.location.href = "#gallery5";
@@ -386,6 +358,7 @@ togallery5.addEventListener('click', function() {
   rightblue5.className = 'rightblue animateset2';
   rb5.className = 'rightblue2 animateset2';
   leftblue5.className = 'leftblue animateset2';
+}
 })
 
 /**********************GALLERY SECTION OVERLAYS************************/
