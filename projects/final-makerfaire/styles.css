@@ -255,7 +255,7 @@ input[type=button]:disabled {
 
 /*********************************HOME PAGE***********************************************/
 
-#homepage, #about, #description {
+#homepage, #description {
   background-image: url(images/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -299,6 +299,11 @@ input[type=button]:disabled {
   height: 100%;
 }
 
+#description h1 {
+  font-size: 3em;
+  margin-top: 4%;
+}
+
 #identitydescription .button {
   margin-top: 5%;
 }
@@ -306,12 +311,23 @@ input[type=button]:disabled {
 #paragraphdescription {
   padding: 3%;
   margin: 2%;
+  margin-top: 1%;
   background-color: #fff;
-  border: #FF8686 solid 2px;
+  border: #aba5d2 solid 1px;
+  box-shadow: #aba5d2 5px 5px;
 }
 
 #description img {
-  margin-top: 3%;
+  margin-top: 1%;
+}
+
+/***********IDENTITY SIGNS: ABOUT***************/
+#about h2 {
+  text-align: left;
+}
+
+#aboutpage {
+  padding-bottom: 8%;
 }
 
 /*********IDENTITY SIGNS: questions***************/
@@ -578,6 +594,7 @@ textarea {
 @media only screen and (min-width: 768px) {
   body {
     border: 6px solid #aba5d2;
+    min-height: 100vh;
   }
   /***no scroll***/
   #identitysigns {
@@ -670,10 +687,6 @@ input[type="button"]:disabled {
 
 
 /***************************IDENTITY SIGNS********************************/
-
-#aboutpage {
-  height: 100vh;
-}
 
 
 /***fixed header***/
