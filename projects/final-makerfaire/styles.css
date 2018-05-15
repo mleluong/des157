@@ -527,8 +527,8 @@ textarea {
 
 .animateflash {
   animation-name: flash;
-  animation-delay: 2s;
   animation-duration: 1s;
+  animation-delay: 3s;
   animation-timing-function: linear;
   animation-iteration-count: 5;
 }
