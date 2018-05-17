@@ -30,7 +30,7 @@ var f1 = document.getElementById('f1');
 //Question1 -> Reflection 1
 jump1.addEventListener('click', function() {
   if ((f1.question1[0].checked == false) && (f1.question1[1].checked == false) && (f1.question1[2].checked == false) && (f1.question1[3].checked == false) && (f1.question1[4].checked == false) && (f1.question1[5].checked == false)) {
-    alert('This question is required');
+    alert('Please choose an identity');
   } else {
   console.log('jump to reflection 1')
   window.location.href = "#r1";
@@ -50,7 +50,7 @@ jump1.addEventListener('click', function() {
 //Question2 -> Reflection 2
 jump2.addEventListener('click', function() {
   if ((f1.question2[0].checked == false) && (f1.question2[1].checked == false) && (f1.question2[2].checked == false) && (f1.question2[3].checked == false) && (f1.question2[4].checked == false) && (f1.question2[5].checked == false)) {
-    alert('This question is required');
+    alert('Please choose an identity');
   } else {
   console.log('jump to reflection 2')
   window.location.href = "#r2";
@@ -69,7 +69,7 @@ jump2.addEventListener('click', function() {
 
 jump3.addEventListener('click', function() {
   if ((f1.question3[0].checked == false) && (f1.question3[1].checked == false) && (f1.question3[2].checked == false) && (f1.question3[3].checked == false) && (f1.question3[4].checked == false) && (f1.question3[5].checked == false)) {
-    alert('This question is required');
+    alert('Please choose an identity');
   } else {
   console.log('jump to reflection 3')
   window.location.href = "#r3";
@@ -88,7 +88,7 @@ jump3.addEventListener('click', function() {
 
 jump4.addEventListener('click', function() {
   if ((f1.question4[0].checked == false) && (f1.question4[1].checked == false) && (f1.question4[2].checked == false) && (f1.question4[3].checked == false) && (f1.question4[4].checked == false) && (f1.question4[5].checked == false)) {
-    alert('This question is required');
+    alert('Please choose an identity');
   } else {
   console.log('jump to reflection 4')
   window.location.href = "#r4";
@@ -107,7 +107,7 @@ jump4.addEventListener('click', function() {
 
 jump5.addEventListener('click', function() {
   if ((f1.question5[0].checked == false) && (f1.question5[1].checked == false) && (f1.question5[2].checked == false) && (f1.question5[3].checked == false) && (f1.question5[4].checked == false) && (f1.question5[5].checked == false)) {
-    alert('This question is required');
+    alert('Please choose an identity');
   } else {
   console.log('jump to reflection 5')
   window.location.href = "#r5";
@@ -191,7 +191,7 @@ togallery1.addEventListener('click', function() {
     var reason = document.getElementById('reason');
     if (reason.value.length == 0){
       console.log('alert');
-      alert('This question is required');
+      alert('Please answer why you chose this identity before moving on');
     } else {
   //scroll to gallery 1
   console.log('go to gallery1');
@@ -230,7 +230,7 @@ togallery2.addEventListener('click', function() {
   var reason2 = document.getElementById('reason2');
   if (reason2.value.length == 0){
     console.log('alert');
-    alert('This question is required');
+    alert('Please answer why you chose this identity before moving on');
   } else {
   //scroll to gallery 2
   console.log('go to gallery2');
@@ -269,7 +269,7 @@ togallery3.addEventListener('click', function() {
   var reason3 = document.getElementById('reason3');
   if (reason3.value.length == 0){
     console.log('alert');
-    alert('This question is required');
+    alert('Please answer why you chose this identity before moving on');
   } else {
   //scroll to gallery 3
   var togallery3 = document.getElementById('#togallery3');
@@ -308,7 +308,7 @@ togallery4.addEventListener('click', function() {
   var reason4 = document.getElementById('reason4');
   if (reason4.value.length == 0){
     console.log('alert');
-    alert('This question is required');
+    alert('Please answer why you chose this identity before moving on');
   } else {
   //scroll to gallery 4
   var togallery4 = document.getElementById('#togallery4');
@@ -347,7 +347,7 @@ togallery5.addEventListener('click', function() {
   var reason5 = document.getElementById('reason5');
   if (reason5.value.length == 0){
     console.log('alert');
-    alert('This question is required');
+    alert('Please answer why you chose this identity before moving on');
   } else {
   //scroll to gallery 5
   var togallery5 = document.getElementById('#togallery5');
